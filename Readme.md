@@ -17,6 +17,7 @@
         - Installs all dependencies in `vendor/`
         - Sets up the default folder structure
     - `.`: Creates at the current level
+
 4. `ddev add-on get ddev/ddev-phpmyadmin`
     - Downloads the phpmyadmin addon to have a frontend GUI for the backend table
     - Run `ddev restart` to reflect changes
@@ -44,3 +45,6 @@ I am unsure about these two:
    - `cp .env.example .env`
    - `ddev artisan key:generate`
 7. **Migrate Database**: `ddev artisan migrate`
+
+# To Read
+[Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/)
