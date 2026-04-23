@@ -17,7 +17,9 @@
         - Installs all dependencies in `vendor/`
         - Sets up the default folder structure
     - `.`: Creates at the current level
-
+4. `ddev add-on get ddev/ddev-phpmyadmin`
+    - Downloads the phpmyadmin addon to have a frontend GUI for the backend table
+    - Run `ddev restart` to reflect changes
 
 # Pulling
 ## Prerequisites
