@@ -9,13 +9,14 @@
     
 2. `ddev start`
 
-3. `ddev composer create laravel/laravel`
+3. `ddev composer create-project laravel/laravel .`
     - **Composer**: The tool used to handle PHP related libraries, similar to `npm` for Node.js
     - `ddev composer`: Run Composer within the ddev environment
-    - `create laravel/laravel`: Composer command:
+    - `create-project laravel/laravel`: Composer command:
         - Downloads the official Laravel starter project
         - Installs all dependencies in `vendor/`
         - Sets up the default folder structure
+    - `.`: Creates at the current level
 
 
 # Pulling
@@ -33,3 +34,11 @@
 5. **Check what websites are available**: `ddev describe`
     - **Frontend**: `http://bonotes.ddev.site`
     - **Backend Database**: `http://bonotes.ddev.site:8036`
+
+---
+
+I am unsure about these two:
+6. **Setup Environment File**: 
+   - `cp .env.example .env`
+   - `ddev artisan key:generate`
+7. **Migrate Database**: `ddev artisan migrate`
