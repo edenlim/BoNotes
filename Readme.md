@@ -22,9 +22,14 @@
 ## Prerequisites
 1. Download Docker
 2. Download DDEV
-3. Git clone
+3. Download Git
 
 ## Startup
-1. **Start up docker environment**: **ALWAYS** run `ddev start`, to start the docker environment.
-    - When working on BoNotes, your **MUST** run `ddev start`. **ALWAYS**
-2. **Install Dependencies**: `ddev composer install`
+1. **Clone the project**: `git clone https://github.com/edenlim/BoNotes.git`
+2. **Change directory to BoNotes**: `cd BoNotes`
+3. **Start up docker environment**: **ALWAYS** run `ddev start`, to start the docker environment.
+    - When working on BoNotes, your **MUST** run `ddev start` to run the project. **ALWAYS**
+4. **Install Dependencies**: `ddev composer install`
+5. **Check what websites are available**: `ddev describe`
+    - **Frontend**: `http://bonotes.ddev.site`
+    - **Backend Database**: `http://bonotes.ddev.site:8036`
