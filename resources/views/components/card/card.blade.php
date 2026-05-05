@@ -22,7 +22,9 @@
             <h1 class="text-primary-text font-medium text-card-title mb-1">{{$title}}</h1>
             <x-card.tags :tags="$tags" />
         </div>
-        <div class="flex items-end">
+        <div 
+            class="download flex items-end" 
+            @click="activeOverlay = 'preview-{{ $title }}';">
                     
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="size-6 bi bi-download fill-current text-secondary-text cursor-pointer">
                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
@@ -31,4 +33,8 @@
         </div>
         
     </div>
+
+    <x-overlay.background name="preview-{{ $title }}">
+        <x-overlay.preview.preview :title="$title" />
+    </x-overlay.background>
 </div>
