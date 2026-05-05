@@ -33,6 +33,7 @@
 2. **Change directory to BoNotes**: `cd BoNotes`
 3. **Start up docker environment**: **ALWAYS** run `ddev start`, to start the docker environment.
     - When working on BoNotes, your **MUST** run `ddev start` to run the project. **ALWAYS**
+    - All console commands need to be run in docker container by appending `ddev` to the front
 4. **Install Dependencies**: `ddev composer install`
 5. **Check what websites are available**: `ddev describe`
     - **Frontend**: `http://bonotes.ddev.site`
@@ -55,4 +56,3 @@ I am unsure about these two:
 1. `ddev npm run rebuild`: Custom Creation in package.json: 
     - Delete static precompiled builds
     - Runs vite build
-2. `php artisian view:clear`: Cache flush for frontend
