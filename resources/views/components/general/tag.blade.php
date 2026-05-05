@@ -12,7 +12,7 @@
         :class="active ? '{{ $activeClasses }}' : '{{ $mutedClasses }}'"
         {{ $attributes->merge(['class' => 'rounded select-none transition-all cursor-pointer']) }}
     @else
-        {{ $attributes->merge(['class' => 'rounded transition-all ' . $activeClasses]) }}
+        {{ $attributes->merge(['class' => 'rounded select-none transition-all ' . $activeClasses]) }}
     @endif
 >
     {{ ucfirst($content) }}

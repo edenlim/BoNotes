@@ -14,7 +14,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     </head>
-    <body class="bg-secondary">
+    <body class="bg-secondary" x-data="{ activeOverlay: null }">
         <x-card.card title="Test.pdf" fileType=".pdf"/>
     </body>
 </html>
