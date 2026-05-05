@@ -46,5 +46,13 @@ I am unsure about these two:
    - `ddev artisan key:generate`
 7. **Migrate Database**: `ddev artisan migrate`
 
+
+
 # To Read
 [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/)
+
+# List of Commands:
+1. `ddev npm run rebuild`: Custom Creation in package.json: 
+    - Delete static precompiled builds
+    - Runs vite build
+2. `php artisian view:clear`: Cache flush for frontend
