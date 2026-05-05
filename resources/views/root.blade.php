@@ -14,7 +14,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     </head>
-    <body>
-        <x-card title="Test.pdf" fileType=".pdf"/>
+    <body class="bg-secondary">
+        <x-card.card title="Test.pdf" fileType=".pdf"/>
     </body>
 </html>

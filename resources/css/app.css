@@ -6,14 +6,34 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-sans: 'DM Sans', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 
     /* -----------------------------------------
        1. ADDING NEW VALUES (EXTENDING)
        ----------------------------------------- */
+
+    /* ---------- Colors ---------- */
+    --color-primary-text: #1F2937;
+    --color-secondary-text: #6B7280;
+    --color-tertiary-text: #DDE9EB;
+    
+
     --color-like-green: #48C076;
     --color-like-green-active: #57EB90;
+    --color-dislike-red: #9D1A2E;
+    --color-dislike-red-active: #C52039;
+
+    --color-pdf-data: #E6F1FB;
+    --color-txt-data: #F1EFE8;
+
+    --color-primary: #0891B2;
+    --color-secondary: #ECFEFF;
+
+    /* ---------- Font Sizes ---------- */
+    --text-card-tags: 0.625rem;
+    --text-card-title: 0.875rem;
+    
 
     /* -----------------------------------------
        2. CHANGING DEFAULT VALUES (OVERRIDING)
