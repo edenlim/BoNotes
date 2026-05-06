@@ -17,7 +17,6 @@
     --color-primary-text: #1F2937;
     --color-secondary-text: #6B7280;
     --color-tertiary-text: #DDE9EB;
-    
 
     --color-like-green: #48C076;
     --color-like-green-active: #57EB90;
@@ -27,13 +26,15 @@
     --color-pdf-data: #E6F1FB;
     --color-txt-data: #F1EFE8;
 
+    --color-preview-bg: #2B2B2B;
+
     --color-primary: #0891B2;
     --color-secondary: #ECFEFF;
 
     /* ---------- Font Sizes ---------- */
-    --text-card-tags: 0.625rem;
-    --text-card-title: 0.875rem;
-    
+    --text-card-tags: 0.625rem; /* 10px */
+    --text-card-title: 0.875rem; /* 14px */
+
 
     /* -----------------------------------------
        2. CHANGING DEFAULT VALUES (OVERRIDING)

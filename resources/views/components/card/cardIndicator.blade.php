@@ -1,9 +1,16 @@
-<div 
+@props([
+    'trigger' => '',
+    'fileType' => 'unknown',
+    'noOfLikes' => 0,
+    'noOfDislikes' => 0
+])
+<div
     x-data="{ fileType: '{{ $fileType }}' }"
     :class="fileType==='.pdf' ? 'bg-pdf-data' : 'bg-txt-data' "
     class="w-64 flex flex-col rounded-t-lg"
+    @click="{{$trigger}}"
 >
-    <div class="mx-auto">
+    <div class="mx-auto cursor-pointer">
         @if($fileType === '.pdf')
             <svg width="86" height="81" viewBox="0 0 86 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_193_41)">
@@ -43,6 +50,6 @@
             </svg>
         @endif
     </div>
-    
+
     <x-card.rating :noOfLikes="$noOfLikes" :noOfDislikes="$noOfDislikes" />
 </div>
