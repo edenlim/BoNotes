@@ -2,11 +2,11 @@
 1. [Initialisation Step](#initalisation-step)
 2. [Pulling and Execution](#pulling-and-execution)
 3. [Libraries and Framework](#libraries-and-framework)
-4. [List of Commands](#list-of-commands)
-5. [To Read](#to-read)
+4. [Programming Conventions](#programming-conventions)
+5. [List of Commands](#list-of-commands)
+6. [Good Read](#good-read)
 
 # Initalisation step
-
 1. Congifure laravel project with ddev
     - `ddev config --project-type=laravel --docroot=public --create-docroot`
         - `ddev config`: Sets up a ddev configuration file
@@ -73,6 +73,8 @@ Blade is the templating engine of laravel- it replaces our traditional HTML file
 ## Tailwind
 Tailwind allows you to inline style elements using classes.
 
+Tailwind base unit is 0.25rem == 4px.
+
 When running, tailwind compiles and caches only what classes it needs to use, to not bloat the project. 
 - As such, changes might not appear on refresh. 
 - When adding a new tailwind class, use `ddev npm run rebuild` to flush the cache.
@@ -85,12 +87,17 @@ AlpineJS allows you to add small interactive logic while staying in HTML file (.
 - `x-show` or `if`: conditional rendering
 - `x-teleport`: Allows you to write a code in a file, but have it removed and appended at the end of another, specified element
 
+# Programming Conventions:
+1. Don't hardcode
+2. Don't Repeat Yourself
+3. Don't use `px`
+   - Use `rem` (Relative EM size). This is because every device has different pixel density, so if you use px, it may look kaputt in some devices
 
 # List of Commands:
 1. `ddev npm run rebuild`: Custom Creation in package.json: 
     - Delete static precompiled builds
     - Runs vite build
 
-# To Read
+# Good Read
 - [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/): How to properly leave a commit message
 - [Sementic Versioning](https://semver.org/): How to properly version the project
