@@ -10,7 +10,7 @@
     class="w-64 flex flex-col rounded-t-lg"
     @click="{{$trigger}}"
 >
-    <div class="mx-auto cursor-pointer">
+    <div class="mx-auto cursor-pointer pt-[1.5rem]">
         @if($fileType === '.pdf')
             <svg width="86" height="81" viewBox="0 0 86 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_193_41)">
@@ -36,7 +36,7 @@
                 </defs>
             </svg>
         @else
-            <svg width="54" height="64" viewBox="0 0 54 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="86" height="81" viewBox="0 0 54 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-inside-1_193_63" fill="white">
                 <path d="M0 4C0 1.79086 1.79086 0 4 0H50C52.2091 0 54 1.79086 54 4V60C54 62.2091 52.2091 64 50 64H4C1.79086 64 0 62.2091 0 60V4Z"/>
                 </mask>
