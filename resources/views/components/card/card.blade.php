@@ -11,7 +11,7 @@
 >
     <x-card.cardIndicator trigger="activeOverlay = 'preview-{{ $title }}';" :fileType="$fileType" :noOfLikes="$noOfLikes" :noOfDislikes="$noOfDislikes" />
 
-    <div class="flex flex-row justify-between py-2 px-3 ">
+    <div class="flex flex-row justify-between p-3 ">
         <div>
             <h1 class="text-primary-text font-medium text-card-title mb-1">{{$title}}</h1>
             <x-card.tags :tags="$tags" />

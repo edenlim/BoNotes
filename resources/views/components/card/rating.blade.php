@@ -1,4 +1,4 @@
-<div 
+<div
     x-data="{
         state: null,
         likes: {{ $noOfLikes }},
@@ -28,7 +28,7 @@
     }"
     class="flex gap-4 select-none m-[0.5rem]"
 >
-    <div @click="toggleLike()" class="inline-flex items-center gap-1 cursor-pointer" >
+    <div @click.stop="toggleLike()" class="inline-flex items-center gap-1 cursor-pointer" >
         <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -40,7 +40,7 @@
         <p :class="state === 'like' ? 'text-like-green-active' : 'text-like-green'" x-text="likes"/>
     </div>
 
-    <div @click="toggleDislike()" class="inline-flex items-center gap-1 cursor-pointer">
+    <div @click.stop="toggleDislike()" class="inline-flex items-center gap-1 cursor-pointer">
         <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
