@@ -1,0 +1,54 @@
+<div
+    x-data="{
+        state: null,
+        likes: {{ $noOfLikes }},
+        dislikes: {{ $noOfDislikes }},
+
+        toggleLike() {
+            if (this.state === 'like') {
+                this.state = null
+                this.likes--
+            } else {
+                if (this.state === 'dislike') this.dislikes--
+                this.state = 'like'
+                this.likes++
+            }
+        },
+
+        toggleDislike() {
+            if (this.state === 'dislike') {
+                this.state = null
+                this.dislikes--
+            } else {
+                if (this.state === 'like') this.likes--
+                this.state = 'dislike'
+                this.dislikes++
+            }
+        }
+    }"
+    class="flex gap-4 select-none m-[0.5rem]"
+>
+    <div @click.stop="toggleLike()" class="inline-flex items-center gap-1 cursor-pointer" >
+        <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                class="fill-current"
+                :class="state === 'like' ? 'text-like-green-active' : 'text-like-green'"
+                d="M10.1 0.369798L5.48333 4.98646C5.175 5.2948 5 5.7198 5 6.16147V14.4865C5 15.4031 5.75 16.1531 6.66667 16.1531H14.1667C14.8333 16.1531 15.4333 15.7531 15.7 15.1448L18.4167 8.80313C19.1167 7.15313 17.9083 5.3198 16.1167 5.3198H11.4083L12.2 1.50313C12.2833 1.08647 12.1583 0.661465 11.8583 0.361465C11.3667 -0.121868 10.5833 -0.121868 10.1 0.369798ZM1.66667 16.1531C2.58333 16.1531 3.33333 15.4031 3.33333 14.4865V7.8198C3.33333 6.90313 2.58333 6.15313 1.66667 6.15313C0.75 6.15313 0 6.90313 0 7.8198V14.4865C0 15.4031 0.75 16.1531 1.66667 16.1531Z"
+            />
+        </svg>
+        <p :class="state === 'like' ? 'text-like-green-active' : 'text-like-green'" x-text="likes"/>
+    </div>
+
+    <div @click.stop="toggleDislike()" class="inline-flex items-center gap-1 cursor-pointer">
+        <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                class="fill-current"
+                :class="state === 'dislike' ? 'text-dislike-red-active' : 'text-dislike-red'"
+                d="M10.1 0.369798L5.48333 4.98646C5.175 5.2948 5 5.7198 5 6.16147V14.4865C5 15.4031 5.75 16.1531 6.66667 16.1531H14.1667C14.8333 16.1531 15.4333 15.7531 15.7 15.1448L18.4167 8.80313C19.1167 7.15313 17.9083 5.3198 16.1167 5.3198H11.4083L12.2 1.50313C12.2833 1.08647 12.1583 0.661465 11.8583 0.361465C11.3667 -0.121868 10.5833 -0.121868 10.1 0.369798ZM1.66667 16.1531C2.58333 16.1531 3.33333 15.4031 3.33333 14.4865V7.8198C3.33333 6.90313 2.58333 6.15313 1.66667 6.15313C0.75 6.15313 0 6.90313 0 7.8198V14.4865C0 15.4031 0.75 16.1531 1.66667 16.1531Z"
+            />
+        </svg>
+        <p :class="state === 'dislike' ? 'text-dislike-red-active' : 'text-dislike-red'" x-text="dislikes"/>
+    </div>
+</div>
