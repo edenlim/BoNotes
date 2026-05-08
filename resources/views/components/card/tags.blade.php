@@ -1,5 +1,3 @@
-
-
 <div
     x-data="{ tags: {{ Js::from($tags) }} }"
     class="flex flex-wrap gap-2"
