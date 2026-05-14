@@ -12,7 +12,7 @@ const toggle = () => active.value = !active.value;
 
 <template>
     <div
-        class="p-2 border-2 rounded-xl cursor-pointer transition-all duration-200 hover:scale-105"
+        class="text-center min-w-15 p-2 select-none border-2 rounded-xl cursor-pointer transition-all duration-200 hover:scale-105"
         :class="{
             'border-secondary-text text-secondary-text' : !active,
             'border-tertiary-text text-tertiary-text bg-primary ' : active

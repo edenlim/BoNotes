@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<div class="p-2 border-2 rounded-xl cursor-pointer">
+<div class="p-2 border-2 rounded-xl cursor-pointer flex items-center select-none">
     Konto ▼
 </div>
 </template>
