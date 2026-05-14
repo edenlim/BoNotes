@@ -11,15 +11,18 @@ import Card from '../components/card/Card.vue'; // Import your existing Rating c
             title="IT-woche1.txt"
             file-type=".txt"
             :tags="['mathe', 'informatik']"
+            no-of-dislikes="23"
+            no-of-likes="39"
         />
 
         <Card
             title="Business-IT.txt"
             file-type=".txt"
             :tags="['wirtschaft', 'informatik']"
+            no-of-dislikes="3"
+            no-of-likes="369"
         />
     </div>
-    <div>hello</div>
 </template>
 
 <style scoped>

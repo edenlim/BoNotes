@@ -47,18 +47,8 @@ const toggleOverlay = () => {
 
         <!-- NEW OVERLAY LOGIC -->
         <Background :show="isOverlayOpen" @close="isOverlayOpen = false">
-            <!-- Everything inside here goes into the <slot /> of Background.vue -->
-            <div class="p-6">
-                <h2 class="text-xl font-bold mb-4">Preview: {{ title }}</h2>
-                <Preview :tags="tags" />
+            <Preview :title="title" :tags="tags" @close="isOverlayOpen = false"/>
 
-                <button
-                    @click="isOverlayOpen = false"
-                    class="mt-6 px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
-                >
-                    Close
-                </button>
-            </div>
         </Background>
     </div>
 </template>
