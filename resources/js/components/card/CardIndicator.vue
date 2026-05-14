@@ -7,11 +7,10 @@ const props = defineProps({
     noOfDislikes: { type: Number, default: 0 }
 });
 
-// Logic to handle the click trigger if needed, or emit an event
 const handleClick = () => {
-    // You can emit an event to the parent if this card is clickable
     console.log('Card clicked');
 };
+
 </script>
 <template>
     <div
