@@ -9,7 +9,7 @@ const emit = defineEmits(['toggle'])
 
 <template>
     <div
-        class="text-center min-w-15 p-2 select-none border-2 rounded-xl cursor-pointer transition-all duration-200 hover:scale-105"
+        class="text-center min-w-15 p-2 select-none border-2 rounded-xl hover-pop"
         :class="{
             'border-secondary-text text-secondary-text' : !isActive,
             'border-tertiary-text text-tertiary-text bg-primary ' : isActive
