@@ -36,7 +36,7 @@ const emit = defineEmits(['close','update:like', 'update:dislike']);
     <div class="bg-preview-bg">
         <InformationHeadbar :data="informationHeadbarData" @close="emit('close')"/>
         <div class="flex flex-row grid grid-cols-3">
-            <Display class="col-span-2"/>
+            <Display :fileType="props.data.fileType" class="col-span-2"/>
             <InformationSidebar
                 :data="informationSidebarData"
                 @update:dislike="emit('update:dislike')"

@@ -14,7 +14,7 @@ const emit = defineEmits(['close']);
 </script>
 
 <template>
-    <div class="flex px-5 py-4 justify-between w-[50vw] mx-auto">
+    <div class="flex px-5 py-4 justify-between mx-auto">
         <h1 class="text-white text-lg font-bold">{{ data.title }}</h1>
         <div class="flex flex-row gap-[0.75rem]">
             <Tag
