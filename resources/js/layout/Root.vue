@@ -5,12 +5,23 @@ import Upload from "../components/upload/Upload.vue";
 import {reactive} from "vue";
 
 const responseData = reactive( [{
+    title: "Testing.pdf",
+    fileType: ".pdf",
+    tags: [],
+    userVote: null,
+    noOfDislikes: 1,
+    noOfLikes: 0,
+    author: "Tommy Höller",
+    uploadTime: "10. Dec 2025",
+    pageLength: 1,
+    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+},{
     title: "Test.pdf",
     fileType: ".pdf",
     tags: [],
     userVote: null,
     noOfDislikes: 0,
-    noOfLikes: 0,
+    noOfLikes: 1,
     author: "Max Walter",
     uploadTime: "10. Apr 2025",
     pageLength: 3,
