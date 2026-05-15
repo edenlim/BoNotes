@@ -1,6 +1,7 @@
 <script setup>
 import Card from '../components/card/Card.vue'; // Import your existing Rating component
 import Navbar from "../components/navbar/Navbar.vue";
+import Upload from "../components/upload/Upload.vue";
 </script>
 
 <template>
@@ -24,6 +25,8 @@ import Navbar from "../components/navbar/Navbar.vue";
                 no-of-dislikes="3"
                 no-of-likes="369"
             />
+
+            <Upload/>
         </div>
     </div>
 </template>

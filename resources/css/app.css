@@ -40,3 +40,14 @@
        2. CHANGING DEFAULT VALUES (OVERRIDING)
        ----------------------------------------- */
 }
+
+@layer components {
+    /* ---------- Adding new Combination Class ----------
+    *  .appropriate-class-name {
+    *      @apply list-of-tailwind-css-classes
+    *  }
+    */
+    .hover-pop {
+        @apply transition-all duration-200 hover:scale-105 cursor-pointer;
+    }
+}
