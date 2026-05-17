@@ -2,6 +2,8 @@
 import Filters from "./Filters.vue";
 import Account from "./Account.vue";
 import Searchbar from "./Searchbar.vue";
+
+const activeFilter = defineModel('activeFilter', { type: Array, required: true });
 </script>
 
 <template>
@@ -12,7 +14,7 @@ import Searchbar from "./Searchbar.vue";
             alt="BoNotes Logo"
         />
         <Searchbar class="col-span-4"/>
-        <Filters class="col-span-6"/>
+        <Filters class="col-span-6" v-model:active-filter="activeFilter"/>
         <Account class="col-span-1"/>
     </nav>
 </template>

@@ -28,7 +28,7 @@ const handleClick = () => {
 <template>
     <div
         :style="containerStyle"
-        class="w-[var(--size)] h-[var(--size)] cursor-pointer rounded-full flex items-center justify-center select-none"
+        class="w-[var(--size)] h-[var(--size)]rounded-full flex items-center justify-center select-none hover-pop"
         @click="handleClick"
     >
         ✕

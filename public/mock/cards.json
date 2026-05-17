@@ -1,0 +1,1585 @@
+[
+    {
+        "title":"linear_algebra.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "wirtschaft",
+            "maschinebau",
+            "mathe"
+        ],
+        "userVote":"like",
+        "noOfDislikes":279,
+        "noOfLikes":396,
+        "author":"Linda Spence",
+        "uploadTime":"10. Mar 2025",
+        "pageLength":2,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"data_structures.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":232,
+        "noOfLikes":285,
+        "author":"Linda Schmidt",
+        "uploadTime":"24. Mar 2024",
+        "pageLength":1,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"statistics.pdf",
+        "fileType":".pdf",
+        "tags":[
+
+        ],
+        "userVote":"like",
+        "noOfDislikes":49,
+        "noOfLikes":423,
+        "author":"Leslie Stephens",
+        "uploadTime":"23. Jan 2026",
+        "pageLength":5,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"calculus.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft",
+            "maschinebau",
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":103,
+        "noOfLikes":493,
+        "author":"Katie Norman",
+        "uploadTime":"07. Oct 2021",
+        "pageLength":2,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"accounting.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau",
+            "wirtschaft"
+        ],
+        "userVote":null,
+        "noOfDislikes":474,
+        "noOfLikes":357,
+        "author":"Sarah Greene",
+        "uploadTime":"22. Nov 2023",
+        "pageLength":2,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"machine_design.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"like",
+        "noOfDislikes":389,
+        "noOfLikes":392,
+        "author":"Crystal Jackson",
+        "uploadTime":"09. Oct 2022",
+        "pageLength":3,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"accounting.txt",
+        "fileType":".txt",
+        "tags":[
+            "wirtschaft",
+            "mathe",
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":360,
+        "noOfLikes":439,
+        "author":"Hannah Hess",
+        "uploadTime":"23. Jul 2025",
+        "pageLength":4,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"data_structures.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik",
+            "mathe"
+        ],
+        "userVote":"like",
+        "noOfDislikes":218,
+        "noOfLikes":18,
+        "author":"Ellen Krause",
+        "uploadTime":"07. Sep 2023",
+        "pageLength":3,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"algorithms.pdf",
+        "fileType":".pdf",
+        "tags":[
+
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":214,
+        "noOfLikes":228,
+        "author":"Matthew Fisher",
+        "uploadTime":"17. May 2023",
+        "pageLength":4,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"electronics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau",
+            "informatik",
+            "wirtschaft"
+        ],
+        "userVote":"like",
+        "noOfDislikes":346,
+        "noOfLikes":109,
+        "author":"Matthew Fowler",
+        "uploadTime":"29. May 2020",
+        "pageLength":1,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"statistics.txt",
+        "fileType":".txt",
+        "tags":[
+            "mathe",
+            "wirtschaft"
+        ],
+        "userVote":null,
+        "noOfDislikes":246,
+        "noOfLikes":245,
+        "author":"David Dixon",
+        "uploadTime":"09. Nov 2022",
+        "pageLength":3,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"economics.txt",
+        "fileType":".txt",
+        "tags":[
+            "wirtschaft"
+        ],
+        "userVote":null,
+        "noOfDislikes":416,
+        "noOfLikes":338,
+        "author":"Natalie Jennings",
+        "uploadTime":"19. Mar 2022",
+        "pageLength":4,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"business_math.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft",
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":279,
+        "noOfLikes":99,
+        "author":"Lauren Williams",
+        "uploadTime":"11. Oct 2021",
+        "pageLength":2,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"networking.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":33,
+        "PeteofLikes":207,
+        "author":"Laura Stokes",
+        "uploadTime":"20. May 2023",
+        "pageLength":2,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"data_structures.pdf",
+        "fileType":".pdf",
+        "tags":[
+
+        ],
+        "userVote":null,
+        "noOfDislikes":29,
+        "noOfLikes":344,
+        "author":"Jillian Walker",
+        "uploadTime":"07. Mar 2026",
+        "pageLength":2,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"machine_design.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau",
+            "mathe",
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":393,
+        "noOfLikes":133,
+        "author":"Emily Carlson",
+        "uploadTime":"12. Jan 2024",
+        "pageLength":5,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"database_systems.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":218,
+        "noOfLikes":262,
+        "author":"Michelle Griffin",
+        "uploadTime":"25. Sep 2021",
+        "pageLength":2,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"linear_algebra.txt",
+        "fileType":".txt",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":"like",
+        "noOfDislikes":97,
+        "noOfLikes":132,
+        "author":"Claudia Willis",
+        "uploadTime":"31. Aug 2025",
+        "pageLength":4,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"algorithms.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik",
+            "mathe",
+            "wirtschaft",
+            "maschinebau"
+        ],
+        "userVote":"like",
+        "noOfDislikes":125,
+        "noOfLikes":435,
+        "author":"Adrian Payne",
+        "uploadTime":"04. Mar 2022",
+        "pageLength":5,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"data_structures.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":186,
+        "noOfLikes":391,
+        "author":"Jennifer Khan",
+        "uploadTime":"08. May 2021",
+        "pageLength":5,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"economics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "wirtschaft",
+            "maschinebau"
+        ],
+        "userVote":"like",
+        "noOfDislikes":478,
+        "noOfLikes":104,
+        "author":"Sara Carpenter MD",
+        "uploadTime":"27. Dec 2024",
+        "pageLength":1,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"algorithms.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik",
+            "mathe"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":139,
+        "noOfLikes":252,
+        "author":"Ricky Daniel",
+        "uploadTime":"07. Feb 2020",
+        "pageLength":5,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"algorithms.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik",
+            "wirtschaft",
+            "maschinebau"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":367,
+        "noOfLikes":377,
+        "author":"Brittany Guzman",
+        "uploadTime":"21. Nov 2020",
+        "pageLength":1,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"physics.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":null,
+        "noOfDislikes":163,
+        "noOfLikes":175,
+        "author":"Joseph Finley",
+        "uploadTime":"02. Nov 2021",
+        "pageLength":3,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"business_math.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft"
+        ],
+        "userVote":"like",
+        "noOfDislikes":63,
+        "noOfLikes":339,
+        "author":"Debra Russo",
+        "uploadTime":"15. Feb 2022",
+        "pageLength":1,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"linear_algebra.txt",
+        "fileType":".txt",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":null,
+        "noOfDislikes":419,
+        "noOfLikes":414,
+        "author":"Philip Powers",
+        "uploadTime":"21. May 2021",
+        "pageLength":3,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"physics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":325,
+        "noOfLikes":462,
+        "author":"Cheryl Hansen",
+        "uploadTime":"18. Jan 2022",
+        "pageLength":1,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"algorithms.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":100,
+        "noOfLikes":301,
+        "author":"Michael Patterson",
+        "uploadTime":"14. Feb 2022",
+        "pageLength":4,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"statistics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":175,
+        "noOfLikes":232,
+        "author":"Alexander Davis",
+        "uploadTime":"17. Feb 2026",
+        "pageLength":3,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"physics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"like",
+        "noOfDislikes":491,
+        "noOfLikes":331,
+        "author":"David Bridges",
+        "uploadTime":"04. Apr 2024",
+        "pageLength":1,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"electronics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau",
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":214,
+        "noOfLikes":491,
+        "author":"Mr. David Ali III",
+        "uploadTime":"13. Jul 2024",
+        "pageLength":2,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"statistics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":"like",
+        "noOfDislikes":239,
+        "noOfLikes":407,
+        "author":"Tamara Doyle",
+        "uploadTime":"30. Oct 2023",
+        "pageLength":5,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"database_systems.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":182,
+        "noOfLikes":406,
+        "author":"Jill George",
+        "uploadTime":"21. Mar 2020",
+        "pageLength":3,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"machine_design.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau",
+            "wirtschaft"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":324,
+        "noOfLikes":269,
+        "author":"David Turner",
+        "uploadTime":"25. Jun 2024",
+        "pageLength":4,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"networking.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":309,
+        "noOfLikes":201,
+        "author":"Laura Maldonado",
+        "uploadTime":"20. Aug 2021",
+        "pageLength":5,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"statistics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft"
+        ],
+        "userVote":"like",
+        "noOfDislikes":306,
+        "noOfLikes":310,
+        "author":"Anthony Brown",
+        "uploadTime":"16. Jun 2025",
+        "pageLength":5,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"mechanics.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":454,
+        "noOfLikes":442,
+        "author":"Brittney Moody",
+        "uploadTime":"25. Mar 2023",
+        "pageLength":5,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"business_math.txt",
+        "fileType":".txt",
+        "tags":[
+            "wirtschaft",
+            "mathe"
+        ],
+        "userVote":null,
+        "noOfDislikes":108,
+        "noOfLikes":360,
+        "author":"Lisa Wright",
+        "uploadTime":"05. May 2021",
+        "pageLength":1,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"networking.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":341,
+        "noOfLikes":393,
+        "author":"Jon Long",
+        "uploadTime":"26. May 2023",
+        "pageLength":3,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"machine_design.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"like",
+        "noOfDislikes":437,
+        "noOfLikes":326,
+        "author":"Kyle Clark",
+        "uploadTime":"17. Apr 2021",
+        "pageLength":2,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"physics.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":391,
+        "noOfLikes":236,
+        "author":"Laura Banks",
+        "uploadTime":"29. Aug 2023",
+        "pageLength":2,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"economics.txt",
+        "fileType":".txt",
+        "tags":[
+            "wirtschaft"
+        ],
+        "userVote":null,
+        "noOfDislikes":260,
+        "noOfLikes":467,
+        "author":"Katherine Benton",
+        "uploadTime":"25. Jan 2025",
+        "pageLength":1,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"linear_algebra.txt",
+        "fileType":".txt",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":null,
+        "noOfDislikes":499,
+        "noOfLikes":414,
+        "author":"Jessica Beard",
+        "uploadTime":"07. Oct 2025",
+        "pageLength":4,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"networking.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":234,
+        "noOfLikes":445,
+        "author":"Robert Hinton",
+        "uploadTime":"16. May 2025",
+        "pageLength":3,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"thermodynamics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":427,
+        "noOfLikes":34,
+        "author":"Sabrina Li",
+        "uploadTime":"30. Jan 2021",
+        "pageLength":1,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"business_math.txt",
+        "fileType":".txt",
+        "tags":[
+            "wirtschaft",
+            "mathe"
+        ],
+        "userVote":null,
+        "noOfDislikes":472,
+        "noOfLikes":121,
+        "author":"James Ray",
+        "uploadTime":"17. Dec 2022",
+        "pageLength":2,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"networking.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":420,
+        "noOfLikes":85,
+        "author":"Robert Bradshaw",
+        "uploadTime":"22. Dec 2021",
+        "pageLength":5,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"mechanics.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":338,
+        "noOfLikes":31,
+        "author":"Catherine Soto",
+        "uploadTime":"21. Feb 2020",
+        "pageLength":2,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"thermodynamics.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":423,
+        "noOfLikes":23,
+        "author":"Joann Rice",
+        "uploadTime":"21. Jan 2020",
+        "pageLength":4,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"economics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "wirtschaft"
+        ],
+        "userVote":null,
+        "noOfDislikes":35,
+        "noOfLikes":178,
+        "author":"Christine Zavala",
+        "uploadTime":"07. May 2024",
+        "pageLength":3,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"electronics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau",
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":375,
+        "noOfLikes":446,
+        "author":"Charles Palmer",
+        "uploadTime":"28. Apr 2021",
+        "pageLength":5,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"accounting.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "wirtschaft"
+        ],
+        "userVote":"like",
+        "noOfDislikes":121,
+        "noOfLikes":464,
+        "author":"Allison Santiago",
+        "uploadTime":"03. Dec 2022",
+        "pageLength":5,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"mechanics.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":null,
+        "noOfDislikes":417,
+        "noOfLikes":274,
+        "author":"Troy Matthews",
+        "uploadTime":"01. Sep 2020",
+        "pageLength":1,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"physics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":null,
+        "noOfDislikes":494,
+        "noOfLikes":208,
+        "author":"Michael Foley",
+        "uploadTime":"02. Nov 2023",
+        "pageLength":2,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"linear_algebra.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":null,
+        "noOfDislikes":421,
+        "noOfLikes":75,
+        "author":"Daniel Harris",
+        "uploadTime":"24. May 2023",
+        "pageLength":1,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"electronics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau",
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":225,
+        "noOfLikes":225,
+        "author":"Jessica Collins",
+        "uploadTime":"27. May 2024",
+        "pageLength":2,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"machine_design.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":235,
+        "noOfLikes":162,
+        "author":"Darren Crawford MD",
+        "uploadTime":"03. Jun 2022",
+        "pageLength":5,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"database_systems.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":15,
+        "noOfLikes":254,
+        "author":"Kelly Santiago",
+        "uploadTime":"24. Feb 2022",
+        "pageLength":5,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"algorithms.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik",
+            "mathe"
+        ],
+        "userVote":null,
+        "noOfDislikes":181,
+        "noOfLikes":135,
+        "author":"Andrew Williams",
+        "uploadTime":"30. May 2020",
+        "pageLength":3,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"business_math.txt",
+        "fileType":".txt",
+        "tags":[
+            "wirtschaft",
+            "mathe"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":360,
+        "noOfLikes":230,
+        "author":"Henry Warren",
+        "uploadTime":"03. Dec 2023",
+        "pageLength":3,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"linear_algebra.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft",
+            "maschinebau"
+        ],
+        "userVote":null,
+        "noOfDislikes":381,
+        "noOfLikes":491,
+        "author":"Roy Rodriguez",
+        "uploadTime":"02. Jul 2021",
+        "pageLength":5,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"accounting.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "wirtschaft"
+        ],
+        "userVote":null,
+        "noOfDislikes":384,
+        "noOfLikes":220,
+        "author":"Laura Rodgers",
+        "uploadTime":"31. Aug 2020",
+        "pageLength":1,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"statistics.txt",
+        "fileType":".txt",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":"like",
+        "noOfDislikes":334,
+        "noOfLikes":28,
+        "author":"Brian Hayes",
+        "uploadTime":"30. Jan 2025",
+        "pageLength":5,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"database_systems.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":328,
+        "noOfLikes":228,
+        "author":"Sabrina Black",
+        "uploadTime":"15. May 2021",
+        "pageLength":3,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"mechanics.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":null,
+        "noOfDislikes":206,
+        "noOfLikes":122,
+        "author":"Jesse Sandoval",
+        "uploadTime":"24. May 2020",
+        "pageLength":3,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"electronics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau",
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":231,
+        "noOfLikes":306,
+        "author":"Susan Rosario",
+        "uploadTime":"01. Nov 2021",
+        "pageLength":4,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"calculus.txt",
+        "fileType":".txt",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":null,
+        "noOfDislikes":351,
+        "noOfLikes":362,
+        "author":"Mary Williams",
+        "uploadTime":"30. Mar 2021",
+        "pageLength":5,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"mechanics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"like",
+        "noOfDislikes":393,
+        "noOfLikes":112,
+        "author":"Joseph Johnson",
+        "uploadTime":"09. Jun 2022",
+        "pageLength":2,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"machine_design.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau",
+            "wirtschaft",
+            "mathe"
+        ],
+        "userVote":"like",
+        "noOfDislikes":488,
+        "noOfLikes":113,
+        "author":"Victoria Ruiz",
+        "uploadTime":"26. May 2025",
+        "pageLength":2,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"electronics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau",
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":144,
+        "noOfLikes":205,
+        "author":"Kathleen Jackson",
+        "uploadTime":"26. Jan 2025",
+        "pageLength":2,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"electronics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau",
+            "informatik",
+            "wirtschaft",
+            "mathe"
+        ],
+        "userVote":null,
+        "noOfDislikes":147,
+        "noOfLikes":131,
+        "author":"Peggy Stevens",
+        "uploadTime":"11. Apr 2025",
+        "pageLength":4,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"thermodynamics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"like",
+        "noOfDislikes":212,
+        "noOfLikes":210,
+        "author":"Michelle Richards",
+        "uploadTime":"25. Apr 2022",
+        "pageLength":3,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"linear_algebra.txt",
+        "fileType":".txt",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":"like",
+        "noOfDislikes":117,
+        "noOfLikes":399,
+        "author":"Ashley Knight",
+        "uploadTime":"11. Sep 2021",
+        "pageLength":4,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"statistics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":189,
+        "noOfLikes":281,
+        "author":"Sydney Lee",
+        "uploadTime":"20. Aug 2024",
+        "pageLength":2,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"data_structures.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":340,
+        "noOfLikes":276,
+        "author":"Anthony Kennedy",
+        "uploadTime":"25. Aug 2025",
+        "pageLength":5,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"networking.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik",
+            "wirtschaft"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":270,
+        "noOfLikes":166,
+        "author":"Maria Thompson",
+        "uploadTime":"17. Jun 2025",
+        "pageLength":4,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"mechanics.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":405,
+        "noOfLikes":466,
+        "author":"Valerie Galvan MD",
+        "uploadTime":"04. Oct 2020",
+        "pageLength":2,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"mechanics.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau",
+            "wirtschaft"
+        ],
+        "userVote":null,
+        "noOfDislikes":187,
+        "noOfLikes":400,
+        "author":"Jeremy Robinson",
+        "uploadTime":"19. Jun 2024",
+        "pageLength":3,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"data_structures.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik",
+            "mathe"
+        ],
+        "userVote":null,
+        "noOfDislikes":255,
+        "noOfLikes":296,
+        "author":"Jeffrey Bautista",
+        "uploadTime":"14. Mar 2025",
+        "pageLength":5,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"programming_basics.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":171,
+        "noOfLikes":323,
+        "author":"Aaron Myers",
+        "uploadTime":"31. Mar 2023",
+        "pageLength":2,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"electronics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau",
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":54,
+        "noOfLikes":15,
+        "author":"Aaron Tucker",
+        "uploadTime":"10. Apr 2023",
+        "pageLength":4,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"machine_design.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":null,
+        "noOfDislikes":351,
+        "noOfLikes":223,
+        "author":"Jeremiah Rivera",
+        "uploadTime":"11. Jan 2026",
+        "pageLength":1,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"statistics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":"like",
+        "noOfDislikes":486,
+        "noOfLikes":366,
+        "author":"Whitney Peterson",
+        "uploadTime":"12. Dec 2023",
+        "pageLength":1,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"economics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "wirtschaft",
+            "maschinebau"
+        ],
+        "userVote":"like",
+        "noOfDislikes":494,
+        "noOfLikes":129,
+        "author":"Phillip Carroll",
+        "uploadTime":"15. Apr 2023",
+        "pageLength":4,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"electronics.txt",
+        "fileType":".txt",
+        "tags":[
+            "maschinebau",
+            "informatik"
+        ],
+        "userVote":"like",
+        "noOfDislikes":292,
+        "noOfLikes":124,
+        "author":"Benjamin Blevins",
+        "uploadTime":"20. May 2023",
+        "pageLength":3,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"data_structures.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":227,
+        "noOfLikes":336,
+        "author":"Martin Obrien",
+        "uploadTime":"06. Aug 2025",
+        "pageLength":4,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"business_math.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft"
+        ],
+        "userVote":"like",
+        "noOfDislikes":133,
+        "noOfLikes":129,
+        "author":"Curtis Rodriguez II",
+        "uploadTime":"22. Apr 2021",
+        "pageLength":3,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"accounting.txt",
+        "fileType":".txt",
+        "tags":[
+            "wirtschaft"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":173,
+        "noOfLikes":289,
+        "author":"Miss Connie Garcia",
+        "uploadTime":"11. May 2020",
+        "pageLength":3,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"statistics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":null,
+        "noOfDislikes":29,
+        "noOfLikes":355,
+        "author":"Rachel Henderson",
+        "uploadTime":"12. May 2024",
+        "pageLength":5,
+        "description":"Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "title":"data_structures.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":416,
+        "noOfLikes":211,
+        "author":"Oscar Benjamin",
+        "uploadTime":"18. Apr 2026",
+        "pageLength":4,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"statistics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft"
+        ],
+        "userVote":null,
+        "noOfDislikes":54,
+        "noOfLikes":45,
+        "author":"Timothy Barnes",
+        "uploadTime":"19. Apr 2021",
+        "pageLength":3,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"business_math.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft"
+        ],
+        "userVote":null,
+        "noOfDislikes":98,
+        "noOfLikes":59,
+        "author":"Timothy James",
+        "uploadTime":"08. Jul 2020",
+        "pageLength":2,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"accounting.txt",
+        "fileType":".txt",
+        "tags":[
+            "wirtschaft"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":364,
+        "noOfLikes":22,
+        "author":"Paul Cannon",
+        "uploadTime":"21. Sep 2023",
+        "pageLength":1,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"machine_design.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":null,
+        "noOfDislikes":212,
+        "noOfLikes":13,
+        "author":"Caroline Walker",
+        "uploadTime":"06. Oct 2025",
+        "pageLength":2,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"business_math.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":403,
+        "noOfLikes":90,
+        "author":"Paul Kerr DDS",
+        "uploadTime":"06. Jun 2020",
+        "pageLength":4,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"database_systems.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":398,
+        "noOfLikes":220,
+        "author":"Katrina Taylor",
+        "uploadTime":"04. Aug 2021",
+        "pageLength":5,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"physics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":null,
+        "noOfDislikes":220,
+        "noOfLikes":410,
+        "author":"Kelly Mahoney",
+        "uploadTime":"07. Nov 2021",
+        "pageLength":2,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"programming_basics.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":335,
+        "noOfLikes":381,
+        "author":"Michael Drake",
+        "uploadTime":"29. May 2020",
+        "pageLength":5,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"data_structures.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":445,
+        "noOfLikes":254,
+        "author":"Brandi Hughes",
+        "uploadTime":"18. Mar 2021",
+        "pageLength":1,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"calculus.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft",
+            "maschinebau",
+            "informatik"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":299,
+        "noOfLikes":149,
+        "author":"Kimberly Petty",
+        "uploadTime":"24. Feb 2025",
+        "pageLength":2,
+        "description":"Compact reference sheet covering the most important concepts."
+    },
+    {
+        "title":"economics.txt",
+        "fileType":".txt",
+        "tags":[
+            "wirtschaft"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":365,
+        "noOfLikes":90,
+        "author":"Derek Byrd",
+        "uploadTime":"04. Jun 2020",
+        "pageLength":3,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"statistics.txt",
+        "fileType":".txt",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":"like",
+        "noOfDislikes":403,
+        "noOfLikes":463,
+        "author":"John King",
+        "uploadTime":"28. May 2024",
+        "pageLength":2,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"statistics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":174,
+        "noOfLikes":42,
+        "author":"Charles Rodriguez",
+        "uploadTime":"17. May 2021",
+        "pageLength":4,
+        "description":"Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "title":"linear_algebra.txt",
+        "fileType":".txt",
+        "tags":[
+            "mathe"
+        ],
+        "userVote":"like",
+        "noOfDislikes":4,
+        "noOfLikes":302,
+        "author":"Jonathan Gentry",
+        "uploadTime":"13. Aug 2024",
+        "pageLength":4,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"networking.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":null,
+        "noOfDislikes":459,
+        "noOfLikes":332,
+        "author":"Doris Chung",
+        "uploadTime":"26. Dec 2023",
+        "pageLength":1,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"programming_basics.txt",
+        "fileType":".txt",
+        "tags":[
+            "informatik"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":82,
+        "noOfLikes":396,
+        "author":"Mark Mitchell",
+        "uploadTime":"21. Sep 2025",
+        "pageLength":1,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "title":"physics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":null,
+        "noOfDislikes":483,
+        "noOfLikes":381,
+        "author":"Sandra Clark",
+        "uploadTime":"09. Jan 2024",
+        "pageLength":2,
+        "description":"Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "title":"physics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "maschinebau"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":157,
+        "noOfLikes":85,
+        "author":"Sarah Forbes",
+        "uploadTime":"13. Feb 2025",
+        "pageLength":4,
+        "description":"Practice-focused material with solved exercises and tips."
+    },
+    {
+        "title":"statistics.pdf",
+        "fileType":".pdf",
+        "tags":[
+            "mathe",
+            "wirtschaft"
+        ],
+        "userVote":"dislike",
+        "noOfDislikes":482,
+        "noOfLikes":217,
+        "author":"Morgan Dawson",
+        "uploadTime":"17. Dec 2025",
+        "pageLength":3,
+        "description":"Detailed explanations and practice exercises for exam preparation."
+    }
+]

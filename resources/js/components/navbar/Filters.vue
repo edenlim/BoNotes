@@ -2,10 +2,9 @@
 import { ref } from 'vue';
 import Filter from "../../templates/Filter.vue";
 
-const labels = ['Alle', 'Mathe', 'Informatik', 'Wirtschaft', 'Maschinenbau'];
+const labels = ['Alle', 'Mathe', 'Informatik', 'Wirtschaft', 'Maschinebau'];
 // Creates a subject that the template can observe. This is our activeFilter array.
-const activeFilters = ref(['Alle']);
-
+const activeFilters = defineModel('activeFilter', { type: Array, required: true });
 const handleToggle = (clickedLabel) => {
     /*
     * 1. If Alle is clicked, only Alle will be toggled active.
@@ -20,18 +19,25 @@ const handleToggle = (clickedLabel) => {
         activeFilters.value = ['Alle'];
         return;
     }
-    const index = activeFilters.value.indexOf(clickedLabel);
+    let current = [...activeFilters.value];
+
+    const index = current.indexOf(clickedLabel);
     if (index > -1) {
-        activeFilters.value.splice(index, 1);
+        current.splice(index, 1);
     } else {
-        activeFilters.value.push(clickedLabel);
-        activeFilters.value = activeFilters.value.filter(item => item !== 'Alle');
+        current.push(clickedLabel);
+        current = current.filter(item => item !== 'Alle');
     }
-    const allSubjects = labels.filter(l => l !== 'Alle');
-    const allSpecificSelected = allSubjects.every(l => activeFilters.value.includes(l));
-    if (activeFilters.value.length === 0 || allSpecificSelected) {
+
+    const allSubjects = labels.filter(label => label !== 'Alle');
+    const allSpecificSelected = allSubjects.every(label => current.includes(label));
+
+    if (current.length === 0 || allSpecificSelected) {
         activeFilters.value = ['Alle'];
+    } else {
+        activeFilters.value = current;
     }
+    console.log(activeFilters)
 };
 </script>
 
