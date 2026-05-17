@@ -29,14 +29,15 @@ const filteredCards = computed(() => {
     if (activeFilter.value.includes('Alle')) {
         return responseData.value;
     }
-
+    const activeFiltersLower = activeFilter.value.map(filter => filter.toLowerCase());
     return responseData.value.filter(card => {
-        // Convert all card tags to lowercase to prevent casing mismatches
-        const cardTags = card.tags.map(tag => tag.toLowerCase());
+        if (card.tags.length === 0) {
+            return false;
+        }
 
-        // Return true if at least one active filter matches a tag on the card
-        return activeFilter.value.some(filter =>
-            cardTags.includes(filter.toLowerCase())
+        // Return true ONLY if every single tag on this card exists inside the active filters pool
+        return card.tags.every(cardTag =>
+            activeFiltersLower.includes(cardTag.toLowerCase())
         );
     });
 });
