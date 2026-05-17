@@ -2,25 +2,22 @@
 import Rating from './Rating.vue'; // Import your existing Rating component
 
 const props = defineProps({
-    fileType: { type: String, default: 'unknown' },
-    noOfLikes: { type: Number, default: 0 },
-    noOfDislikes: { type: Number, default: 0 }
+    data: {
+        type: Object,
+        required: true
+    },
 });
-
-const handleClick = () => {
-    console.log('Card clicked');
-};
+const emit = defineEmits(['update:like', 'update:dislike']);
 
 </script>
 <template>
     <div
-        @click="handleClick"
         class="w-64 flex flex-col rounded-t-lg transition-colors cursor-pointer"
-        :class="fileType === '.pdf' ? 'bg-pdf-data' : 'bg-txt-data'"
+        :class="props.data.fileType === '.pdf' ? 'bg-pdf-data' : 'bg-txt-data'"
     >
         <div class="mx-auto pt-[1.5rem] h-[100px] flex items-center">
             <img
-                v-if="fileType === '.pdf'"
+                v-if="props.data.fileType === '.pdf'"
                 :src="'/resources/images/pdf-icon.svg'"
                 alt="PDF Icon"
                 class="w-[86px] h-[81px]"
@@ -35,8 +32,11 @@ const handleClick = () => {
         </div>
 
         <Rating
-            :initial-likes="noOfLikes"
-            :initial-dislikes="noOfDislikes"
+            :noOfLikes="props.data.noOfLikes"
+            :noOfDislikes="props.data.noOfDislikes"
+            :userVote="props.data.userVote"
+            @update:dislike="emit('update:dislike')"
+            @update:like="emit('update:like')"
         />
     </div>
 </template>
