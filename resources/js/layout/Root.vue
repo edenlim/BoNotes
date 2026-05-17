@@ -3,7 +3,7 @@ import Card from '../components/card/Card.vue'; // Import your existing Rating c
 import Navbar from "../components/navbar/Navbar.vue";
 import Upload from "../components/upload/Upload.vue";
 import {reactive} from "vue";
-
+console.log("test !!")
 const responseData = reactive( [{
     title: "Testing.pdf",
     fileType: ".pdf",
