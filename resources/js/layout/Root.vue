@@ -8,18 +8,24 @@ const responseData = ref([]);
 const isLoading = ref(true);
 const fetchError = ref(null);
 
-// SSOT for filters and raw inputs
 const activeFilter = ref(['Alle']);
 const rawSearchQuery = ref('');
 const debouncedSearchQuery = ref('');
 
-// Debounce logic: Wait 500ms after the last keystroke before updating the search filter
+/*
+ * Set timeout to only run 0.5 seconds after user stopped typing into the searchbar
+ * - Whenever user is typing, it removes any timeout debounceTimer and creates a new timeout debounceTimer
+ * - The timeout will execute updating debouncedSearchQuery = the value from searchbar after 0.5sec
+ * - If the timeout is still counting down and the user is still typing, it deletes and creates (resets) a new 0.5sec timeout
+ *     - This allows debouncing
+ */
+
 let debounceTimer = null;
-watch(rawSearchQuery, (newValue) => {
+watch(rawSearchQuery, (e) => { // Note that e === rawSearchQuery.value
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
-        debouncedSearchQuery.value = newValue.trim().toLowerCase();
-    }, 500); // 0.5 seconds timeout
+        debouncedSearchQuery.value = e.trim().toLowerCase();
+    }, 500);
 });
 
 const loadMockData = async () => {
