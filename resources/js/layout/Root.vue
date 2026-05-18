@@ -1,67 +1,67 @@
 <script setup>
-import Card from '../components/card/Card.vue'; // Import your existing Rating component
+import { ref, onMounted, computed } from 'vue';
+import Card from '../components/card/Card.vue';
 import Navbar from "../components/navbar/Navbar.vue";
 import Upload from "../components/upload/Upload.vue";
-import {reactive} from "vue";
-console.log("test !!")
-const responseData = reactive( [{
-    title: "Testing.pdf",
-    fileType: ".pdf",
-    tags: [],
-    userVote: null,
-    noOfDislikes: 1,
-    noOfLikes: 0,
-    author: "Tommy Höller",
-    uploadTime: "10. Dec 2025",
-    pageLength: 1,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
-},{
-    title: "Test.pdf",
-    fileType: ".pdf",
-    tags: [],
-    userVote: null,
-    noOfDislikes: 0,
-    noOfLikes: 1,
-    author: "Max Walter",
-    uploadTime: "10. Apr 2025",
-    pageLength: 3,
-    description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
-},{
-    title: "IT-woche1.txt",
-    fileType: ".txt",
-    tags: ['mathe', 'informatik'],
-    userVote: 'dislike',
-    noOfDislikes: 23,
-    noOfLikes: 39,
-    author: "Karl Gunterman",
-    uploadTime: "15. Dec 2012",
-    pageLength: 4,
-    description: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-},{
-    title: "Business-IT.txt",
-    fileType: ".txt",
-    tags: ['wirtschaft', 'informatik'],
-    userVote: 'like',
-    noOfDislikes: 3,
-    noOfLikes: 369,
-    author: "Jonas Berg",
-    uploadTime: "29. Apr 2022",
-    pageLength: 5,
-    description: "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-}])
+
+const responseData = ref([]);
+const isLoading = ref(true);
+const fetchError = ref(null);
+
+// SSOT for filters
+const activeFilter = ref(['Alle']);
+
+const loadMockData = async () => {
+    try {
+        const response = await fetch('/mock/cards.json');
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        responseData.value = await response.json();
+    } catch (error) {
+        console.error("Failed to populate frontend state:", error);
+        fetchError.value = error.message;
+    } finally {
+        isLoading.value = false;
+    }
+};
+
+// Derived State: Dynamically filters the items based on active selection rules
+const filteredCards = computed(() => {
+    if (activeFilter.value.includes('Alle')) {
+        return responseData.value;
+    }
+    const activeFiltersLower = activeFilter.value.map(filter => filter.toLowerCase());
+    return responseData.value.filter(card => {
+        if (card.tags.length === 0) {
+            return false;
+        }
+
+        // Return true ONLY if every single tag on this card exists inside the active filters pool
+        return card.tags.every(cardTag =>
+            activeFiltersLower.includes(cardTag.toLowerCase())
+        );
+    });
+});
+
+onMounted(() => {
+    loadMockData();
+});
 </script>
 
 <template>
-    <Navbar/>
-    <div class="p-4 flex justify-space-between gap-[2rem]">
+    <Navbar v-model:activeFilter="activeFilter"/>
+
+    <div v-if="isLoading" class="p-4 text-white text-center">Laden...</div>
+    <div v-else-if="fetchError" class="p-4 text-red-500 text-center">Fehler: {{ fetchError }}</div>
+
+    <div v-else class="mx-64 my-12 flex flex-wrap justify-center gap-[2rem]">
         <Card
-            v-for="(data, index) in responseData"
+            v-for="(data, index) in filteredCards"
             :key="index"
             :data="data"
         />
 
     </div>
-    <Upload/>
+    <Upload />
 
 </template>
 
