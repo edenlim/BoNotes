@@ -49,6 +49,12 @@ const emit = defineEmits(['close']);
                         mutedClasses="ring-1 ring-gray-300 text-gray-500 bg-white"
                         class="px-3 py-1 text-xs font-medium rounded-full"
                     />
+                    <Tag
+                        content="maschinenbau"
+                        isToggleable
+                        mutedClasses="ring-1 ring-gray-300 text-gray-500 bg-white"
+                        class="px-3 py-1 text-xs font-medium rounded-full"
+                    />
                 </div>
             </div>
 
