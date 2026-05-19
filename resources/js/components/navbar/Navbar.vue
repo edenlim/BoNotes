@@ -9,7 +9,7 @@ const searchQuery = defineModel('searchQuery', { type: String, default: '' });
 
 <template>
     <nav class="
-        grid grid-cols-12 bg-white w-full items-center py-2 shadow-sm
+        grid grid-cols-12 bg-white w-full items-center py-2 shadow-sm sticky top-0 z-48
         px-2 md:px-8
         gap-2 md:gap-4
     ">

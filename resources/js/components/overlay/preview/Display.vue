@@ -31,7 +31,7 @@ const handleNext = () => {
 <template>
     <div class="text-white ">
         <div
-            class="flex h-[50vh] justify-center items-center text-black"
+            class="flex h-[50vh] md:h-[50vh] justify-center items-center text-black"
             :class="fileType === '.pdf' ? 'bg-pdf-data' : 'bg-txt-data'"
         >
             PAGE {{currentPage}}

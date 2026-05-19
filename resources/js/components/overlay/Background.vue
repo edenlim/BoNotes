@@ -18,7 +18,7 @@ const emit = defineEmits(['close']);
             >
                 <div
                     @click.stop
-                    class="bg-white rounded-lg shadow-xl max-w-[95vw] max-h-[90vh] overflow-y-auto relative"
+                    class="no-scrollbar bg-white rounded-lg shadow-xl max-w-[95vw] max-h-[90vh] overflow-y-auto relative"
                 >
                     <slot />
                 </div>

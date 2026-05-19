@@ -67,7 +67,7 @@ const toggleDropdown = () =>{
 
                 </button>
                 <div
-                    class="translate-y-[0.7rem] -translate-x-1/6 flex-col absolute bg-white gap-2 pb-4 px-4 rounded-b-xl shadow-[0_4px_6px_-2px_rgba(0,0,0,0.1)] z-99"
+                    class="translate-y-[0.7rem] -translate-x-1/6 flex-col absolute bg-white gap-2 pb-4 px-4 rounded-b-xl shadow-[0_4px_6px_-2px_rgba(0,0,0,0.1)] z-49"
                     :class="dropdownShow ? 'flex' : 'hidden'"
                 >
                     <Filter
