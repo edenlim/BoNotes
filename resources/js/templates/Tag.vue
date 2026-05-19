@@ -19,7 +19,7 @@ const colorStyle = computed(() => {
             return 'text-[#155E75] bg-[#CFFAFE]';
         case 'mathe':
             return 'text-[#3C3489] bg-[#EEEDFE]';
-        case 'maschinebau':
+        case 'maschinenbau':
             return 'text-[#7C2D12] bg-[#FEE2D5]';
         default:
             return 'bg-gray-200 text-gray-800';
