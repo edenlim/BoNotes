@@ -3,6 +3,8 @@ import { ref, onMounted, computed, watch } from 'vue';
 import Card from '../components/card/Card.vue';
 import Navbar from "../components/navbar/Navbar.vue";
 import Upload from "../components/upload/Upload.vue";
+import Background from "../components/overlay/Background.vue";
+import UploadOverlay from "../components/overlay/upload/UploadOverlay.vue";
 
 const responseData = ref([]);
 const isLoading = ref(true);
@@ -11,6 +13,7 @@ const fetchError = ref(null);
 const activeFilter = ref(['Alle']);
 const rawSearchQuery = ref('');
 const debouncedSearchQuery = ref('');
+const showUploadOverlay = ref(false);
 
 /*
  * Set timeout to only run 0.5 seconds after user stopped typing into the searchbar
@@ -84,5 +87,8 @@ onMounted(() => {
             :data="data"
         />
     </div>
-    <Upload />
+    <Upload @open="showUploadOverlay = true" />
+    <Background :show="showUploadOverlay" @close="showUploadOverlay = false">
+        <UploadOverlay @close="showUploadOverlay = false" />
+    </Background>
 </template>
