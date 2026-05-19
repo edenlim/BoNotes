@@ -125,4 +125,8 @@
             display: none;
         }
     }
+
+    .overflow-hidden-scroll-lock {
+        overflow: hidden !important;
+    }
 }
