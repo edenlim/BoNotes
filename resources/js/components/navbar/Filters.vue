@@ -37,7 +37,6 @@ const handleToggle = (clickedLabel) => {
     } else {
         activeFilters.value = current;
     }
-    console.log(activeFilters)
 };
 </script>
 
