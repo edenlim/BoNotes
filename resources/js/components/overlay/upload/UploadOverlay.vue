@@ -34,20 +34,20 @@ const emit = defineEmits(['close']);
                     <Tag
                         content="mathe"
                         isToggleable
-                        mutedClasses="border border-gray-300 text-gray-500 bg-white"
-                        class="px-3 py-1 text-xs font-medium"
+                        mutedClasses="ring-1 ring-gray-300 text-gray-500 bg-white"
+                        class="px-3 py-1 text-xs font-medium rounded-full"
                     />
                     <Tag
                         content="informatik"
                         isToggleable
-                        mutedClasses="border border-gray-300 text-gray-500 bg-white"
-                        class="px-3 py-1 text-xs font-medium"
+                        mutedClasses="ring-1 ring-gray-300 text-gray-500 bg-white"
+                        class="px-3 py-1 text-xs font-medium rounded-full"
                     />
                     <Tag
                         content="wirtschaft"
                         isToggleable
-                        mutedClasses="border border-gray-300 text-gray-500 bg-white"
-                        class="px-3 py-1 text-xs font-medium"
+                        mutedClasses="ring-1 ring-gray-300 text-gray-500 bg-white"
+                        class="px-3 py-1 text-xs font-medium rounded-full"
                     />
                 </div>
             </div>
@@ -55,12 +55,12 @@ const emit = defineEmits(['close']);
             <div class="mt-6 flex justify-end gap-3">
                 <button
                     type="button"
-                    class="px-4 py-2 text-sm rounded-lg border border-gray-300 text-secondary-text"
+                    class="px-4 py-2 text-sm rounded-lg border border-gray-300 text-secondary-text cursor-pointer"
                     @click="emit('close')"
                 >
                     Abbrechen
                 </button>
-                <button type="submit" class="px-4 py-2 text-sm rounded-lg bg-primary text-white">
+                <button type="submit" class="px-4 py-2 text-sm rounded-lg bg-primary text-white cursor-pointer">
                     Hochladen
                 </button>
             </div>
