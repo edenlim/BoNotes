@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
 import Filter from "../../templates/Filter.vue";
 
 const labels = ['Alle', 'Mathe', 'Informatik', 'Wirtschaft', 'Maschinebau'];
