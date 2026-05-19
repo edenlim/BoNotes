@@ -1,9 +1,12 @@
 <script setup>
+import {ref} from 'vue';
 import Filter from "../../templates/Filter.vue";
 
 const labels = ['Alle', 'Mathe', 'Informatik', 'Wirtschaft', 'Maschinenbau'];
 // Creates a subject that the template can observe. This is our activeFilter array.
 const activeFilters = defineModel('activeFilter', { type: Array, required: true });
+const dropdownShow = ref(false);
+
 const handleToggle = (clickedLabel) => {
     /*
     * 1. If Alle is clicked, only Alle will be toggled active.
@@ -37,16 +40,46 @@ const handleToggle = (clickedLabel) => {
         activeFilters.value = current;
     }
 };
+
+const toggleDropdown = () =>{
+    dropdownShow.value = !dropdownShow.value;
+}
 </script>
 
 <template>
-    <div class="flex flex-row gap-4 items-center justify-center h-full">
-        <Filter
-            v-for="label in labels"
-            :key="label"
-            :label="label"
-            :is-active="activeFilters.includes(label)"
-            @toggle="handleToggle(label)"
-        />
+    <div >
+        <div class="hidden lg:flex lg:flex-row lg:gap-4 lg:items-center lg:justify-center lg:h-full">
+            <Filter
+                v-for="label in labels"
+                :key="label"
+                :label="label"
+                :is-active="activeFilters.includes(label)"
+                @toggle="handleToggle(label)"
+            />
+        </div>
+        <div class="lg:hidden">
+            <div class="">
+                <button
+                    class="w-full select-none border-2 rounded-xl hover-pop p-2 dropdown relative"
+                    @click="toggleDropdown"
+                >
+                    Tags
+
+                </button>
+                <div
+                    class="translate-y-[0.7rem] -translate-x-1/6 flex-col absolute bg-white gap-2 pb-4 px-4 rounded-b-xl shadow-[0_4px_6px_-2px_rgba(0,0,0,0.1)] z-99"
+                    :class="dropdownShow ? 'flex' : 'hidden'"
+                >
+                    <Filter
+                        v-for="label in labels"
+                        :key="label"
+                        :label="label"
+                        :is-active="activeFilters.includes(label)"
+                        @toggle="handleToggle(label)"
+                    />
+                </div>
+
+            </div>
+        </div>
     </div>
 </template>

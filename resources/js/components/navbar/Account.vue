@@ -7,15 +7,17 @@ const isModalOpen = ref(false);
 
 <template>
   <div
-    @click="isModalOpen = true"
-    class="ml-auto w-fit p-2 border-2 rounded-xl cursor-pointer flex items-center select-none text-center"
+      v-bind="$attrs"
+      @click="isModalOpen = true"
+      class="w-full p-2 border-2 rounded-xl cursor-pointer flex justify-center items-center select-none hover-pop"
   >
-    Konto ▼
+<!--    Konto ▼-->
+      Konto
   </div>
 
   <AccountModal
-    v-if="isModalOpen"
-    @close="isModalOpen = false"
+      v-if="isModalOpen"
+      @close="isModalOpen = false"
   />
 </template>
 
