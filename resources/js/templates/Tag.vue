@@ -7,7 +7,7 @@ const props = defineProps({
     mutedClasses: {type: String, default: 'opacity-50 greyscale'},
 })
 
-const active = ref(true);
+const active = ref(false);
 
 const colorStyle = computed(() => {
     const subject = props.content.toLowerCase();
