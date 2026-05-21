@@ -43,9 +43,7 @@ const handleRegister = async () => {
 </script>
 <template>
     <div class="flex flex-col">
-        <div>
-            <span class="form-brand-svg"></span>
-        </div>
+
 
         <h2 class="form-title">Konto erstellen</h2>
         <p class="form-subtitle">Tritt der BoNotes Community bei</p>
@@ -74,7 +72,7 @@ const handleRegister = async () => {
 
             <p v-if="errorMessage" class="form-error-text">{{ errorMessage }}</p>
 
-            <p class="form-switch-text">
+            <p class="form-subtitle">
                 Du hast bereits ein Konto? Logge dich
                 <span class="form-link-button" @click="emit('switch-to-login')">hier</span>
                 ein
