@@ -15,11 +15,18 @@ const activeView = ref('login');
         @click="emit('close')"
     >
         <div
-            class="bg-white p-8 rounded-2xl w-full max-w-[400px] relative shadow-lg"
+            class="p-8 rounded-2xl w-full max-w-[400px] relative shadow-lg"
+            style="background-color: var(--color-secondary);"
             @click.stop
         >
-            <div class="flex items-center justify-end p-2">
-                <CloseButton @close="emit('close')" />
+            <div class="flex items-center justify-between -mt-1">
+            <span class="form-brand-svg"></span>
+
+                <CloseButton
+                    @close="emit('close')"
+                    backgroundColor="var(--color-primary)"
+                    x-color="var(--color-secondary)"
+                />
             </div>
 
             <LoginForm

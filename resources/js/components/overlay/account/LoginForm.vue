@@ -36,12 +36,9 @@ const handleLogin = async () => {
 
 <template>
     <div class="flex flex-col">
-        <div>
-            <span class="form-brand-svg"></span>
-        </div>
 
         <h2 class="form-title">Einloggen</h2>
-        <p class="form-subtitle">Log dich bei BoNotes ein!</p>
+        <p class="form-subtitle" >Log dich bei BoNotes ein!</p>
 
         <form @submit.prevent="handleLogin" class="flex flex-col gap-1">
 
@@ -57,7 +54,7 @@ const handleLogin = async () => {
 
             <p v-if="errorMessage" class="form-error-text">{{ errorMessage }}</p>
 
-            <p class="form-switch-text">
+            <p class="form-subtitle">
                 Kein Konto? Melde dich
                 <span class="form-link-button" @click="emit('switch-to-register')">hier</span>
                 an
