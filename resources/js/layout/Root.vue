@@ -80,7 +80,11 @@ onMounted(() => {
     <div v-if="isLoading" class="p-4 text-white text-center">Laden...</div>
     <div v-else-if="fetchError" class="p-4 text-red-500 text-center">Fehler: {{ fetchError }}</div>
 
-    <div v-else class="mx-64 my-12 flex flex-wrap justify-center gap-[2rem]">
+    <div v-else
+        class="
+            flex flex-wrap justify-center my-12 gap-[2rem]
+            mx-16 md:mx-24 lg:mx-32 xl:mx-64
+    ">
         <Card
             v-for="(data, index) in filteredCards"
             :key="index"

@@ -60,3 +60,22 @@
         @apply text-sidebar-heading text-xs font-bold
     }
 }
+
+@layer utilities {
+    .no-scrollbar {
+        /* IE and Edge */
+        -ms-overflow-style: none;
+
+        /* Firefox */
+        scrollbar-width: none;
+
+        /* Safari and Chrome */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .overflow-hidden-scroll-lock {
+        overflow: hidden !important;
+    }
+}

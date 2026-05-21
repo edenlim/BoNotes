@@ -33,9 +33,9 @@ const emit = defineEmits(['close','update:like', 'update:dislike']);
 </script>
 
 <template>
-    <div class="bg-preview-bg">
+    <div class="bg-preview-bg no-scrollbar">
         <InformationHeadbar :data="informationHeadbarData" @close="emit('close')"/>
-        <div class="flex flex-row grid grid-cols-3">
+        <div class="flex flex-col md:flex-row md:grid grid-cols-3">
             <Display
                 :fileType="props.data.fileType"
                 :pageLength="props.data.pageLength"

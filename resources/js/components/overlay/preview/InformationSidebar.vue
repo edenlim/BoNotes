@@ -33,7 +33,11 @@ const emit = defineEmits(['update:like', 'update:dislike']);
             @update:like="emit('update:like')"
         />
     </div>
-    <div class="preview-button hover-pop w-40 text-center mx-auto py-8 px-8">
+    <div class="
+        preview-button hover-pop w-40 text-center mx-auto
+        p-2 md:p-4 lg:p-8
+        my-4 md:my-0
+    ">
         Download
 
     </div>
