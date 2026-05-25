@@ -3,6 +3,10 @@ import Filters from "./Filters.vue";
 import Account from "./Account.vue";
 import Searchbar from "./Searchbar.vue";
 
+const props = defineProps({
+    isLoggedIn: { type: Boolean, required: true }
+});
+const emit = defineEmits(['login-success', 'logout-success']);
 const activeFilter = defineModel('activeFilter', { type: Array, required: true });
 const searchQuery = defineModel('searchQuery', { type: String, default: '' });
 </script>
@@ -26,7 +30,7 @@ const searchQuery = defineModel('searchQuery', { type: String, default: '' });
 
         <div class="flex items-center gap-2 md:gap-4 flex-shrink-0">
             <Filters v-model:active-filter="activeFilter"/>
-            <Account />
+            <Account :isLoggedIn="props.isLoggedIn" @login-success="$emit('login-success')" @logout-success="$emit('logout-success')"/>
         </div>
     </nav>
 </template>

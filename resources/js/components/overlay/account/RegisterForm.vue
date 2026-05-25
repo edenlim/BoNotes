@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 
 // Definiere die Events, die wir an AccountModal.vue senden können
-const emit = defineEmits(['switch-to-login', 'register-success']);
+const emit = defineEmits(['switch-to-login', 'login-success']);
 
 // Reaktive Variablen für die Eingabefelder
 const name = ref('');
@@ -13,32 +13,48 @@ const errorMessage = ref('');
 
 // Die Funktion, die beim Klick auf "Registrieren" aufgerufen wird
 const handleRegister = async () => {
-  errorMessage.value = ''; // Vorherige Fehler zurücksetzen
+    errorMessage.value = ''; // Vorherige Fehler zurücksetzen
 
-  // 1. Prüfen, ob die Passwörter identisch sind
-  if (password.value !== passwordConfirm.value) {
-    errorMessage.value = 'Die Passwörter stimmen nicht überein.';
-    return; // Bricht die Funktion hier ab
-  }
+    // 1. Prüfen, ob die Passwörter identisch sind
+    if (password.value !== passwordConfirm.value) {
+        errorMessage.value = 'Die Passwörter stimmen nicht überein.';
+        return; // Bricht die Funktion hier ab
+    }
 
-  try {
-    // HIER kommt später dein API-Aufruf an Laravel hin
-    // const response = await axios.post('/api/register', {
-    //   name: name.value,
-    //   email: email.value,
-    //   password: password.value,
-    //   password_confirmation: passwordConfirm.value
-    // });
+    try {
+        const response = await fetch('/mock/user.json');
+        if (!response.ok) {
+            throw new Error('Netzwerk-Fehler beim Laden der Benutzerdaten.');
+        }
+        const userlist = await response.json();
 
-    // Falls Passwörter übereinastimmen
-    console.log("Registriere neuen Nutzer:", name.value, email.value);
+        const matchedUser = userlist.find(
+            user => user.email === email.value
+        );
 
-    // Sag dem Modal, dass die Registrierung erfolgreich war und es schließen kann
-    emit('register-success');
+        if(matchedUser) {
+            errorMessage.value = "User existiert schon"
+        } else {
+            console.log("Register success");
+            const nextUserId = userlist.length > 0
+                ? userlist[userlist.length - 1].id + 1
+                : 1;
 
-  } catch (error) {
-    errorMessage.value = 'Fehler bei der Registrierung. Bitte versuche es erneut.';
-  }
+            const sessionData = {
+                username: name.value,
+                userid: nextUserId
+            };
+
+            const cookieValue = encodeURIComponent(JSON.stringify(sessionData));
+
+            document.cookie = `current_login_session=${cookieValue}; path=/; max-age=86400; SameSite=Strict; Secure`;
+
+            emit('login-success');
+        }
+
+    } catch (error) {
+        errorMessage.value = 'Fehler bei der Registrierung. Bitte versuche es erneut.';
+    }
 };
 </script>
 <template>
@@ -52,22 +68,22 @@ const handleRegister = async () => {
 
             <div class="form-input-group">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" v-model="name" required class="form-input-field" />
+                <input type="text" id="name" v-model="name" autocomplete="new-name" required class="form-input-field" />
             </div>
 
             <div class="form-input-group">
                 <label for="email" class="form-label">E-Mail</label>
-                <input type="email" id="email" v-model="email" required class="form-input-field" />
+                <input type="email" id="email" v-model="email" autocomplete="new-email" required class="form-input-field" />
             </div>
 
             <div class="form-input-group">
                 <label for="password" class="form-label">Passwort</label>
-                <input type="password" id="password" v-model="password" required class="form-input-field" />
+                <input type="password" id="password" v-model="password" autocomplete="new-password" required class="form-input-field" />
             </div>
 
             <div class="form-input-group">
                 <label for="passwordConfirm" class="form-label">Passwort bestätigen</label>
-                <input type="password" id="passwordConfirm" v-model="passwordConfirm" required class="form-input-field" />
+                <input type="password" id="passwordConfirm" v-model="passwordConfirm" autocomplete="new-password" required class="form-input-field" />
             </div>
 
             <p v-if="errorMessage" class="form-error-text">{{ errorMessage }}</p>

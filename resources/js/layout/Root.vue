@@ -15,6 +15,8 @@ const rawSearchQuery = ref('');
 const debouncedSearchQuery = ref('');
 const showUploadOverlay = ref(false);
 
+const session = ref(null);
+const isLoggedIn = computed(() => !!session.value);
 /*
  * Set timeout to only run 0.5 seconds after user stopped typing into the searchbar
  * - Whenever user is typing, it removes any timeout debounceTimer and creates a new timeout debounceTimer
@@ -69,13 +71,38 @@ const filteredCards = computed(() => {
     return cards;
 });
 
+const getSessionCookie = () => {
+    const name = "current_login_session=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const cookieArray = decodedCookie.split(';');
+
+    for (let i = 0; i < cookieArray.length; i++) {
+        let cookie = cookieArray[i].trim();
+        if (cookie.indexOf(name) === 0) {
+            return JSON.parse(cookie.substring(name.length, cookie.length));
+        }
+    }
+    return null;
+};
+
+const refreshSession = () => {
+    session.value = getSessionCookie();
+};
+
 onMounted(() => {
     loadMockData();
+    refreshSession();
 });
 </script>
 
 <template>
-    <Navbar v-model:activeFilter="activeFilter" v-model:searchQuery="rawSearchQuery"/>
+    <Navbar
+        v-model:activeFilter="activeFilter"
+        v-model:searchQuery="rawSearchQuery"
+        :isLoggedIn="isLoggedIn"
+        @login-success="refreshSession"
+        @logout-success="refreshSession"
+    />
 
     <div v-if="isLoading" class="p-4 text-white text-center">Laden...</div>
     <div v-else-if="fetchError" class="p-4 text-red-500 text-center">Fehler: {{ fetchError }}</div>
@@ -91,8 +118,12 @@ onMounted(() => {
             :data="data"
         />
     </div>
-    <Upload @open="showUploadOverlay = true" />
-    <Background :show="showUploadOverlay" @close="showUploadOverlay = false">
-        <UploadOverlay @close="showUploadOverlay = false" />
-    </Background>
+
+    <div v-if="isLoggedIn">
+        <Upload @open="showUploadOverlay = true" />
+        <Background :show="showUploadOverlay" @close="showUploadOverlay = false">
+            <UploadOverlay @close="showUploadOverlay = false" />
+        </Background>
+    </div>
+
 </template>
