@@ -89,6 +89,8 @@ const refreshSession = () => {
     session.value = getSessionCookie();
 };
 
+
+
 onMounted(() => {
     loadMockData();
     refreshSession();
@@ -99,7 +101,9 @@ onMounted(() => {
     <Navbar
         v-model:activeFilter="activeFilter"
         v-model:searchQuery="rawSearchQuery"
+        :isLoggedIn="isLoggedIn"
         @login-success="refreshSession"
+        @logout-success="refreshSession"
     />
 
     <div v-if="isLoading" class="p-4 text-white text-center">Laden...</div>

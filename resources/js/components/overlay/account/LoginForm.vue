@@ -22,7 +22,7 @@ const handleLogin = async () => {
         );
 
         if (matchedUser) {
-            console.log("Login erfolgreich für:", matchedUser.name);
+            console.log("Logged In success");
 
             const sessionData = {
                 username: matchedUser.name,
