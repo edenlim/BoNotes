@@ -89,8 +89,6 @@ const refreshSession = () => {
     session.value = getSessionCookie();
 };
 
-
-
 onMounted(() => {
     loadMockData();
     refreshSession();
