@@ -54,7 +54,7 @@ const handleLogin = async () => {
 
             <div class="form-input-group">
                 <label for="email" class="form-label">E-Mail</label>
-                <input type="email" id="email" v-model="email" required class="form-input-field" />
+                <input type="email" id="email" v-model="email" autocomplete="current-email" required class="form-input-field" />
             </div>
 
             <div class="form-input-group">

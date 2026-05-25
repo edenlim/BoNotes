@@ -38,7 +38,7 @@ const activeView = ref('login');
             <RegisterForm
                 v-else
                 @switch-to-login="activeView = 'login'"
-                @register-success="emit('close')"
+                @login-success="emit('close'); emit('login-success')"
             />
 
         </div> </div>
