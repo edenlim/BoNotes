@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import AccountModal from '../overlay/account/AccountModal.vue';
+const emit = defineEmits(['login-success']);
 
 const isModalOpen = ref(false);
 </script>
@@ -18,6 +19,7 @@ const isModalOpen = ref(false);
   <AccountModal
       v-if="isModalOpen"
       @close="isModalOpen = false"
+      @login-success="emit('login-success')"
   />
 </template>
 

@@ -1,36 +1,46 @@
 <script setup>
 import { ref } from 'vue';
 
-// Definiere die Events, die wir an AccountModal.vue senden können
 const emit = defineEmits(['switch-to-register', 'login-success']);
 
-// Reaktive Variablen für die Eingabefelder
 const email = ref('');
 const password = ref('');
-const errorMessage = ref(''); // Für Fehler vom Backend (Laravel)
+const errorMessage = ref('');
 
-// Die Funktion, die beim Klick auf "Einloggen" aufgerufen wird
 const handleLogin = async () => {
-  errorMessage.value = ''; // Vorherige Fehler zurücksetzen
+    errorMessage.value = '';
+    try {
+        const response = await fetch('/mock/user.json');
+        if (!response.ok) {
+            throw new Error('Netzwerk-Fehler beim Laden der Benutzerdaten.');
+        }
 
-  try {
-    // HIER kommt später dein API-Aufruf an Laravel hin (z.B. mit Axios)
-    // const response = await axios.post('/api/login', {
-    //   email: email.value,
-    //   password: password.value
-    // });
+        const userlist = await response.json();
 
-    // Für jetzt simulieren wir einfach einen erfolgreichen Klick:
-    console.log("Sende an Laravel:", email.value, password.value);
+        const matchedUser = userlist.find(
+            user => user.email === email.value && user.password === password.value
+        );
 
-    // Sag dem Modal, dass der Login erfolgreich war und es sich schließen kann
-    emit('login-success');
+        if (matchedUser) {
+            console.log("Login erfolgreich für:", matchedUser.name);
 
-  } catch (error) {
-    // Wenn Laravel einen Fehler wirft (z.B. falsches Passwort)
-    // errorMessage.value = error.response.data.message;
-    errorMessage.value = 'E-Mail oder Passwort ist falsch.';
-  }
+            const sessionData = {
+                username: matchedUser.name,
+                userid: matchedUser.id
+            };
+
+            const cookieValue = encodeURIComponent(JSON.stringify(sessionData));
+
+            document.cookie = `current_login_session=${cookieValue}; path=/; max-age=86400; SameSite=Strict; Secure`;
+
+            emit('login-success');
+        } else {
+            errorMessage.value = 'E-Mail oder Passwort ist falsch.';
+        }
+
+    } catch (error) {
+        errorMessage.value = 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.';
+    }
 };
 </script>
 
@@ -49,7 +59,7 @@ const handleLogin = async () => {
 
             <div class="form-input-group">
                 <label for="password" class="form-label">Passwort</label>
-                <input type="password" id="password" v-model="password" required class="form-input-field" />
+                <input type="password" id="password" v-model="password" autocomplete="current-password" required class="form-input-field" />
             </div>
 
             <p v-if="errorMessage" class="form-error-text">{{ errorMessage }}</p>

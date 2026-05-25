@@ -4,7 +4,7 @@ import LoginForm from './LoginForm.vue';
 import RegisterForm from './RegisterForm.vue';
 import CloseButton from "../../../templates/CloseButton.vue";
 
-const emit = defineEmits(['close']);
+const emit = defineEmits(['close', 'login-success']);
 
 const activeView = ref('login');
 </script>
@@ -32,7 +32,7 @@ const activeView = ref('login');
             <LoginForm
                 v-if="activeView === 'login'"
                 @switch-to-register="activeView = 'register'"
-                @login-success="emit('close')"
+                @login-success="emit('close'); emit('login-success')"
             />
 
             <RegisterForm
