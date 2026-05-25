@@ -29,6 +29,17 @@ const emit = defineEmits(['close']);
             </div>
 
             <div class="mt-5">
+                <label class="block text-sm font-medium text-primary-text mb-1" for="upload-title">Beschreibung</label>
+                <input
+                    id="upload-title"
+                    type="text"
+                    placeholder="z.B. Es handelt Sich um Ein Text der Folgendes Beinhaltet...."
+                    class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+            </div>
+
+
+            <div class="mt-5">
                 <label class="block text-sm font-medium text-primary-text mb-2">Labels</label>
                 <div class="flex flex-wrap gap-2">
                     <Tag
