@@ -18,12 +18,20 @@ const showUploadOverlay = ref(false);
 
 const session = ref(null);
 const isLoggedIn = computed(() => !!session.value);
+/*
+ * Set timeout to only run 0.5 seconds after user stopped typing into the searchbar
+ * - Whenever user is typing, it removes any timeout debounceTimer and creates a new timeout debounceTimer
+ * - The timeout will execute updating debouncedSearchQuery = the value from searchbar after 0.5sec
+ * - If the timeout is still counting down and the user is still typing, it deletes and creates (resets) a new 0.5sec timeout
+ *     - This allows debouncing
+ */
 
 let debounceTimer = null;
-watch(rawSearchQuery, (newQuery) => {
+watch(rawSearchQuery, (e) => {
+    // Note that e === rawSearchQuery.value
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
-        debouncedSearchQuery.value = newQuery.trim().toLowerCase();
+        debouncedSearchQuery.value = e.trim().toLowerCase();
     }, 500);
 });
 
