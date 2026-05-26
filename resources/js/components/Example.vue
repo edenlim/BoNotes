@@ -1,10 +1,8 @@
 <script setup>
 import { ref } from 'vue';
 
-// Logic Layer: Create a reactive variable starting at 0
 const count = ref(0);
 
-// A simple function to increase the number
 function increment() {
     count.value++;
 }

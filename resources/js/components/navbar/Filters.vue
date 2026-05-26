@@ -3,6 +3,7 @@ import {ref} from 'vue';
 import Filter from "../../templates/Filter.vue";
 
 const labels = ['Alle', 'Mathe', 'Informatik', 'Wirtschaft', 'Maschinenbau'];
+
 // Creates a subject that the template can observe. This is our activeFilter array.
 const activeFilters = defineModel('activeFilter', { type: Array, required: true });
 const dropdownShow = ref(false);

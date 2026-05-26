@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import Cookies from 'js-cookie';
 
 const emit = defineEmits(['switch-to-register', 'login-success']);
 
@@ -22,16 +23,18 @@ const handleLogin = async () => {
         );
 
         if (matchedUser) {
-            console.log("Logged In success");
-
             const sessionData = {
                 username: matchedUser.name,
+                email: matchedUser.email,
                 userid: matchedUser.id
             };
 
-            const cookieValue = encodeURIComponent(JSON.stringify(sessionData));
-
-            document.cookie = `current_login_session=${cookieValue}; path=/; max-age=86400; SameSite=Strict; Secure`;
+            Cookies.set('current_login_session', JSON.stringify(sessionData), {
+                expires: 1,
+                path: '/',
+                sameSite: 'Strict',
+                secure: true
+            });
 
             emit('login-success');
         } else {
@@ -43,7 +46,6 @@ const handleLogin = async () => {
     }
 };
 </script>
-
 <template>
     <div class="flex flex-col">
 
