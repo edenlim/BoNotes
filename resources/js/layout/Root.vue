@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, computed, watch } from 'vue';
+import Cookies from 'js-cookie';
 import Card from '../components/card/Card.vue';
 import Navbar from "../components/navbar/Navbar.vue";
 import Upload from "../components/upload/Upload.vue";
@@ -26,7 +27,8 @@ const isLoggedIn = computed(() => !!session.value);
  */
 
 let debounceTimer = null;
-watch(rawSearchQuery, (e) => { // Note that e === rawSearchQuery.value
+watch(rawSearchQuery, (e) => {
+    // Note that e === rawSearchQuery.value
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
         debouncedSearchQuery.value = e.trim().toLowerCase();
@@ -46,11 +48,9 @@ const loadMockData = async () => {
     }
 };
 
-// Derived State: Filters by both tags AND debounced search text input
 const filteredCards = computed(() => {
     let cards = responseData.value;
 
-    // 1. Process Tag Filtering
     if (!activeFilter.value.includes('Alle')) {
         const activeFiltersLower = activeFilter.value.map(filter => filter.toLowerCase());
         cards = cards.filter(card => {
@@ -61,7 +61,6 @@ const filteredCards = computed(() => {
         });
     }
 
-    // 2. Process Debounced Text Search Filtering
     if (debouncedSearchQuery.value !== '') {
         cards = cards.filter(card =>
             card.title.toLowerCase().includes(debouncedSearchQuery.value)
@@ -71,22 +70,9 @@ const filteredCards = computed(() => {
     return cards;
 });
 
-const getSessionCookie = () => {
-    const name = "current_login_session=";
-    const decodedCookie = decodeURIComponent(document.cookie);
-    const cookieArray = decodedCookie.split(';');
-
-    for (let i = 0; i < cookieArray.length; i++) {
-        let cookie = cookieArray[i].trim();
-        if (cookie.indexOf(name) === 0) {
-            return JSON.parse(cookie.substring(name.length, cookie.length));
-        }
-    }
-    return null;
-};
-
 const refreshSession = () => {
-    session.value = getSessionCookie();
+    const cookieData = Cookies.get('current_login_session');
+    session.value = cookieData ? JSON.parse(cookieData) : null;
 };
 
 onMounted(() => {
@@ -94,7 +80,6 @@ onMounted(() => {
     refreshSession();
 });
 </script>
-
 <template>
     <Navbar
         v-model:activeFilter="activeFilter"

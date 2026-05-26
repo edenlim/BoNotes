@@ -1,18 +1,19 @@
 <script setup>
 import { ref } from 'vue';
 import AccountModal from '../overlay/account/AccountModal.vue';
+import EditAccountModal from "../overlay/account/EditAccountModal.vue";
 
 const props = defineProps({
     isLoggedIn: { type: Boolean, required: true }
 });
 const emit = defineEmits(['login-success', 'logout-success']);
-const isModalOpen = ref(false);
+const isLoginModalOpen = ref(false);
+const isEditModalOpen = ref(false);
 const accountDropdownShow = ref(false);
 
 const handleLogout = () => {
     document.cookie = "current_login_session=; path=/; max-age=0; SameSite=Strict; Secure";
     accountDropdownShow.value = false;
-    console.log('Logged out')
 };
 
 const toggleDropdown = () =>{
@@ -32,7 +33,10 @@ const toggleDropdown = () =>{
             class="flex-col absolute right-0 bg-white gap-4 p-4 rounded-b-xl shadow-[0_4px_6px_-2px_rgba(0,0,0,0.1)] z-49"
             :class="accountDropdownShow ? 'flex' : 'hidden'"
         >
-            <div class="hover-pop">
+            <div
+                class="hover-pop"
+                @click="isEditModalOpen = true"
+            >
                 Einstellungen
             </div>
             <div
@@ -47,16 +51,20 @@ const toggleDropdown = () =>{
     <div
       v-else
       v-bind="$attrs"
-      @click="isModalOpen = true"
+      @click="isLoginModalOpen = true"
       class="w-full p-2 border-2 rounded-xl cursor-pointer flex justify-center items-center select-none hover-pop"
     >
       Login
     </div>
 
     <AccountModal
-      v-if="isModalOpen"
-      @close="isModalOpen = false"
+      v-if="isLoginModalOpen"
+      @close="isLoginModalOpen = false"
       @login-success="emit('login-success')"
+    />
+    <EditAccountModal
+        v-if="isEditModalOpen"
+        @close="isEditModalOpen = false"
     />
 </template>
 

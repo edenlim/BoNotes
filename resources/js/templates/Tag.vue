@@ -26,7 +26,6 @@ const colorStyle = computed(() => {
     }
 });
 
-// Helper function for Uppercase first letter
 const formattedContent = computed(() => {
     if (!props.content) return '';
     return props.content.charAt(0).toUpperCase() + props.content.slice(1);

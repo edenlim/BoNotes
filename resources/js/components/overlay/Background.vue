@@ -1,11 +1,9 @@
 <script setup>
 import {watch, onBeforeUnmount} from "vue";
-// Props to control visibility
 const props = defineProps({
     show: Boolean
 });
 
-// Define the event to tell the parent to close
 const emit = defineEmits(['close']);
 watch(() => props.show, (isModalOpen) => {
     if (isModalOpen) {

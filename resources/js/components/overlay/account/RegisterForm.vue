@@ -1,24 +1,21 @@
 <script setup>
 import { ref } from 'vue';
+import Cookies from 'js-cookie';
 
-// Definiere die Events, die wir an AccountModal.vue senden können
 const emit = defineEmits(['switch-to-login', 'login-success']);
 
-// Reaktive Variablen für die Eingabefelder
 const name = ref('');
 const email = ref('');
 const password = ref('');
 const passwordConfirm = ref('');
 const errorMessage = ref('');
 
-// Die Funktion, die beim Klick auf "Registrieren" aufgerufen wird
 const handleRegister = async () => {
-    errorMessage.value = ''; // Vorherige Fehler zurücksetzen
+    errorMessage.value = '';
 
-    // 1. Prüfen, ob die Passwörter identisch sind
     if (password.value !== passwordConfirm.value) {
         errorMessage.value = 'Die Passwörter stimmen nicht überein.';
-        return; // Bricht die Funktion hier ab
+        return;
     }
 
     try {
@@ -28,26 +25,31 @@ const handleRegister = async () => {
         }
         const userlist = await response.json();
 
-        const matchedUser = userlist.find(
+        const emailExists = userlist.some(
             user => user.email === email.value
         );
 
-        if(matchedUser) {
-            errorMessage.value = "User existiert schon"
+        if (emailExists) {
+            errorMessage.value = "User existiert schon";
         } else {
             console.log("Register success");
+
             const nextUserId = userlist.length > 0
                 ? userlist[userlist.length - 1].id + 1
                 : 1;
 
             const sessionData = {
                 username: name.value,
+                email: email.value,
                 userid: nextUserId
             };
 
-            const cookieValue = encodeURIComponent(JSON.stringify(sessionData));
-
-            document.cookie = `current_login_session=${cookieValue}; path=/; max-age=86400; SameSite=Strict; Secure`;
+            Cookies.set('current_login_session', updatedSessionData, {
+                expires: 1,
+                path: '/',
+                sameSite: 'Strict',
+                secure: true
+            });
 
             emit('login-success');
         }

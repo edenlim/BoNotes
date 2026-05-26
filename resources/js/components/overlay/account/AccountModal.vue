@@ -41,5 +41,6 @@ const activeView = ref('login');
                 @login-success="emit('close'); emit('login-success')"
             />
 
-        </div> </div>
+        </div>
+    </div>
 </template>

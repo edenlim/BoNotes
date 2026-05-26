@@ -1,5 +1,5 @@
 <script setup>
-import Rating from './Rating.vue'; // Import your existing Rating component
+import Rating from './Rating.vue';
 
 const props = defineProps({
     data: {

@@ -1,8 +1,7 @@
 <script setup>
-import Tag from '../../templates/Tag.vue'; // Ensure the path is correct
+import Tag from '../../templates/Tag.vue';
 
 const props = defineProps({
-    // We expect an array of strings from Laravel
     tags: {
         type: Array,
         default: () => []

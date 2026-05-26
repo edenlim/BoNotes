@@ -2,8 +2,8 @@
 import {computed, reactive, ref} from 'vue';
 import CardIndicator from './CardIndicator.vue';
 import Tags from './Tags.vue';
-import Background from '../overlay/Background.vue'; // Import Shell
-import Preview from '../overlay/preview/Preview.vue'; // Import Content
+import Background from '../overlay/Background.vue';
+import Preview from '../overlay/preview/Preview.vue';
 
 const props = defineProps({
     data: {
