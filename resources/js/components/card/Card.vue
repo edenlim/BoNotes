@@ -1,9 +1,7 @@
 <script setup>
-import {computed, reactive, ref} from 'vue';
+import { computed } from 'vue';
 import CardIndicator from './CardIndicator.vue';
 import Tags from './Tags.vue';
-import Background from '../overlay/Background.vue';
-import Preview from '../overlay/preview/Preview.vue';
 
 const props = defineProps({
     data: {
@@ -12,31 +10,15 @@ const props = defineProps({
     },
 });
 
-const isOverlayOpen = ref(false);
+// Define explicit click emit to notify Root.vue
+const emit = defineEmits(['click']);
 
 const cardIndicatorData = computed(() => ({
     fileType: props.data.fileType,
     noOfLikes: props.data.noOfLikes,
     noOfDislikes: props.data.noOfDislikes,
     userVote: props.data.userVote
-}))
-
-const previewData = computed(() => ({
-    title: props.data.title,
-    tags: props.data.tags,
-    fileType: props.data.fileType,
-    author: props.data.author,
-    uploadTime: props.data.uploadTime,
-    pageLength: props.data.pageLength,
-    description: props.data.description,
-    noOfLikes: props.data.noOfLikes,
-    noOfDislikes: props.data.noOfDislikes,
-    userVote: props.data.userVote
-
 }));
-const toggleOverlay = () => {
-    isOverlayOpen.value = !isOverlayOpen.value;
-};
 
 const handleLike = () => {
     if (props.data.userVote === 'like') {
@@ -65,7 +47,7 @@ const handleDislike = () => {
     <div class="card bg-white w-64 rounded-lg shadow-sm flex flex-col justify-between">
         <CardIndicator
             :data="cardIndicatorData"
-            @click="toggleOverlay"
+            @click="emit('click')"
             @update:dislike="handleDislike"
             @update:like="handleLike"
         />
@@ -75,26 +57,14 @@ const handleDislike = () => {
                 {{ props.data.title }}
             </h1>
             <div class="flex flex-row justify-between">
-
                 <Tags :tags="props.data.tags" />
-                <div class="hover-pop download flex items-end ml-2" @click="toggleOverlay">
+                <div class="hover-pop download flex items-end ml-2" @click="emit('click')">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="size-6 bi bi-download fill-current text-secondary-text cursor-pointer">
                         <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
                         <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
                     </svg>
                 </div>
             </div>
-
-
         </div>
-
-        <Background :show="isOverlayOpen" @close="isOverlayOpen = false">
-            <Preview
-                :data="previewData"
-                @close="isOverlayOpen = false"
-                @update:dislike="handleDislike"
-                @update:like="handleLike"
-            />
-        </Background>
     </div>
 </template>
