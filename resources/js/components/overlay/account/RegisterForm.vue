@@ -44,7 +44,7 @@ const handleRegister = async () => {
                 userid: nextUserId
             };
 
-            Cookies.set('current_login_session', updatedSessionData, {
+            Cookies.set('current_login_session', JSON.stringify(sessionData), {
                 expires: 1,
                 path: '/',
                 sameSite: 'Strict',
