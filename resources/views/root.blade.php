@@ -13,12 +13,5 @@
         <div id="vue-root">
             <app-root></app-root>
         </div>
-
-        <!---<div class="flex justify-space-between gap-[2rem]">
-            <x-card.card title="Test.pdf" fileType=".pdf"/>
-            <x-card.card title="IT-woche1.txt" fileType=".txt" :tags="['mathe', 'informatik']"/>
-            <x-card.card title="Business-IT.txt" fileType=".txt" :tags="['wirtschaft', 'informatik']"/>
-        </div>--->
-
     </body>
 </html>

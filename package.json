@@ -5,7 +5,8 @@
     "scripts": {
         "build": "vite build",
         "dev": "vite",
-        "rebuild": "rm -rf public/build && vite build"
+        "rebuild": "rm -rf public/build && vite build",
+        "reseed": "artisan migrate:fresh --seed"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",

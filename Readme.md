@@ -105,6 +105,8 @@ AlpineJS allows you to add small interactive logic while staying in HTML file (.
 1. `ddev npm run rebuild`: Custom Creation in package.json: 
     - Delete static precompiled builds
     - Runs vite build
+2. `ddev npm run reseed`: Rerun the seeder files to populate the database with dummy data.
+   - Seeder files are located in `./database/seeders` and links to public/mock folder for dummy data
 
 # Good Read
 - [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/): How to properly leave a commit message
