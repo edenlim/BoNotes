@@ -98,7 +98,7 @@ const filteredCards = computed(() => {
 // Finds the reactive target item inside our state array
 const activeNoteData = computed(() => {
     if (!currentNoteId.value) return null;
-    return responseData.value.find(card => card.id === currentNoteId.value);
+    return responseData.value.find(card => card.id == currentNoteId.value);
 });
 
 // Centralized voting mechanics for the active overlay instance
@@ -139,6 +139,20 @@ onMounted(() => {
     parseUrlRoute();
     window.addEventListener('popstate', parseUrlRoute);
 });
+
+// Update-Handler für Bearbeitungen
+const handleUpdateNote = (updatedNote) => {
+    const index = responseData.value.findIndex(card => card.id === updatedNote.id);
+    if (index !== -1) {
+        responseData.value[index] = { ...responseData.value[index], ...updatedNote };
+    }
+};
+
+// Delete-Handler für Löschungen
+const handleDeleteNote = (noteId) => {
+    responseData.value = responseData.value.filter(card => card.id !== noteId);
+    navigateToNote(null); // Detailansicht schließen
+};
 </script>
 
 <template>
@@ -171,9 +185,12 @@ onMounted(() => {
         <Preview
             v-if="activeNoteData"
             :data="activeNoteData"
+            :session="session"
             @close="navigateToNote(null)"
             @update:dislike="handleOverlayDislike"
             @update:like="handleOverlayLike"
+            @delete-note="handleDeleteNote"
+            @update-note="handleUpdateNote"
         />
         <div v-else class="p-8 text-red-500 text-center min-w-[300px]">
             Notiz nicht gefunden.
