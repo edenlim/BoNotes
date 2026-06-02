@@ -1,5 +1,4 @@
 <script setup>
-import { computed } from 'vue';
 import CardIndicator from './CardIndicator.vue';
 import Tags from './Tags.vue';
 
@@ -12,13 +11,6 @@ const props = defineProps({
 
 // Define explicit click emit to notify Root.vue
 const emit = defineEmits(['click']);
-
-const cardIndicatorData = computed(() => ({
-    fileType: props.data.fileType,
-    noOfLikes: props.data.noOfLikes,
-    noOfDislikes: props.data.noOfDislikes,
-    userVote: props.data.userVote
-}));
 
 const handleLike = () => {
     if (props.data.userVote === 'like') {
@@ -46,7 +38,7 @@ const handleDislike = () => {
 <template>
     <div class="card bg-white w-64 rounded-lg shadow-sm flex flex-col justify-between">
         <CardIndicator
-            :data="cardIndicatorData"
+            :data="props.data"
             @click="emit('click')"
             @update:dislike="handleDislike"
             @update:like="handleLike"
