@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "linear_algebra.pdf",
+        "title": "linear_algebra,Author_Test.pdf",
         "fileType": ".pdf",
         "tags": [
             "wirtschaft",
@@ -11,7 +11,7 @@
         "userVote": "like",
         "noOfDislikes": 279,
         "noOfLikes": 396,
-        "author": 1,
+        "author": 2,
         "uploadTime": "10. Mar 2025",
         "pageLength": 2,
         "description": "Practice-focused material with solved exercises and tips."
