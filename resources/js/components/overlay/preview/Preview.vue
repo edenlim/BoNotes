@@ -2,14 +2,10 @@
 import InformationHeadbar from "./InformationHeadbar.vue";
 import Display from "./Display.vue";
 import InformationSidebar from "./InformationSidebar.vue";
-import {computed} from "vue"
-import { ref } from 'vue';
-
-import Rating from "../../card/Rating.vue";
-
+import { computed } from "vue";
 
 const props = defineProps({
-    data:{
+    data: {
         type: Object,
         required: true
     },
@@ -17,6 +13,12 @@ const props = defineProps({
         type: Object,
         default: null
     }
+});
+
+const emit = defineEmits(['close', 'update:like', 'update:dislike', 'delete-note', 'update-note']);
+
+const isOwner = computed(() => {
+    return props.session && props.session.userid == props.data.author;
 });
 
 const informationHeadbarData = computed(() => ({
@@ -32,39 +34,17 @@ const informationSidebarData = computed(() => ({
     noOfLikes: props.data.noOfLikes,
     noOfDislikes: props.data.noOfDislikes,
     userVote: props.data.userVote,
+}));
 
-}))
-
-const emit = defineEmits(['close','update:like', 'update:dislike','delete-note', 'update-note']);
-
-const isOwner = computed(() => {
-    return props.session && props.session.userid == props.data.author;
-});
-
-const isEditing = ref(false);
-const editedTitle = ref('');
-const editedDescription = ref('');
-
-const startEdit = () => {
-    editedTitle.value = props.data.title;
-    editedDescription.value = props.data.description;
-    isEditing.value = true;
+const handleUpdateTitle = (newTitle) => {
+    emit('update-note', { id: props.data.id, title: newTitle });
 };
 
-const cancelEdit = () => {
-    isEditing.value = false;
+const handleUpdateDescription = (newDescription) => {
+    emit('update-note', { id: props.data.id, description: newDescription });
 };
 
-const saveEdit = () => {
-    emit('update-note', {
-        id: props.data.id,
-        title: editedTitle.value,
-        description: editedDescription.value
-    });
-    isEditing.value = false;
-};
-
-const deleteNote = () => {
+const handleDelete = () => {
     if (confirm("Möchtest du diese Notiz wirklich löschen?")) {
         emit('delete-note', props.data.id);
     }
@@ -73,7 +53,12 @@ const deleteNote = () => {
 
 <template>
     <div class="bg-preview-bg no-scrollbar">
-        <InformationHeadbar :data="informationHeadbarData" :isEditing="isEditing" v-model:title="editedTitle" @close="emit('close')"/>
+        <InformationHeadbar
+            :data="informationHeadbarData"
+            :isOwner="isOwner"
+            @close="emit('close')"
+            @update-title="handleUpdateTitle"
+        />
         <div class="flex flex-col md:flex-row md:grid grid-cols-3">
             <Display
                 :fileType="props.data.fileType"
@@ -82,18 +67,13 @@ const deleteNote = () => {
             />
             <InformationSidebar
                 :data="informationSidebarData"
+                :isOwner="isOwner"
                 @update:dislike="emit('update:dislike')"
                 @update:like="emit('update:like')"
-                :isOwner="isOwner"
-                :isEditing="isEditing"
-                v-model:description="editedDescription"
-                @edit="startEdit"
-                @delete="deleteNote"
-                @save="saveEdit"
-                @cancel="cancelEdit"
+                @delete="handleDelete"
+                @update-description="handleUpdateDescription"
                 class="col-span-1"
             />
         </div>
     </div>
-
 </template>
