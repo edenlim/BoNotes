@@ -2,7 +2,7 @@
 import InformationHeadbar from "./InformationHeadbar.vue";
 import Display from "./Display.vue";
 import InformationSidebar from "./InformationSidebar.vue";
-import { computed } from "vue";
+import { computed, ref } from "vue";
 
 const props = defineProps({
     data: {
@@ -21,6 +21,24 @@ const isOwner = computed(() => {
     return props.session && props.session.userid == props.data.author;
 });
 
+// Title editing state lives here so Sidebar can react to it
+const isEditingTitle = ref(false);
+const editedTitle = ref('');
+
+const startTitleEdit = () => {
+    editedTitle.value = props.data.title;
+    isEditingTitle.value = true;
+};
+
+const saveTitle = () => {
+    emit('update-note', { id: props.data.id, title: editedTitle.value });
+    isEditingTitle.value = false;
+};
+
+const cancelTitleEdit = () => {
+    isEditingTitle.value = false;
+};
+
 const informationHeadbarData = computed(() => ({
     tags: props.data.tags,
     title: props.data.title
@@ -35,10 +53,6 @@ const informationSidebarData = computed(() => ({
     noOfDislikes: props.data.noOfDislikes,
     userVote: props.data.userVote,
 }));
-
-const handleUpdateTitle = (newTitle) => {
-    emit('update-note', { id: props.data.id, title: newTitle });
-};
 
 const handleUpdateDescription = (newDescription) => {
     emit('update-note', { id: props.data.id, description: newDescription });
@@ -56,8 +70,12 @@ const handleDelete = () => {
         <InformationHeadbar
             :data="informationHeadbarData"
             :isOwner="isOwner"
+            :isEditingTitle="isEditingTitle"
+            v-model:editedTitle="editedTitle"
             @close="emit('close')"
-            @update-title="handleUpdateTitle"
+            @start-edit="startTitleEdit"
+            @save-title="saveTitle"
+            @cancel-edit="cancelTitleEdit"
         />
         <div class="flex flex-col md:flex-row md:grid grid-cols-3">
             <Display
@@ -68,10 +86,12 @@ const handleDelete = () => {
             <InformationSidebar
                 :data="informationSidebarData"
                 :isOwner="isOwner"
+                :isEditingTitle="isEditingTitle"
                 @update:dislike="emit('update:dislike')"
                 @update:like="emit('update:like')"
                 @delete="handleDelete"
                 @update-description="handleUpdateDescription"
+                @save-title="saveTitle"
                 class="col-span-1"
             />
         </div>

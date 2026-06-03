@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
 import CloseButton from "../../../templates/CloseButton.vue";
 import Tag from "../../../templates/Tag.vue";
 
@@ -12,49 +11,38 @@ const props = defineProps({
     isOwner: {
         type: Boolean,
         default: false
+    },
+    isEditingTitle: {
+        type: Boolean,
+        default: false
     }
 });
 
-const emit = defineEmits(['close', 'update-title']);
-
-const isEditingTitle = ref(false);
-const editedTitle = ref('');
-
-const startEdit = () => {
-    editedTitle.value = props.data.title;
-    isEditingTitle.value = true;
-};
-
-const saveTitle = () => {
-    if (isEditingTitle.value) {
-        emit('update-title', editedTitle.value);
-        isEditingTitle.value = false;
-    }
-};
-
-const cancelEdit = () => {
-    isEditingTitle.value = false;
-};
+const editedTitle = defineModel('editedTitle', { type: String, default: '' });
+const emit = defineEmits(['close', 'start-edit', 'save-title', 'cancel-edit']);
 </script>
 
 <template>
     <!-- Mobile -->
     <div class="md:hidden flex flex-col p-4 justify-between mx-auto gap-2">
         <div class="flex flex-row justify-between items-center">
-            <div class="flex items-center gap-2 flex-1 mr-2">
+            <div
+                class="flex items-center gap-2 flex-1 mr-2"
+                :class="isOwner ? 'border border-white rounded-lg px-2 py-1' : ''"
+            >
                 <input
                     v-if="isEditingTitle"
                     v-model="editedTitle"
                     type="text"
-                    @keydown.enter="saveTitle"
-                    @keydown.escape="cancelEdit"
-                    class="bg-[#2D2D2D] text-white border border-[#444] rounded px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                    @keydown.enter="emit('save-title')"
+                    @keydown.escape="emit('cancel-edit')"
+                    class="bg-transparent text-white text-lg font-bold focus:outline-none w-full"
                     autofocus
                 />
                 <h1 v-else class="text-white text-lg font-bold">{{ data.title }}</h1>
                 <button
                     v-if="isOwner && !isEditingTitle"
-                    @click="startEdit"
+                    @click="emit('start-edit')"
                     class="flex-shrink-0 opacity-50 hover:opacity-100 transition-opacity cursor-pointer"
                     title="Titel bearbeiten"
                 >
@@ -75,20 +63,23 @@ const cancelEdit = () => {
 
     <!-- Desktop -->
     <div class="hidden md:flex p-4 justify-between mx-auto items-center">
-        <div class="flex items-center gap-2">
+        <div
+            class="flex items-center gap-2"
+            :class="isOwner ? 'border border-white rounded-lg px-2 py-1' : ''"
+        >
             <input
                 v-if="isEditingTitle"
                 v-model="editedTitle"
                 type="text"
-                @keydown.enter="saveTitle"
-                @keydown.escape="cancelEdit"
-                class="bg-[#2D2D2D] text-white border border-[#444] rounded px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-64"
+                @keydown.enter="emit('save-title')"
+                @keydown.escape="emit('cancel-edit')"
+                class="bg-transparent text-white text-lg font-bold focus:outline-none"
                 autofocus
             />
             <h1 v-else class="text-white text-lg font-bold">{{ data.title }}</h1>
             <button
                 v-if="isOwner && !isEditingTitle"
-                @click="startEdit"
+                @click="emit('start-edit')"
                 class="flex-shrink-0 opacity-50 hover:opacity-100 transition-opacity cursor-pointer"
                 title="Titel bearbeiten"
             >

@@ -10,10 +10,14 @@ const props = defineProps({
     isOwner: {
         type: Boolean,
         default: false
+    },
+    isEditingTitle: {
+        type: Boolean,
+        default: false
     }
 });
 
-const emit = defineEmits(['update:like', 'update:dislike', 'delete', 'update-description']);
+const emit = defineEmits(['update:like', 'update:dislike', 'delete', 'update-description', 'save-title']);
 
 // Self-contained description editing state
 const isEditingDescription = ref(false);
@@ -72,15 +76,18 @@ const cancelDescription = () => {
                     <img :src="'/resources/images/editing-Pen.svg'" class="w-3.5 h-3.5" alt="Bearbeiten" />
                 </button>
             </div>
-            <textarea
-                v-if="isEditingDescription"
-                v-model="editedDescription"
-                @keydown.enter.prevent="saveDescription"
-                @keydown.escape="cancelDescription"
-                class="bg-[#2D2D2D] text-white border border-[#444] rounded p-2 w-full h-24 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
-                autofocus
-            ></textarea>
-            <p v-else>{{ props.data.description }}</p>
+            <div class="flex items-center gap-2 flex-1" :class="props.isOwner ? 'border border-white rounded-lg p-2 -mx-2' : ''">
+                <textarea
+                    v-if="isEditingDescription"
+                    v-model="editedDescription"
+                    @keydown.enter.prevent="saveDescription"
+                    @keydown.escape="cancelDescription"
+                    class="bg-transparent text-[#bbb] w-full text-sm focus:outline-none resize-none leading-relaxed"
+                    style="min-height: 0; height: auto; field-sizing: content;"
+                    autofocus
+                ></textarea>
+                <p v-else class="leading-relaxed">{{ props.data.description }}</p>
+            </div>
         </div>
 
         <!-- HILFREICH Bereich -->
@@ -95,10 +102,24 @@ const cancelDescription = () => {
             />
         </div>
 
-        <!-- Download Bereich -->
-        <div class="
+        <!-- Save Changes / Download Button -->
+        <div
+            v-if="isEditingDescription"
+            @click="saveDescription"
+            class="preview-button hover-pop w-40 text-center mx-auto p-2 md:p-4 lg:p-4 my-4 md:my-0 cursor-pointer"
+        >
+            Speichern
+        </div>
+        <div
+            v-else-if="props.isEditingTitle"
+            @click="emit('save-title')"
+            class="preview-button hover-pop w-40 text-center mx-auto p-2 md:p-4 lg:p-4 my-4 md:my-0 cursor-pointer"
+        >
+             Speichern
+        </div>
+        <div v-else class="
             preview-button hover-pop w-40 text-center mx-auto
-            p-2 md:p-4 lg:p-8
+            p-2 md:p-4 lg:p-4
             my-4 md:my-0
         ">
             Download
