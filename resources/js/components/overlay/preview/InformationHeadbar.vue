@@ -65,7 +65,7 @@ const emit = defineEmits(['close', 'start-edit', 'save-title', 'cancel-edit']);
     <div class="hidden md:flex p-4 justify-between mx-auto items-center">
         <div
             class="flex items-center gap-2"
-            :class="isOwner ? 'border border-white rounded-lg px-2 py-1' : ''"
+            :class="isEditingTitle ? 'border border-white rounded-lg px-2 py-1' : ''"
         >
             <input
                 v-if="isEditingTitle"

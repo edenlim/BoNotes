@@ -47,7 +47,7 @@ const cancelDescription = () => {
         <div class="border-b border-[#3A3A3A] py-8 px-8">
             <div class="flex items-center justify-between mb-1">
                 <p class="sidebar-heading">INFO</p>
-                <!-- Delete button in INFO header, only for owner -->
+
                 <button
                     v-if="props.isOwner"
                     @click="emit('delete')"
@@ -66,7 +66,7 @@ const cancelDescription = () => {
         <div class="border-b border-[#3A3A3A] py-8 px-8">
             <div class="flex items-center justify-between mb-1">
                 <p class="sidebar-heading">BESCHREIBUNG</p>
-                <!-- Pen toggle button, only for owner and when not editing -->
+
                 <button
                     v-if="props.isOwner && !isEditingDescription"
                     @click="startEditDescription"
@@ -76,7 +76,7 @@ const cancelDescription = () => {
                     <img :src="'/resources/images/editing-Pen.svg'" class="w-3.5 h-3.5" alt="Bearbeiten" />
                 </button>
             </div>
-            <div class="flex items-center gap-2 flex-1" :class="props.isOwner ? 'border border-white rounded-lg p-2 -mx-2' : ''">
+            <div class="flex items-center gap-2 flex-1" :class="isEditingDescription ?  'border border-white rounded-lg p-2 -mx-2' : ''">
                 <textarea
                     v-if="isEditingDescription"
                     v-model="editedDescription"
