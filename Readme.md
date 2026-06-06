@@ -111,3 +111,4 @@ AlpineJS allows you to add small interactive logic while staying in HTML file (.
 # Good Read
 - [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/): How to properly leave a commit message
 - [Sementic Versioning](https://semver.org/): How to properly version the project
+a
