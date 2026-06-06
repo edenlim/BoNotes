@@ -22,7 +22,7 @@ class CardSeeder extends Seeder
         foreach ($cards as $card) {
             Card::create([
                 'title'          => $card['title'],
-                'file_type'      => $card['fileType'],
+                'fileType'      => $card['fileType'],
                 'tags'           => $card['tags'],
                 'user_vote'      => $card['userVote'] ?? null,
                 'no_of_likes'    => $card['noOfLikes'] ?? $card['PeteofLikes'] ?? 0,

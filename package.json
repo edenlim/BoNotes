@@ -5,7 +5,7 @@
     "scripts": {
         "build": "vite build",
         "dev": "vite",
-        "rebuild": "rm -rf public/build && vite build",
+        "rebuild": "rm -rf public/build && vite build && composer dump-autoload",
         "reseed": "artisan migrate:fresh --seed"
     },
     "devDependencies": {

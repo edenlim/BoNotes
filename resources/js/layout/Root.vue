@@ -6,7 +6,6 @@ import Navbar from "../components/navbar/Navbar.vue";
 import Upload from "../components/upload/Upload.vue";
 import Background from "../components/overlay/Background.vue";
 import UploadOverlay from "../components/overlay/upload/UploadOverlay.vue";
-// Import Preview here to manage it centrally
 import Preview from '../components/overlay/preview/Preview.vue';
 
 const responseData = ref([]);
@@ -62,7 +61,7 @@ watch(rawSearchQuery, (e) => {
 
 const loadMockData = async () => {
     try {
-        const response = await fetch('/mock/cards.json');
+        const response = await fetch('/api/cards');
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
         responseData.value = await response.json();
     } catch (error) {
