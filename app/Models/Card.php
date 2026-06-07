@@ -8,7 +8,7 @@ class Card extends Model
 {
     protected $fillable = [
         'title', 'fileType', 'tags', 'user_vote',
-        'no_of_likes', 'no_of_dislikes', 'author',
+        'noOfLikes', 'noOfDislikes', 'author',
         'upload_time', 'page_length', 'description'
     ];
 

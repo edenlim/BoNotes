@@ -1,4 +1,4 @@
-/*M!999999\- enable the sandbox mode */ 
+/*M!999999\- enable the sandbox mode */
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -36,11 +36,11 @@ CREATE TABLE `cards` (
   `fileType` varchar(255) NOT NULL,
   `tags` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL CHECK (json_valid(`tags`)),
   `user_vote` varchar(255) DEFAULT NULL,
-  `no_of_likes` int(11) NOT NULL DEFAULT 0,
-  `no_of_dislikes` int(11) NOT NULL DEFAULT 0,
+  `noOfLikes` int(11) NOT NULL DEFAULT 0,
+  `noOfDislikes` int(11) NOT NULL DEFAULT 0,
   `author` varchar(255) NOT NULL,
-  `upload_time` varchar(255) NOT NULL,
-  `page_length` int(11) NOT NULL,
+  `uploadTime` varchar(255) NOT NULL,
+  `pageLength` int(11) NOT NULL,
   `description` text NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -172,7 +172,7 @@ CREATE TABLE `users` (
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
-/*M!999999\- enable the sandbox mode */ 
+/*M!999999\- enable the sandbox mode */
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES (1,'0001_01_01_000000_create_users_table',1);
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES (2,'0001_01_01_000001_create_cache_table',1);

@@ -25,11 +25,11 @@ class CardSeeder extends Seeder
                 'fileType'      => $card['fileType'],
                 'tags'           => $card['tags'],
                 'user_vote'      => $card['userVote'] ?? null,
-                'no_of_likes'    => $card['noOfLikes'] ?? $card['PeteofLikes'] ?? 0,
-                'no_of_dislikes' => $card['noOfDislikes'] ?? 0,
+                'noOfLikes'    => $card['noOfLikes'] ?? 0,
+                'noOfDislikes' => $card['noOfDislikes'] ?? 0,
                 'author'         => $card['author'],
-                'upload_time'    => $card['uploadTime'],
-                'page_length'    => $card['pageLength'],
+                'uploadTime'    => $card['uploadTime'],
+                'pageLength'    => $card['pageLength'],
                 'description'    => $card['description'],
             ]);
         }
