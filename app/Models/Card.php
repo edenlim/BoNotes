@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Card extends Model
 {
     protected $fillable = [
-        'title', 'file_type', 'tags', 'user_vote',
-        'no_of_likes', 'no_of_dislikes', 'author',
+        'title', 'fileType', 'tags', 'user_vote',
+        'noOfLikes', 'noOfDislikes', 'author',
         'upload_time', 'page_length', 'description'
     ];
 
