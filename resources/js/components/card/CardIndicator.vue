@@ -7,7 +7,6 @@ const props = defineProps({
         required: true
     },
 });
-console.log("Datatype:", props.data);
 const emit = defineEmits(['update:like', 'update:dislike']);
 
 </script>

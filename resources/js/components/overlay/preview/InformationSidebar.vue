@@ -14,6 +14,10 @@ const props = defineProps({
     isEditingTitle: {
         type: Boolean,
         default: false
+    },
+    userData: {
+        type: Object,
+        required: true
     }
 });
 
@@ -57,7 +61,7 @@ const cancelDescription = () => {
                     <img :src="'/resources/images/delete-button.svg'" class="w-4 h-4" alt="Löschen" />
                 </button>
             </div>
-            <p>Von <span class="font-bold text-[#90CAF9]">{{ props.data.author }}</span></p>
+            <p>Von <span class="font-bold text-[#90CAF9]">{{ props.userData[props.data.author - 1].name }}</span></p>
             <p>Hochgeladen <span class="font-bold text-white">{{ props.data.uploadTime }}</span></p>
             <p class="font-bold text-white">{{ props.data.pageLength }} {{ props.data.pageLength > 1 ? "Seiten" : "Seite" }}</p>
         </div>

@@ -12,6 +12,10 @@ const props = defineProps({
     session: {
         type: Object,
         default: null
+    },
+    userData: {
+        type: Object,
+        required: true
     }
 });
 
@@ -84,6 +88,7 @@ const handleDelete = () => {
                 class="col-span-2"
             />
             <InformationSidebar
+                :userData="userData"
                 :data="informationSidebarData"
                 :isOwner="isOwner"
                 :isEditingTitle="isEditingTitle"

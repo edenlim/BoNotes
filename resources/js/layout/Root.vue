@@ -9,6 +9,7 @@ import UploadOverlay from "../components/overlay/upload/UploadOverlay.vue";
 import Preview from '../components/overlay/preview/Preview.vue';
 
 const responseData = ref([]);
+const userData = ref({});
 const isLoading = ref(true);
 const fetchError = ref(null);
 
@@ -62,7 +63,9 @@ watch(rawSearchQuery, (e) => {
 const loadMockData = async () => {
     try {
         const response = await fetch('/api/cards');
-        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        const users = await fetch('/api/users');
+        if (!response.ok || !users.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        userData.value = await users.json();
         responseData.value = await response.json();
     } catch (error) {
         console.error("Failed to populate frontend state:", error);
@@ -185,6 +188,7 @@ const handleDeleteNote = (noteId) => {
             v-if="activeNoteData"
             :data="activeNoteData"
             :session="session"
+            :userData="userData"
             @close="navigateToNote(null)"
             @update:dislike="handleOverlayDislike"
             @update:like="handleOverlayLike"
