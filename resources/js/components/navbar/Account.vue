@@ -1,7 +1,8 @@
 <script setup>
-import { ref } from 'vue';
+import {computed, ref} from 'vue';
 import AccountModal from '../overlay/account/AccountModal.vue';
 import EditAccountModal from "../overlay/account/EditAccountModal.vue";
+import Background from "../overlay/Background.vue";
 
 const props = defineProps({
     isLoggedIn: { type: Boolean, required: true }
@@ -10,6 +11,8 @@ const emit = defineEmits(['login-success', 'logout-success']);
 const isLoginModalOpen = ref(false);
 const isEditModalOpen = ref(false);
 const accountDropdownShow = ref(false);
+const showOverlay = computed(() => isEditModalOpen.value !== false || isLoginModalOpen.value !== false);
+
 
 const handleLogout = () => {
     document.cookie = "current_login_session=; path=/; max-age=0; SameSite=Strict; Secure";
@@ -57,15 +60,18 @@ const toggleDropdown = () =>{
       Login
     </div>
 
-    <AccountModal
-      v-if="isLoginModalOpen"
-      @close="isLoginModalOpen = false"
-      @login-success="emit('login-success')"
-    />
-    <EditAccountModal
-        v-if="isEditModalOpen"
-        @close="isEditModalOpen = false"
-    />
+    <Background @click="isLoginModalOpen = false; isEditModalOpen = false" :show="showOverlay">
+        <AccountModal
+            v-if="isLoginModalOpen"
+            @close="isLoginModalOpen = false"
+            @login-success="emit('login-success')"
+        />
+        <EditAccountModal
+            v-if="isEditModalOpen"
+            @close="isEditModalOpen = false"
+        />
+    </Background>
+
 </template>
 
 <style scoped>
