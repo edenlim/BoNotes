@@ -12,7 +12,10 @@ class Card extends Model
         'upload_time', 'page_length', 'description'
     ];
 
-    protected $casts = [
-        'tags' => 'array',
-    ];
+    protected function casts(): array
+    {
+        return [
+            'tags' => 'array',
+        ];
+    }
 }

@@ -5,7 +5,7 @@ export function useCards(currentNoteId, navigateToNote) {
     const isLoading = ref(true);
     const fetchError = ref(null);
 
-    const loadMockData = async () => {
+    const loadData = async () => {
         try {
             const response = await fetch('/api/cards', {
                 method: 'GET',
@@ -66,7 +66,7 @@ export function useCards(currentNoteId, navigateToNote) {
     };
 
     return {
-        responseData, isLoading, fetchError, loadMockData, activeNoteData,
+        responseData, isLoading, fetchError, loadData, activeNoteData,
         handleOverlayLike, handleOverlayDislike, handleUpdateNote, handleDeleteNote
     };
 }

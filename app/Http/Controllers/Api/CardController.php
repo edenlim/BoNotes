@@ -6,13 +6,33 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Card;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\DB;
 
 class CardController extends Controller
 {
-    public function index(): JsonResponse
+    public function index(Request $request): JsonResponse
     {
-        // Fetches all rows from the cards table via MariaDB
-        $cards = Card::all();
+        $user = $request->user('sanctum');
+
+        $query = Card::query();
+
+        if ($user) {
+            $query->leftJoin('users_cards_like', function ($join) use ($user) {
+                $join->on('cards.id', '=', 'users_cards_like.card_id')
+                    ->where('users_cards_like.user_id', '=', $user->id);
+            })
+                ->select(
+                    'cards.*',
+                    DB::raw("IFNULL(users_cards_like.status, 'none') as interaction_status")
+                );
+        } else {
+            $query->select(
+                'cards.*',
+                DB::raw("'none' as interaction_status")
+            );
+        }
+
+        $cards = $query->get();
 
         return response()->json($cards);
     }
