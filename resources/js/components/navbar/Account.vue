@@ -1,5 +1,6 @@
 <script setup>
-import {computed, ref} from 'vue';
+import { computed, ref } from 'vue';
+import Cookies from 'js-cookie'; // Imported to grab the CSRF token
 import AccountModal from '../overlay/account/AccountModal.vue';
 import EditAccountModal from "../overlay/account/EditAccountModal.vue";
 import Background from "../overlay/Background.vue";
@@ -8,18 +9,38 @@ const props = defineProps({
     isLoggedIn: { type: Boolean, required: true }
 });
 const emit = defineEmits(['login-success', 'logout-success']);
+
 const isLoginModalOpen = ref(false);
 const isEditModalOpen = ref(false);
 const accountDropdownShow = ref(false);
 const showOverlay = computed(() => isEditModalOpen.value !== false || isLoginModalOpen.value !== false);
 
+const handleLogout = async () => {
+    try {
+        // Send the secure POST request to your Laravel backend
+        const response = await fetch('/api/logout', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'X-XSRF-TOKEN': Cookies.get('XSRF-TOKEN') // Attach CSRF token
+            },
+            credentials: 'include' // Ensure session cookies are sent
+        });
 
-const handleLogout = () => {
-    document.cookie = "current_login_session=; path=/; max-age=0; SameSite=Strict; Secure";
-    accountDropdownShow.value = false;
+        // Only update the UI if the backend successfully destroyed the session
+        if (response.ok) {
+            accountDropdownShow.value = false;
+            emit('logout-success');
+        } else {
+            console.error("Logout failed on the server.");
+        }
+    } catch (error) {
+        console.error("Network error during logout:", error);
+    }
 };
 
-const toggleDropdown = () =>{
+const toggleDropdown = () => {
     accountDropdownShow.value = !accountDropdownShow.value;
 }
 </script>
@@ -44,7 +65,7 @@ const toggleDropdown = () =>{
             </div>
             <div
                 class="hover-pop"
-                @click="handleLogout(); emit('logout-success')"
+                @click="handleLogout"
             >
                 Ausloggen
             </div>
@@ -52,12 +73,12 @@ const toggleDropdown = () =>{
     </div>
 
     <div
-      v-else
-      v-bind="$attrs"
-      @click="isLoginModalOpen = true"
-      class="w-full p-2 border-2 rounded-xl cursor-pointer flex justify-center items-center select-none hover-pop"
+        v-else
+        v-bind="$attrs"
+        @click="isLoginModalOpen = true"
+        class="w-full p-2 border-2 rounded-xl cursor-pointer flex justify-center items-center select-none hover-pop"
     >
-      Login
+        Login
     </div>
 
     <Background @click="isLoginModalOpen = false; isEditModalOpen = false" :show="showOverlay">
@@ -73,7 +94,3 @@ const toggleDropdown = () =>{
     </Background>
 
 </template>
-
-<style scoped>
-
-</style>
