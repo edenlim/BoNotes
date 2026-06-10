@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import {ref, onMounted, toRaw} from 'vue';
 
 // Components
 import Card from '../components/card/Card.vue';
@@ -19,7 +19,7 @@ import { useSearch } from '../composables/useSearch';
 const { isLoggedIn, userData, checkSession, handleLogoutSuccess } = useAuth();
 const { currentNoteId, showNoteOverlay, parseUrlRoute, navigateToNote } = useRouting();
 const {
-    isLoading, fetchError, loadMockData, activeNoteData,
+    isLoading, fetchError, loadData, activeNoteData,
     handleOverlayLike, handleOverlayDislike, handleUpdateNote, handleDeleteNote, responseData
 } = useCards(currentNoteId, navigateToNote);
 const { activeFilter, rawSearchQuery, filteredCards } = useSearch(responseData);
@@ -28,11 +28,13 @@ const { activeFilter, rawSearchQuery, filteredCards } = useSearch(responseData);
 const showUploadOverlay = ref(false);
 
 // Lifecycle
-onMounted(() => {
-    checkSession();
-    loadMockData();
+onMounted(async () => {
+    await checkSession();
+    await loadData();
     parseUrlRoute();
     window.addEventListener('popstate', parseUrlRoute);
+    console.log("Data: ", toRaw(responseData.value));
+
 });
 </script>
 

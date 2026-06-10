@@ -17,9 +17,10 @@ class CardSeeder extends Seeder
             return;
         }
 
-        $cards = json_decode(File::get($jsonPath), true);
+        $rawJsonData = File::get($jsonPath);
+        $parsedCards = json_decode($rawJsonData, true);
 
-        foreach ($cards as $card) {
+        foreach ($parsedCards as $card) {
             Card::create([
                 'title'          => $card['title'],
                 'fileType'      => $card['fileType'],
