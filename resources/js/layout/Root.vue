@@ -1,6 +1,5 @@
 <script setup>
-import { ref, onMounted, computed, watch } from 'vue';
-import Cookies from 'js-cookie';
+import { ref, onMounted, computed, watch, toRaw } from 'vue';
 import Card from '../components/card/Card.vue';
 import Navbar from "../components/navbar/Navbar.vue";
 import Upload from "../components/upload/Upload.vue";
@@ -8,8 +7,10 @@ import Background from "../components/overlay/Background.vue";
 import UploadOverlay from "../components/overlay/upload/UploadOverlay.vue";
 import Preview from '../components/overlay/preview/Preview.vue';
 
+// --- STATE ---
 const responseData = ref([]);
-const userData = ref({});
+const userData = ref(null); // Now strictly holds the logged-in user profile from Sanctum
+const isLoggedIn = ref(false); // Controlled entirely by backend response
 const isLoading = ref(true);
 const fetchError = ref(null);
 
@@ -18,13 +19,38 @@ const rawSearchQuery = ref('');
 const debouncedSearchQuery = ref('');
 const showUploadOverlay = ref(false);
 
-const session = ref(null);
-const isLoggedIn = computed(() => !!session.value);
-
-// --- SIMULATED ROUTING STATE ---
 const currentNoteId = ref(null);
 const showNoteOverlay = computed(() => currentNoteId.value !== null);
 
+// --- AUTHENTICATION ---
+const checkSession = async () => {
+    try {
+        const response = await fetch('/api/user', {
+            method: 'GET',
+            headers: { 'Accept': 'application/json' },
+            credentials: 'include'
+        });
+
+        if (response.ok) {
+            isLoggedIn.value = true;
+            userData.value = await response.json();
+        } else {
+            isLoggedIn.value = false;
+            userData.value = null;
+        }
+    } catch (error) {
+        console.error("Failed to verify session:", error);
+        isLoggedIn.value = false;
+        userData.value = null;
+    }
+};
+
+const handleLogoutSuccess = () => {
+    isLoggedIn.value = false;
+    userData.value = null;
+};
+
+// --- ROUTING ---
 const parseUrlRoute = () => {
     const path = window.location.pathname;
     const match = path.match(/^\/note\/(\d+)$/);
@@ -44,36 +70,14 @@ const navigateToNote = (id) => {
     parseUrlRoute();
 };
 
-/*
-* Set timeout to only run 0.5 seconds after user stopped typing into the searchbar
-* - Whenever user is typing, it removes any timeout debounceTimer and creates a new timeout debounceTimer
-* - The timeout will execute updating debouncedSearchQuery = the value from searchbar after 0.5sec
-* - If the timeout is still counting down and the user is still typing, it deletes and creates (resets) a new 0.5sec timeout
-*     - This allows debouncing
-*/
+// --- SEARCH & FILTER ---
 let debounceTimer = null;
 watch(rawSearchQuery, (e) => {
-    // Note that e === rawSearchQuery.value
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
         debouncedSearchQuery.value = e.trim().toLowerCase();
     }, 500);
 });
-
-const loadMockData = async () => {
-    try {
-        const response = await fetch('/api/cards');
-        const users = await fetch('/api/users');
-        if (!response.ok || !users.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-        userData.value = await users.json();
-        responseData.value = await response.json();
-    } catch (error) {
-        console.error("Failed to populate frontend state:", error);
-        fetchError.value = error.message;
-    } finally {
-        isLoading.value = false;
-    }
-};
 
 const filteredCards = computed(() => {
     let cards = responseData.value;
@@ -97,13 +101,33 @@ const filteredCards = computed(() => {
     return cards;
 });
 
-// Finds the reactive target item inside our state array
+// --- DATA FETCHING ---
+const loadMockData = async () => {
+    try {
+        const response = await fetch('/api/cards', {
+            method: 'GET',
+            headers: {'Accept': 'application/json'},
+            credentials: 'include'
+        });
+
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+        responseData.value = await response.json();
+        console.log("response: ", toRaw(responseData.value));
+    } catch (error) {
+        console.error("Failed to populate frontend state:", error);
+        fetchError.value = error.message;
+    } finally {
+        isLoading.value = false;
+    }
+};
+
+// --- DATA MUTATION ---
 const activeNoteData = computed(() => {
     if (!currentNoteId.value) return null;
     return responseData.value.find(card => card.id == currentNoteId.value);
 });
 
-// Centralized voting mechanics for the active overlay instance
 const handleOverlayLike = () => {
     const note = activeNoteData.value;
     if (!note) return;
@@ -130,19 +154,6 @@ const handleOverlayDislike = () => {
     }
 };
 
-const refreshSession = () => {
-    const cookieData = Cookies.get('current_login_session');
-    session.value = cookieData ? JSON.parse(cookieData) : null;
-};
-
-onMounted(() => {
-    loadMockData();
-    refreshSession();
-    parseUrlRoute();
-    window.addEventListener('popstate', parseUrlRoute);
-});
-
-// Update-Handler für Bearbeitungen
 const handleUpdateNote = (updatedNote) => {
     const index = responseData.value.findIndex(card => card.id === updatedNote.id);
     if (index !== -1) {
@@ -150,11 +161,18 @@ const handleUpdateNote = (updatedNote) => {
     }
 };
 
-// Delete-Handler für Löschungen
 const handleDeleteNote = (noteId) => {
     responseData.value = responseData.value.filter(card => card.id !== noteId);
-    navigateToNote(null); // Detailansicht schließen
+    navigateToNote(null);
 };
+
+// --- LIFECYCLE ---
+onMounted(() => {
+    checkSession();
+    loadMockData();
+    parseUrlRoute();
+    window.addEventListener('popstate', parseUrlRoute);
+});
 </script>
 
 <template>
@@ -162,8 +180,8 @@ const handleDeleteNote = (noteId) => {
         v-model:activeFilter="activeFilter"
         v-model:searchQuery="rawSearchQuery"
         :isLoggedIn="isLoggedIn"
-        @login-success="refreshSession"
-        @logout-success="refreshSession"
+        @login-success="checkSession"
+        @logout-success="handleLogoutSuccess"
     />
 
     <div v-if="isLoading" class="p-4 text-white text-center">Laden...</div>
@@ -187,7 +205,6 @@ const handleDeleteNote = (noteId) => {
         <Preview
             v-if="activeNoteData"
             :data="activeNoteData"
-            :session="session"
             :userData="userData"
             @close="navigateToNote(null)"
             @update:dislike="handleOverlayDislike"
