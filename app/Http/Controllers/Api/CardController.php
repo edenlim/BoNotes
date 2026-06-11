@@ -18,8 +18,6 @@ class CardController extends Controller
         $query = Card::query();
 
         if ($user) {
-            Log::debug('from user');
-
             $query->leftJoin('users_cards_like', function ($join) use ($user) {
                 $join->on('cards.id', '=', 'users_cards_like.card_id')
                     ->where('users_cards_like.user_id', '=', $user->id);
@@ -29,8 +27,6 @@ class CardController extends Controller
                     DB::raw("IFNULL(users_cards_like.status, 'none') as interaction_status")
                 );
         } else {
-            Log::debug('from else');
-
             $query->select(
                 'cards.*',
                 DB::raw("'none' as interaction_status")

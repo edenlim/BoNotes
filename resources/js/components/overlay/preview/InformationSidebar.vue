@@ -100,7 +100,7 @@ const cancelDescription = () => {
             <Rating
                 :noOfLikes="props.data.noOfLikes"
                 :noOfDislikes="props.data.noOfDislikes"
-                :userVote="props.data.userVote"
+                :interaction_status="props.data.interaction_status"
                 @update:dislike="emit('update:dislike')"
                 @update:like="emit('update:like')"
             />
