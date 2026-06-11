@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Card;
-use App\Models\UserCardLike;
+use App\Models\UserCardRating;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -19,13 +19,13 @@ class CardController extends Controller
         $query = Card::with('user:id,name');
 
         if ($user) {
-            $query->leftJoin('users_cards_like', function ($join) use ($user) {
-                $join->on('cards.id', '=', 'users_cards_like.card_id')
-                    ->where('users_cards_like.user_id', '=', $user->id);
+            $query->leftJoin('users_cards_ratings', function ($join) use ($user) {
+                $join->on('cards.id', '=', 'users_cards_ratings.card_id')
+                    ->where('users_cards_ratings.user_id', '=', $user->id);
             })
                 ->select(
                     'cards.*',
-                    DB::raw("IFNULL(users_cards_like.status, 'none') as interaction_status")
+                    DB::raw("IFNULL(users_cards_ratings.status, 'none') as interaction_status")
                 );
         } else {
             $query->select(
@@ -48,11 +48,11 @@ class CardController extends Controller
         $user = $request->user('sanctum');
         $updatedCard = DB::transaction(function () use ($card, $user, $newStatus) {
             $lockedCard = Card::lockForUpdate()->findOrFail($card->id);
-            $userLike = UserCardLike::firstOrNew([
+            $userRating = UserCardRating::firstOrNew([
                 'user_id' => $user->id,
                 'card_id' => $lockedCard->id,
             ]);
-            $oldStatus = $userLike->exists ? $userLike->status : 'none';
+            $oldStatus = $userRating->exists ? $userRating->status : 'none';
 
             if ($oldStatus === $newStatus) {
                 return $lockedCard;
@@ -68,8 +68,8 @@ class CardController extends Controller
             } elseif ($newStatus === 'disliked') {
                 $lockedCard->noOfDislikes++;
             }
-            $userLike->status = $newStatus;
-            $userLike->save();
+            $userRating->status = $newStatus;
+            $userRating->save();
             $lockedCard->save();
             return $lockedCard;
 

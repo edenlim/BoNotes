@@ -86,7 +86,7 @@ export function useCards(currentNoteId, navigateToNote) {
 
         if (card.interaction_status === 'disliked') {
             card.noOfDislikes--;
-            card.interaction_status = null;
+            card.interaction_status = 'none';
         } else {
             if (card.interaction_status === 'liked') card.noOfLikes--;
             card.noOfDislikes++;

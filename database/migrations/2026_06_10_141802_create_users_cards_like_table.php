@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users_cards_like', function (Blueprint $table) {
+        Schema::create('users_cards_ratings', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('card_id')->constrained()->onDelete('cascade');
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users_cards_like');
+        Schema::dropIfExists('users_cards_ratings');
     }
 };
