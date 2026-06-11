@@ -80,4 +80,33 @@ class CardController extends Controller
             'interaction_status' => $newStatus,
         ]);
     }
+
+    public function infiniteLoad(Request $request, int $lastIndex): JsonResponse
+    {
+        $user = $request->user('sanctum');
+        $query = Card::with('user:id,name');
+
+        if ($user) {
+            $query->leftJoin('users_cards_ratings', function ($join) use ($user) {
+                $join->on('cards.id', '=', 'users_cards_ratings.card_id')
+                    ->where('users_cards_ratings.user_id', '=', $user->id);
+            })
+                ->select(
+                    'cards.*',
+                    DB::raw("IFNULL(users_cards_ratings.status, 'none') as interaction_status")
+                );
+        } else {
+            $query->select(
+                'cards.*',
+                DB::raw("'none' as interaction_status")
+            );
+        }
+        // Sort by newest first, skip the already loaded records, and take 20
+        $cards = $query->orderBy('cards.created_at', 'desc')
+            ->orderBy('cards.id', 'desc')
+            ->skip($lastIndex)
+            ->take(20)
+            ->get();
+        return response()->json($cards);
+    }
 }
