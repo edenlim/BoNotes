@@ -14,10 +14,14 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', function (Request $request) {
         return $request->user();
     });
+
+    Route::put('/cards/{card}/rate', [CardController::class, 'rate']);
 });
+
+
+Route::get('/users', [UserController::class, 'index']);
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
 Route::get('/cards', [CardController::class, 'index']);
-Route::get('/users', [UserController::class, 'index']);

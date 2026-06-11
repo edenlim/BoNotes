@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Card;
+use App\Models\UserCardLike;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -36,5 +37,47 @@ class CardController extends Controller
         $cards = $query->get();
 
         return response()->json($cards);
+    }
+
+    public function rate(Request $request, Card $card): JsonResponse
+    {
+        $request->validate([
+            'status' => ['required', 'in:liked,disliked,none'],
+        ]);
+        $newStatus = $request->status;
+        $user = $request->user('sanctum');
+        $updatedCard = DB::transaction(function () use ($card, $user, $newStatus) {
+            $lockedCard = Card::lockForUpdate()->findOrFail($card->id);
+            $userLike = UserCardLike::firstOrNew([
+                'user_id' => $user->id,
+                'card_id' => $lockedCard->id,
+            ]);
+            $oldStatus = $userLike->exists ? $userLike->status : 'none';
+
+            if ($oldStatus === $newStatus) {
+                return $lockedCard;
+            }
+
+            if ($oldStatus === 'liked') {
+                $lockedCard->noOfLikes = max(0, $lockedCard->noOfLikes - 1);
+            } elseif ($oldStatus === 'disliked') {
+                $lockedCard->noOfDislikes = max(0, $lockedCard->noOfDislikes - 1);
+            }
+            if ($newStatus === 'liked') {
+                $lockedCard->noOfLikes++;
+            } elseif ($newStatus === 'disliked') {
+                $lockedCard->noOfDislikes++;
+            }
+            $userLike->status = $newStatus;
+            $userLike->save();
+            $lockedCard->save();
+            return $lockedCard;
+
+        });
+        return response()->json([
+            'noOfLikes'          => $updatedCard->noOfLikes,
+            'noOfDislikes'       => $updatedCard->noOfDislikes,
+            'interaction_status' => $newStatus,
+        ]);
     }
 }
