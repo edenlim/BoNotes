@@ -26,10 +26,10 @@ export function useAuth() {
         }
     };
 
-    const handleLogoutSuccess = () => {
+    const handleLogout = () => {
         isLoggedIn.value = false;
         userData.value = null;
     };
 
-    return { userData, isLoggedIn, checkSession, handleLogoutSuccess };
+    return { userData, isLoggedIn, checkSession, handleLogout };
 }

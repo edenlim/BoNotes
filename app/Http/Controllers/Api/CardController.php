@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Card;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class CardController extends Controller
 {

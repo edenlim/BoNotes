@@ -30,26 +30,26 @@ export function useCards(currentNoteId, navigateToNote) {
     const handleOverlayLike = () => {
         const note = activeNoteData.value;
         if (!note) return;
-        if (note.userVote === 'like') {
+        if (note.interaction_status === 'like') {
             note.noOfLikes--;
-            note.userVote = null;
+            note.interaction_status = null;
         } else {
-            if (note.userVote === 'dislike') note.noOfDislikes--;
+            if (note.interaction_status === 'dislike') note.noOfDislikes--;
             note.noOfLikes++;
-            note.userVote = 'like';
+            note.interaction_status = 'like';
         }
     };
 
     const handleOverlayDislike = () => {
         const note = activeNoteData.value;
         if (!note) return;
-        if (note.userVote === 'dislike') {
+        if (note.interaction_status === 'dislike') {
             note.noOfDislikes--;
-            note.userVote = null;
+            note.interaction_status = null;
         } else {
-            if (note.userVote === 'like') note.noOfLikes--;
+            if (note.interaction_status === 'like') note.noOfLikes--;
             note.noOfDislikes++;
-            note.userVote = 'dislike';
+            note.interaction_status = 'dislike';
         }
     };
 

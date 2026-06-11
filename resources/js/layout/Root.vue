@@ -16,7 +16,7 @@ import { useCards } from '../composables/useCards';
 import { useSearch } from '../composables/useSearch';
 
 // Initialize Logic
-const { isLoggedIn, userData, checkSession, handleLogoutSuccess } = useAuth();
+const { isLoggedIn, userData, checkSession, handleLogout } = useAuth();
 const { currentNoteId, showNoteOverlay, parseUrlRoute, navigateToNote } = useRouting();
 const {
     isLoading, fetchError, loadData, activeNoteData,
@@ -26,6 +26,16 @@ const { activeFilter, rawSearchQuery, filteredCards } = useSearch(responseData);
 
 // Local UI State
 const showUploadOverlay = ref(false);
+
+const handleLoginSuccess = async () => {
+    await checkSession();
+    await loadData();
+};
+
+const handleLogoutSuccess = async () => {
+    handleLogout();
+    await loadData();
+};
 
 // Lifecycle
 onMounted(async () => {
@@ -43,7 +53,7 @@ onMounted(async () => {
         v-model:activeFilter="activeFilter"
         v-model:searchQuery="rawSearchQuery"
         :isLoggedIn="isLoggedIn"
-        @login-success="checkSession"
+        @login-success="handleLoginSuccess"
         @logout-success="handleLogoutSuccess"
     />
 
