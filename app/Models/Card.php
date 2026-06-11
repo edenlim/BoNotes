@@ -7,12 +7,20 @@ use Illuminate\Database\Eloquent\Model;
 class Card extends Model
 {
     protected $fillable = [
-        'title', 'fileType', 'tags', 'user_vote',
+        'title', 'fileType', 'tags',
         'noOfLikes', 'noOfDislikes', 'author',
         'upload_time', 'page_length', 'description'
     ];
 
-    protected $casts = [
-        'tags' => 'array',
-    ];
+    protected function casts(): array
+    {
+        return [
+            'tags' => 'array',
+        ];
+    }
+
+    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }

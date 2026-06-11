@@ -10,38 +10,37 @@ const errorMessage = ref('');
 
 const handleLogin = async () => {
     errorMessage.value = '';
+
     try {
-        const response = await fetch('/mock/user.json');
-        if (!response.ok) {
-            throw new Error('Netzwerk-Fehler beim Laden der Benutzerdaten.');
-        }
+        await fetch('/sanctum/csrf-cookie', {
+            method: 'GET',
+            headers: { 'Accept': 'application/json' },
+            credentials: 'include'
+        });
 
-        const userlist = await response.json();
+        const response = await fetch('/api/login', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'X-XSRF-TOKEN': Cookies.get('XSRF-TOKEN')
+            },
+            credentials: 'include',
+            body: JSON.stringify({
+                email: email.value,
+                password: password.value
+            })
+        });
 
-        const matchedUser = userlist.find(
-            user => user.email === email.value && user.password === password.value
-        );
-
-        if (matchedUser) {
-            const sessionData = {
-                username: matchedUser.name,
-                email: matchedUser.email,
-                userid: matchedUser.id
-            };
-
-            Cookies.set('current_login_session', JSON.stringify(sessionData), {
-                expires: 1,
-                path: '/',
-                sameSite: 'Strict',
-                secure: true
-            });
-
+        if (response.ok) {
             emit('login-success');
         } else {
-            errorMessage.value = 'E-Mail oder Passwort ist falsch.';
+            const errorData = await response.json();
+            errorMessage.value = errorData.message || 'E-Mail oder Passwort ist falsch.';
         }
 
     } catch (error) {
+        console.error("Login failed:", error);
         errorMessage.value = 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.';
     }
 };

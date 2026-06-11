@@ -1,0 +1,104 @@
+[
+    {
+        "id": 1,
+        "user_id": 1,
+        "card_id": 1,
+        "status": "liked"
+    },
+    {
+        "id": 2,
+        "user_id": 1,
+        "card_id": 2,
+        "status": "disliked"
+    },
+    {
+        "id": 3,
+        "user_id": 1,
+        "card_id": 3,
+        "status": "none"
+    },
+    {
+        "id": 4,
+        "user_id": 2,
+        "card_id": 1,
+        "status": "liked"
+    },
+    {
+        "id": 5,
+        "user_id": 2,
+        "card_id": 2,
+        "status": "liked"
+    },
+    {
+        "id": 6,
+        "user_id": 2,
+        "card_id": 3,
+        "status": "disliked"
+    },
+    {
+        "id": 7,
+        "user_id": 3,
+        "card_id": 1,
+        "status": "none"
+    },
+    {
+        "id": 8,
+        "user_id": 3,
+        "card_id": 2,
+        "status": "liked"
+    },
+    {
+        "id": 9,
+        "user_id": 3,
+        "card_id": 3,
+        "status": "liked"
+    },
+    {
+        "id": 10,
+        "user_id": 1,
+        "card_id": 4,
+        "status": "liked"
+    },
+    {
+        "id": 11,
+        "user_id": 1,
+        "card_id": 5,
+        "status": "liked"
+    },
+    {
+        "id": 12,
+        "user_id": 1,
+        "card_id": 6,
+        "status": "disliked"
+    },
+    {
+        "id": 13,
+        "user_id": 1,
+        "card_id": 7,
+        "status": "disliked"
+    },
+    {
+        "id": 14,
+        "user_id": 1,
+        "card_id": 8,
+        "status": "liked"
+    },
+    {
+        "id": 15,
+        "user_id": 1,
+        "card_id": 9,
+        "status": "none"
+    },
+    {
+        "id": 16,
+        "user_id": 1,
+        "card_id": 10,
+        "status": "liked"
+    },
+    {
+        "id": 17,
+        "user_id": 1,
+        "card_id": 11,
+        "status": "disliked"
+    }
+]

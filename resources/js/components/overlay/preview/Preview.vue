@@ -12,10 +12,6 @@ const props = defineProps({
     session: {
         type: Object,
         default: null
-    },
-    userData: {
-        type: Object,
-        required: true
     }
 });
 
@@ -49,13 +45,13 @@ const informationHeadbarData = computed(() => ({
 }));
 
 const informationSidebarData = computed(() => ({
-    author: props.data.author,
+    user: props.data.user,
     uploadTime: props.data.uploadTime,
     pageLength: props.data.pageLength,
     description: props.data.description,
     noOfLikes: props.data.noOfLikes,
     noOfDislikes: props.data.noOfDislikes,
-    userVote: props.data.userVote,
+    interaction_status: props.data.interaction_status,
 }));
 
 const handleUpdateDescription = (newDescription) => {
@@ -88,7 +84,6 @@ const handleDelete = () => {
                 class="col-span-2"
             />
             <InformationSidebar
-                :userData="userData"
                 :data="informationSidebarData"
                 :isOwner="isOwner"
                 :isEditingTitle="isEditingTitle"
