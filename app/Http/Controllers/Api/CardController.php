@@ -15,7 +15,7 @@ class CardController extends Controller
     {
         $user = $request->user('sanctum');
 
-        $query = Card::query();
+        $query = Card::with('user:id,name');
 
         if ($user) {
             $query->leftJoin('users_cards_like', function ($join) use ($user) {

@@ -27,29 +27,27 @@ export function useCards(currentNoteId, navigateToNote) {
         return responseData.value.find(card => card.id == currentNoteId.value);
     });
 
-    const handleOverlayLike = () => {
-        const note = activeNoteData.value;
-        if (!note) return;
-        if (note.interaction_status === 'like') {
-            note.noOfLikes--;
-            note.interaction_status = null;
+    const toggleLike = (card) => {
+        if (!card) return;
+        if (card.interaction_status === 'liked') {
+            card.noOfLikes--;
+            card.interaction_status = null;
         } else {
-            if (note.interaction_status === 'dislike') note.noOfDislikes--;
-            note.noOfLikes++;
-            note.interaction_status = 'like';
+            if (card.interaction_status === 'disliked') card.noOfDislikes--;
+            card.noOfLikes++;
+            card.interaction_status = 'liked';
         }
     };
 
-    const handleOverlayDislike = () => {
-        const note = activeNoteData.value;
-        if (!note) return;
-        if (note.interaction_status === 'dislike') {
-            note.noOfDislikes--;
-            note.interaction_status = null;
+    const toggleDislike = (card) => {
+        if (!card) return;
+        if (card.interaction_status === 'disliked') {
+            card.noOfDislikes--;
+            card.interaction_status = null;
         } else {
-            if (note.interaction_status === 'like') note.noOfLikes--;
-            note.noOfDislikes++;
-            note.interaction_status = 'dislike';
+            if (card.interaction_status === 'liked') card.noOfLikes--;
+            card.noOfDislikes++;
+            card.interaction_status = 'disliked';
         }
     };
 
@@ -67,6 +65,6 @@ export function useCards(currentNoteId, navigateToNote) {
 
     return {
         responseData, isLoading, fetchError, loadData, activeNoteData,
-        handleOverlayLike, handleOverlayDislike, handleUpdateNote, handleDeleteNote
+        toggleLike, toggleDislike, handleUpdateNote, handleDeleteNote
     };
 }

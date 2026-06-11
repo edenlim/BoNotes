@@ -9,30 +9,8 @@ const props = defineProps({
     },
 });
 
-// Define explicit click emit to notify Root.vue
-const emit = defineEmits(['click']);
+const emit = defineEmits(['click', 'toggle-dislike', 'toggle-like']);
 
-const handleLike = () => {
-    if (props.data.interaction_status === 'liked') {
-        props.data.noOfLikes--;
-        props.data.interaction_status = null;
-    } else {
-        if (props.data.interaction_status === 'disliked') props.data.noOfDislikes--;
-        props.data.noOfLikes++;
-        props.data.interaction_status = 'liked';
-    }
-};
-
-const handleDislike = () => {
-    if (props.data.interaction_status === 'disliked') {
-        props.data.noOfDislikes--;
-        props.data.interaction_status = null;
-    } else {
-        if (props.data.interaction_status === 'liked') props.data.noOfLikes--;
-        props.data.noOfDislikes++;
-        props.data.interaction_status = 'disliked';
-    }
-};
 </script>
 
 <template>
@@ -40,8 +18,8 @@ const handleDislike = () => {
         <CardIndicator
             :data="props.data"
             @click="emit('click')"
-            @update:dislike="handleDislike"
-            @update:like="handleLike"
+            @update:dislike="emit('toggle-dislike')"
+            @update:like="emit('toggle-like')"
         />
 
         <div class="flex flex-col justify-between p-3 grow">

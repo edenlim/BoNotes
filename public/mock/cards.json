@@ -11,7 +11,7 @@
         "userVote": "like",
         "noOfDislikes": 279,
         "noOfLikes": 396,
-        "author": 2,
+        "user_id": 2,
         "uploadTime": "10. Mar 2025",
         "pageLength": 2,
         "description": "Practice-focused material with solved exercises and tips."
@@ -26,7 +26,7 @@
         "userVote": null,
         "noOfDislikes": 232,
         "noOfLikes": 285,
-        "author": 19,
+        "user_id": 19,
         "uploadTime": "24. Mar 2024",
         "pageLength": 1,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -39,7 +39,7 @@
         "userVote": "like",
         "noOfDislikes": 49,
         "noOfLikes": 423,
-        "author": 8,
+        "user_id": 8,
         "uploadTime": "23. Jan 2026",
         "pageLength": 5,
         "description": "Compact reference sheet covering the most important concepts."
@@ -57,7 +57,7 @@
         "userVote": "like",
         "noOfDislikes": 103,
         "noOfLikes": 493,
-        "author": 19,
+        "user_id": 19,
         "uploadTime": "07. Oct 2021",
         "pageLength": 2,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -73,7 +73,7 @@
         "userVote": null,
         "noOfDislikes": 474,
         "noOfLikes": 357,
-        "author": 42,
+        "user_id": 42,
         "uploadTime": "22. Nov 2023",
         "pageLength": 2,
         "description": "Practice-focused material with solved exercises and tips."
@@ -88,7 +88,7 @@
         "userVote": "like",
         "noOfDislikes": 389,
         "noOfLikes": 392,
-        "author": 22,
+        "user_id": 22,
         "uploadTime": "09. Oct 2022",
         "pageLength": 3,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -105,7 +105,7 @@
         "userVote": "like",
         "noOfDislikes": 360,
         "noOfLikes": 439,
-        "author": 7,
+        "user_id": 7,
         "uploadTime": "23. Jul 2025",
         "pageLength": 4,
         "description": "Practice-focused material with solved exercises and tips."
@@ -121,7 +121,7 @@
         "userVote": "like",
         "noOfDislikes": 218,
         "noOfLikes": 18,
-        "author": 16,
+        "user_id": 16,
         "uploadTime": "07. Sep 2023",
         "pageLength": 3,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -134,7 +134,7 @@
         "userVote": "dislike",
         "noOfDislikes": 214,
         "noOfLikes": 228,
-        "author": 5,
+        "user_id": 5,
         "uploadTime": "17. May 2023",
         "pageLength": 4,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -151,7 +151,7 @@
         "userVote": "like",
         "noOfDislikes": 346,
         "noOfLikes": 109,
-        "author": 23,
+        "user_id": 23,
         "uploadTime": "29. May 2020",
         "pageLength": 1,
         "description": "Practice-focused material with solved exercises and tips."
@@ -167,7 +167,7 @@
         "userVote": null,
         "noOfDislikes": 246,
         "noOfLikes": 245,
-        "author": 4,
+        "user_id": 4,
         "uploadTime": "09. Nov 2022",
         "pageLength": 3,
         "description": "Practice-focused material with solved exercises and tips."
@@ -182,7 +182,7 @@
         "userVote": null,
         "noOfDislikes": 416,
         "noOfLikes": 338,
-        "author": 10,
+        "user_id": 10,
         "uploadTime": "19. Mar 2022",
         "pageLength": 4,
         "description": "Compact reference sheet covering the most important concepts."
@@ -199,7 +199,7 @@
         "userVote": "like",
         "noOfDislikes": 279,
         "noOfLikes": 99,
-        "author": 23,
+        "user_id": 23,
         "uploadTime": "11. Oct 2021",
         "pageLength": 2,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -214,7 +214,7 @@
         "userVote": "dislike",
         "noOfDislikes": 33,
         "noOfLikes": 207,
-        "author": 18,
+        "user_id": 18,
         "uploadTime": "20. May 2023",
         "pageLength": 2,
         "description": "Practice-focused material with solved exercises and tips."
@@ -227,7 +227,7 @@
         "userVote": null,
         "noOfDislikes": 29,
         "noOfLikes": 344,
-        "author": 27,
+        "user_id": 27,
         "uploadTime": "07. Mar 2026",
         "pageLength": 2,
         "description": "Practice-focused material with solved exercises and tips."
@@ -244,7 +244,7 @@
         "userVote": null,
         "noOfDislikes": 393,
         "noOfLikes": 133,
-        "author": 14,
+        "user_id": 14,
         "uploadTime": "12. Jan 2024",
         "pageLength": 5,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -259,7 +259,7 @@
         "userVote": null,
         "noOfDislikes": 218,
         "noOfLikes": 262,
-        "author": 10,
+        "user_id": 10,
         "uploadTime": "25. Sep 2021",
         "pageLength": 2,
         "description": "Practice-focused material with solved exercises and tips."
@@ -274,7 +274,7 @@
         "userVote": "like",
         "noOfDislikes": 97,
         "noOfLikes": 132,
-        "author": 38,
+        "user_id": 38,
         "uploadTime": "31. Aug 2025",
         "pageLength": 4,
         "description": "Practice-focused material with solved exercises and tips."
@@ -292,7 +292,7 @@
         "userVote": "like",
         "noOfDislikes": 125,
         "noOfLikes": 435,
-        "author": 34,
+        "user_id": 34,
         "uploadTime": "04. Mar 2022",
         "pageLength": 5,
         "description": "Practice-focused material with solved exercises and tips."
@@ -307,7 +307,7 @@
         "userVote": null,
         "noOfDislikes": 186,
         "noOfLikes": 391,
-        "author": 22,
+        "user_id": 22,
         "uploadTime": "08. May 2021",
         "pageLength": 5,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -323,7 +323,7 @@
         "userVote": "like",
         "noOfDislikes": 478,
         "noOfLikes": 104,
-        "author": 26,
+        "user_id": 26,
         "uploadTime": "27. Dec 2024",
         "pageLength": 1,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -339,7 +339,7 @@
         "userVote": "dislike",
         "noOfDislikes": 139,
         "noOfLikes": 252,
-        "author": 27,
+        "user_id": 27,
         "uploadTime": "07. Feb 2020",
         "pageLength": 5,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -356,7 +356,7 @@
         "userVote": "dislike",
         "noOfDislikes": 367,
         "noOfLikes": 377,
-        "author": 47,
+        "user_id": 47,
         "uploadTime": "21. Nov 2020",
         "pageLength": 1,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -371,7 +371,7 @@
         "userVote": null,
         "noOfDislikes": 163,
         "noOfLikes": 175,
-        "author": 39,
+        "user_id": 39,
         "uploadTime": "02. Nov 2021",
         "pageLength": 3,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -387,7 +387,7 @@
         "userVote": "like",
         "noOfDislikes": 63,
         "noOfLikes": 339,
-        "author": 21,
+        "user_id": 21,
         "uploadTime": "15. Feb 2022",
         "pageLength": 1,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -402,7 +402,7 @@
         "userVote": null,
         "noOfDislikes": 419,
         "noOfLikes": 414,
-        "author": 49,
+        "user_id": 49,
         "uploadTime": "21. May 2021",
         "pageLength": 3,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -417,7 +417,7 @@
         "userVote": "dislike",
         "noOfDislikes": 325,
         "noOfLikes": 462,
-        "author": 27,
+        "user_id": 27,
         "uploadTime": "18. Jan 2022",
         "pageLength": 1,
         "description": "Practice-focused material with solved exercises and tips."
@@ -432,7 +432,7 @@
         "userVote": "dislike",
         "noOfDislikes": 100,
         "noOfLikes": 301,
-        "author": 34,
+        "user_id": 34,
         "uploadTime": "14. Feb 2022",
         "pageLength": 4,
         "description": "Compact reference sheet covering the most important concepts."
@@ -448,7 +448,7 @@
         "userVote": "dislike",
         "noOfDislikes": 175,
         "noOfLikes": 232,
-        "author": 24,
+        "user_id": 24,
         "uploadTime": "17. Feb 2026",
         "pageLength": 3,
         "description": "Practice-focused material with solved exercises and tips."
@@ -463,7 +463,7 @@
         "userVote": "like",
         "noOfDislikes": 491,
         "noOfLikes": 331,
-        "author": 23,
+        "user_id": 23,
         "uploadTime": "04. Apr 2024",
         "pageLength": 1,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -479,7 +479,7 @@
         "userVote": "like",
         "noOfDislikes": 214,
         "noOfLikes": 491,
-        "author": 34,
+        "user_id": 34,
         "uploadTime": "13. Jul 2024",
         "pageLength": 2,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -494,7 +494,7 @@
         "userVote": "like",
         "noOfDislikes": 239,
         "noOfLikes": 407,
-        "author": 1,
+        "user_id": 1,
         "uploadTime": "30. Oct 2023",
         "pageLength": 5,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -509,7 +509,7 @@
         "userVote": "dislike",
         "noOfDislikes": 182,
         "noOfLikes": 406,
-        "author": 26,
+        "user_id": 26,
         "uploadTime": "21. Mar 2020",
         "pageLength": 3,
         "description": "Compact reference sheet covering the most important concepts."
@@ -525,7 +525,7 @@
         "userVote": "dislike",
         "noOfDislikes": 324,
         "noOfLikes": 269,
-        "author": 14,
+        "user_id": 14,
         "uploadTime": "25. Jun 2024",
         "pageLength": 4,
         "description": "Compact reference sheet covering the most important concepts."
@@ -540,7 +540,7 @@
         "userVote": null,
         "noOfDislikes": 309,
         "noOfLikes": 201,
-        "author": 7,
+        "user_id": 7,
         "uploadTime": "20. Aug 2021",
         "pageLength": 5,
         "description": "Practice-focused material with solved exercises and tips."
@@ -556,7 +556,7 @@
         "userVote": "like",
         "noOfDislikes": 306,
         "noOfLikes": 310,
-        "author": 50,
+        "user_id": 50,
         "uploadTime": "16. Jun 2025",
         "pageLength": 5,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -571,7 +571,7 @@
         "userVote": "dislike",
         "noOfDislikes": 454,
         "noOfLikes": 442,
-        "author": 16,
+        "user_id": 16,
         "uploadTime": "25. Mar 2023",
         "pageLength": 5,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -587,7 +587,7 @@
         "userVote": null,
         "noOfDislikes": 108,
         "noOfLikes": 360,
-        "author": 44,
+        "user_id": 44,
         "uploadTime": "05. May 2021",
         "pageLength": 1,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -602,7 +602,7 @@
         "userVote": "like",
         "noOfDislikes": 341,
         "noOfLikes": 393,
-        "author": 35,
+        "user_id": 35,
         "uploadTime": "26. May 2023",
         "pageLength": 3,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -617,7 +617,7 @@
         "userVote": "like",
         "noOfDislikes": 437,
         "noOfLikes": 326,
-        "author": 24,
+        "user_id": 24,
         "uploadTime": "17. Apr 2021",
         "pageLength": 2,
         "description": "Compact reference sheet covering the most important concepts."
@@ -632,7 +632,7 @@
         "userVote": "dislike",
         "noOfDislikes": 391,
         "noOfLikes": 236,
-        "author": 8,
+        "user_id": 8,
         "uploadTime": "29. Aug 2023",
         "pageLength": 2,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -647,7 +647,7 @@
         "userVote": null,
         "noOfDislikes": 260,
         "noOfLikes": 467,
-        "author": 29,
+        "user_id": 29,
         "uploadTime": "25. Jan 2025",
         "pageLength": 1,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -662,7 +662,7 @@
         "userVote": null,
         "noOfDislikes": 499,
         "noOfLikes": 414,
-        "author": 44,
+        "user_id": 44,
         "uploadTime": "07. Oct 2025",
         "pageLength": 4,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -677,7 +677,7 @@
         "userVote": null,
         "noOfDislikes": 234,
         "noOfLikes": 445,
-        "author": 20,
+        "user_id": 20,
         "uploadTime": "16. May 2025",
         "pageLength": 3,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -692,7 +692,7 @@
         "userVote": "dislike",
         "noOfDislikes": 427,
         "noOfLikes": 34,
-        "author": 44,
+        "user_id": 44,
         "uploadTime": "30. Jan 2021",
         "pageLength": 1,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -708,7 +708,7 @@
         "userVote": null,
         "noOfDislikes": 472,
         "noOfLikes": 121,
-        "author": 40,
+        "user_id": 40,
         "uploadTime": "17. Dec 2022",
         "pageLength": 2,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -723,7 +723,7 @@
         "userVote": "dislike",
         "noOfDislikes": 420,
         "noOfLikes": 85,
-        "author": 42,
+        "user_id": 42,
         "uploadTime": "22. Dec 2021",
         "pageLength": 5,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -738,7 +738,7 @@
         "userVote": "dislike",
         "noOfDislikes": 338,
         "noOfLikes": 31,
-        "author": 29,
+        "user_id": 29,
         "uploadTime": "21. Feb 2020",
         "pageLength": 2,
         "description": "Compact reference sheet covering the most important concepts."
@@ -753,7 +753,7 @@
         "userVote": "dislike",
         "noOfDislikes": 423,
         "noOfLikes": 23,
-        "author": 10,
+        "user_id": 10,
         "uploadTime": "21. Jan 2020",
         "pageLength": 4,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -768,7 +768,7 @@
         "userVote": null,
         "noOfDislikes": 35,
         "noOfLikes": 178,
-        "author": 3,
+        "user_id": 3,
         "uploadTime": "07. May 2024",
         "pageLength": 3,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -784,7 +784,7 @@
         "userVote": "like",
         "noOfDislikes": 375,
         "noOfLikes": 446,
-        "author": 36,
+        "user_id": 36,
         "uploadTime": "28. Apr 2021",
         "pageLength": 5,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -799,7 +799,7 @@
         "userVote": "like",
         "noOfDislikes": 121,
         "noOfLikes": 464,
-        "author": 33,
+        "user_id": 33,
         "uploadTime": "03. Dec 2022",
         "pageLength": 5,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -814,7 +814,7 @@
         "userVote": null,
         "noOfDislikes": 417,
         "noOfLikes": 274,
-        "author": 1,
+        "user_id": 1,
         "uploadTime": "01. Sep 2020",
         "pageLength": 1,
         "description": "Practice-focused material with solved exercises and tips."
@@ -829,7 +829,7 @@
         "userVote": null,
         "noOfDislikes": 494,
         "noOfLikes": 208,
-        "author": 40,
+        "user_id": 40,
         "uploadTime": "02. Nov 2023",
         "pageLength": 2,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -844,7 +844,7 @@
         "userVote": null,
         "noOfDislikes": 421,
         "noOfLikes": 75,
-        "author": 45,
+        "user_id": 45,
         "uploadTime": "24. May 2023",
         "pageLength": 1,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -860,7 +860,7 @@
         "userVote": "like",
         "noOfDislikes": 225,
         "noOfLikes": 225,
-        "author": 42,
+        "user_id": 42,
         "uploadTime": "27. May 2024",
         "pageLength": 2,
         "description": "Compact reference sheet covering the most important concepts."
@@ -875,7 +875,7 @@
         "userVote": "dislike",
         "noOfDislikes": 235,
         "noOfLikes": 162,
-        "author": 17,
+        "user_id": 17,
         "uploadTime": "03. Jun 2022",
         "pageLength": 5,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -890,7 +890,7 @@
         "userVote": "dislike",
         "noOfDislikes": 15,
         "noOfLikes": 254,
-        "author": 38,
+        "user_id": 38,
         "uploadTime": "24. Feb 2022",
         "pageLength": 5,
         "description": "Compact reference sheet covering the most important concepts."
@@ -906,7 +906,7 @@
         "userVote": null,
         "noOfDislikes": 181,
         "noOfLikes": 135,
-        "author": 13,
+        "user_id": 13,
         "uploadTime": "30. May 2020",
         "pageLength": 3,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -922,7 +922,7 @@
         "userVote": "dislike",
         "noOfDislikes": 360,
         "noOfLikes": 230,
-        "author": 20,
+        "user_id": 20,
         "uploadTime": "03. Dec 2023",
         "pageLength": 3,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -939,7 +939,7 @@
         "userVote": null,
         "noOfDislikes": 381,
         "noOfLikes": 491,
-        "author": 50,
+        "user_id": 50,
         "uploadTime": "02. Jul 2021",
         "pageLength": 5,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -954,7 +954,7 @@
         "userVote": null,
         "noOfDislikes": 384,
         "noOfLikes": 220,
-        "author": 6,
+        "user_id": 6,
         "uploadTime": "31. Aug 2020",
         "pageLength": 1,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -969,7 +969,7 @@
         "userVote": "like",
         "noOfDislikes": 334,
         "noOfLikes": 28,
-        "author": 4,
+        "user_id": 4,
         "uploadTime": "30. Jan 2025",
         "pageLength": 5,
         "description": "Practice-focused material with solved exercises and tips."
@@ -984,7 +984,7 @@
         "userVote": "dislike",
         "noOfDislikes": 328,
         "noOfLikes": 228,
-        "author": 5,
+        "user_id": 5,
         "uploadTime": "15. May 2021",
         "pageLength": 3,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -999,7 +999,7 @@
         "userVote": null,
         "noOfDislikes": 206,
         "noOfLikes": 122,
-        "author": 11,
+        "user_id": 11,
         "uploadTime": "24. May 2020",
         "pageLength": 3,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -1015,7 +1015,7 @@
         "userVote": "like",
         "noOfDislikes": 231,
         "noOfLikes": 306,
-        "author": 25,
+        "user_id": 25,
         "uploadTime": "01. Nov 2021",
         "pageLength": 4,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1030,7 +1030,7 @@
         "userVote": null,
         "noOfDislikes": 351,
         "noOfLikes": 362,
-        "author": 37,
+        "user_id": 37,
         "uploadTime": "30. Mar 2021",
         "pageLength": 5,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -1045,7 +1045,7 @@
         "userVote": "like",
         "noOfDislikes": 393,
         "noOfLikes": 112,
-        "author": 46,
+        "user_id": 46,
         "uploadTime": "09. Jun 2022",
         "pageLength": 2,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -1062,7 +1062,7 @@
         "userVote": "like",
         "noOfDislikes": 488,
         "noOfLikes": 113,
-        "author": 19,
+        "user_id": 19,
         "uploadTime": "26. May 2025",
         "pageLength": 2,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -1078,7 +1078,7 @@
         "userVote": "like",
         "noOfDislikes": 144,
         "noOfLikes": 205,
-        "author": 19,
+        "user_id": 19,
         "uploadTime": "26. Jan 2025",
         "pageLength": 2,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -1096,7 +1096,7 @@
         "userVote": null,
         "noOfDislikes": 147,
         "noOfLikes": 131,
-        "author": 24,
+        "user_id": 24,
         "uploadTime": "11. Apr 2025",
         "pageLength": 4,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -1111,7 +1111,7 @@
         "userVote": "like",
         "noOfDislikes": 212,
         "noOfLikes": 210,
-        "author": 30,
+        "user_id": 30,
         "uploadTime": "25. Apr 2022",
         "pageLength": 3,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -1126,7 +1126,7 @@
         "userVote": "like",
         "noOfDislikes": 117,
         "noOfLikes": 399,
-        "author": 48,
+        "user_id": 48,
         "uploadTime": "11. Sep 2021",
         "pageLength": 4,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -1141,7 +1141,7 @@
         "userVote": "dislike",
         "noOfDislikes": 189,
         "noOfLikes": 281,
-        "author": 31,
+        "user_id": 31,
         "uploadTime": "20. Aug 2024",
         "pageLength": 2,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1156,7 +1156,7 @@
         "userVote": null,
         "noOfDislikes": 340,
         "noOfLikes": 276,
-        "author": 25,
+        "user_id": 25,
         "uploadTime": "25. Aug 2025",
         "pageLength": 5,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1172,7 +1172,7 @@
         "userVote": "dislike",
         "noOfDislikes": 270,
         "noOfLikes": 166,
-        "author": 21,
+        "user_id": 21,
         "uploadTime": "17. Jun 2025",
         "pageLength": 4,
         "description": "Practice-focused material with solved exercises and tips."
@@ -1187,7 +1187,7 @@
         "userVote": "dislike",
         "noOfDislikes": 405,
         "noOfLikes": 466,
-        "author": 43,
+        "user_id": 43,
         "uploadTime": "04. Oct 2020",
         "pageLength": 2,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1203,7 +1203,7 @@
         "userVote": null,
         "noOfDislikes": 187,
         "noOfLikes": 400,
-        "author": 33,
+        "user_id": 33,
         "uploadTime": "19. Jun 2024",
         "pageLength": 3,
         "description": "Practice-focused material with solved exercises and tips."
@@ -1219,7 +1219,7 @@
         "userVote": null,
         "noOfDislikes": 255,
         "noOfLikes": 296,
-        "author": 10,
+        "user_id": 10,
         "uploadTime": "14. Mar 2025",
         "pageLength": 5,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1234,7 +1234,7 @@
         "userVote": "like",
         "noOfDislikes": 171,
         "noOfLikes": 323,
-        "author": 41,
+        "user_id": 41,
         "uploadTime": "31. Mar 2023",
         "pageLength": 2,
         "description": "Practice-focused material with solved exercises and tips."
@@ -1250,7 +1250,7 @@
         "userVote": "like",
         "noOfDislikes": 54,
         "noOfLikes": 15,
-        "author": 31,
+        "user_id": 31,
         "uploadTime": "10. Apr 2023",
         "pageLength": 4,
         "description": "Practice-focused material with solved exercises and tips."
@@ -1265,7 +1265,7 @@
         "userVote": null,
         "noOfDislikes": 351,
         "noOfLikes": 223,
-        "author": 31,
+        "user_id": 31,
         "uploadTime": "11. Jan 2026",
         "pageLength": 1,
         "description": "Practice-focused material with solved exercises and tips."
@@ -1280,7 +1280,7 @@
         "userVote": "like",
         "noOfDislikes": 486,
         "noOfLikes": 366,
-        "author": 3,
+        "user_id": 3,
         "uploadTime": "12. Dec 2023",
         "pageLength": 1,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1296,7 +1296,7 @@
         "userVote": "like",
         "noOfDislikes": 494,
         "noOfLikes": 129,
-        "author": 30,
+        "user_id": 30,
         "uploadTime": "15. Apr 2023",
         "pageLength": 4,
         "description": "Practice-focused material with solved exercises and tips."
@@ -1312,7 +1312,7 @@
         "userVote": "like",
         "noOfDislikes": 292,
         "noOfLikes": 124,
-        "author": 31,
+        "user_id": 31,
         "uploadTime": "20. May 2023",
         "pageLength": 3,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1327,7 +1327,7 @@
         "userVote": null,
         "noOfDislikes": 227,
         "noOfLikes": 336,
-        "author": 3,
+        "user_id": 3,
         "uploadTime": "06. Aug 2025",
         "pageLength": 4,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -1343,7 +1343,7 @@
         "userVote": "like",
         "noOfDislikes": 133,
         "noOfLikes": 129,
-        "author": 46,
+        "user_id": 46,
         "uploadTime": "22. Apr 2021",
         "pageLength": 3,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1358,7 +1358,7 @@
         "userVote": "dislike",
         "noOfDislikes": 173,
         "noOfLikes": 289,
-        "author": 23,
+        "user_id": 23,
         "uploadTime": "11. May 2020",
         "pageLength": 3,
         "description": "Compact reference sheet covering the most important concepts."
@@ -1373,7 +1373,7 @@
         "userVote": null,
         "noOfDislikes": 29,
         "noOfLikes": 355,
-        "author": 5,
+        "user_id": 5,
         "uploadTime": "12. May 2024",
         "pageLength": 5,
         "description": "Lecture summaries with additional annotations and diagrams."
@@ -1388,7 +1388,7 @@
         "userVote": null,
         "noOfDislikes": 416,
         "noOfLikes": 211,
-        "author": 20,
+        "user_id": 20,
         "uploadTime": "18. Apr 2026",
         "pageLength": 4,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1404,7 +1404,7 @@
         "userVote": null,
         "noOfDislikes": 54,
         "noOfLikes": 45,
-        "author": 25,
+        "user_id": 25,
         "uploadTime": "19. Apr 2021",
         "pageLength": 3,
         "description": "Compact reference sheet covering the most important concepts."
@@ -1420,7 +1420,7 @@
         "userVote": null,
         "noOfDislikes": 98,
         "noOfLikes": 59,
-        "author": 48,
+        "user_id": 48,
         "uploadTime": "08. Jul 2020",
         "pageLength": 2,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -1435,7 +1435,7 @@
         "userVote": "dislike",
         "noOfDislikes": 364,
         "noOfLikes": 22,
-        "author": 11,
+        "user_id": 11,
         "uploadTime": "21. Sep 2023",
         "pageLength": 1,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -1450,7 +1450,7 @@
         "userVote": null,
         "noOfDislikes": 212,
         "noOfLikes": 13,
-        "author": 8,
+        "user_id": 8,
         "uploadTime": "06. Oct 2025",
         "pageLength": 2,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -1466,7 +1466,7 @@
         "userVote": "dislike",
         "noOfDislikes": 403,
         "noOfLikes": 90,
-        "author": 30,
+        "user_id": 30,
         "uploadTime": "06. Jun 2020",
         "pageLength": 4,
         "description": "Compact reference sheet covering the most important concepts."
@@ -1481,7 +1481,7 @@
         "userVote": null,
         "noOfDislikes": 398,
         "noOfLikes": 220,
-        "author": 48,
+        "user_id": 48,
         "uploadTime": "04. Aug 2021",
         "pageLength": 5,
         "description": "Practice-focused material with solved exercises and tips."
@@ -1496,7 +1496,7 @@
         "userVote": null,
         "noOfDislikes": 220,
         "noOfLikes": 410,
-        "author": 20,
+        "user_id": 20,
         "uploadTime": "07. Nov 2021",
         "pageLength": 2,
         "description": "Compact reference sheet covering the most important concepts."
@@ -1511,7 +1511,7 @@
         "userVote": null,
         "noOfDislikes": 335,
         "noOfLikes": 381,
-        "author": 46,
+        "user_id": 46,
         "uploadTime": "29. May 2020",
         "pageLength": 5,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1526,7 +1526,7 @@
         "userVote": "dislike",
         "noOfDislikes": 445,
         "noOfLikes": 254,
-        "author": 33,
+        "user_id": 33,
         "uploadTime": "18. Mar 2021",
         "pageLength": 1,
         "description": "Practice-focused material with solved exercises and tips."
@@ -1544,7 +1544,7 @@
         "userVote": "dislike",
         "noOfDislikes": 299,
         "noOfLikes": 149,
-        "author": 44,
+        "user_id": 44,
         "uploadTime": "24. Feb 2025",
         "pageLength": 2,
         "description": "Compact reference sheet covering the most important concepts."
@@ -1559,7 +1559,7 @@
         "userVote": "dislike",
         "noOfDislikes": 365,
         "noOfLikes": 90,
-        "author": 33,
+        "user_id": 33,
         "uploadTime": "04. Jun 2020",
         "pageLength": 3,
         "description": "Practice-focused material with solved exercises and tips."
@@ -1574,7 +1574,7 @@
         "userVote": "like",
         "noOfDislikes": 403,
         "noOfLikes": 463,
-        "author": 11,
+        "user_id": 11,
         "uploadTime": "28. May 2024",
         "pageLength": 2,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1589,7 +1589,7 @@
         "userVote": "dislike",
         "noOfDislikes": 174,
         "noOfLikes": 42,
-        "author": 46,
+        "user_id": 46,
         "uploadTime": "17. May 2021",
         "pageLength": 4,
         "description": "Comprehensive study notes with worked examples and summaries."
@@ -1604,7 +1604,7 @@
         "userVote": "like",
         "noOfDislikes": 4,
         "noOfLikes": 302,
-        "author": 31,
+        "user_id": 31,
         "uploadTime": "13. Aug 2024",
         "pageLength": 4,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1619,7 +1619,7 @@
         "userVote": null,
         "noOfDislikes": 459,
         "noOfLikes": 332,
-        "author": 50,
+        "user_id": 50,
         "uploadTime": "26. Dec 2023",
         "pageLength": 1,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -1634,7 +1634,7 @@
         "userVote": "dislike",
         "noOfDislikes": 82,
         "noOfLikes": 396,
-        "author": 27,
+        "user_id": 27,
         "uploadTime": "21. Sep 2025",
         "pageLength": 1,
         "description": "Detailed explanations and practice exercises for exam preparation."
@@ -1649,7 +1649,7 @@
         "userVote": null,
         "noOfDislikes": 483,
         "noOfLikes": 381,
-        "author": 47,
+        "user_id": 47,
         "uploadTime": "09. Jan 2024",
         "pageLength": 2,
         "description": "Step-by-step walkthroughs for key topics and formulas."
@@ -1664,7 +1664,7 @@
         "userVote": "dislike",
         "noOfDislikes": 157,
         "noOfLikes": 85,
-        "author": 28,
+        "user_id": 28,
         "uploadTime": "13. Feb 2025",
         "pageLength": 4,
         "description": "Practice-focused material with solved exercises and tips."
@@ -1680,7 +1680,7 @@
         "userVote": "dislike",
         "noOfDislikes": 482,
         "noOfLikes": 217,
-        "author": 33,
+        "user_id": 33,
         "uploadTime": "17. Dec 2025",
         "pageLength": 3,
         "description": "Detailed explanations and practice exercises for exam preparation."

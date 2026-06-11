@@ -1,5 +1,5 @@
 <script setup>
-import {ref, onMounted, toRaw} from 'vue';
+import {ref, onMounted} from 'vue';
 
 // Components
 import Card from '../components/card/Card.vue';
@@ -16,11 +16,11 @@ import { useCards } from '../composables/useCards';
 import { useSearch } from '../composables/useSearch';
 
 // Initialize Logic
-const { isLoggedIn, userData, checkSession, handleLogout } = useAuth();
+const { isLoggedIn, checkSession, handleLogout } = useAuth();
 const { currentNoteId, showNoteOverlay, parseUrlRoute, navigateToNote } = useRouting();
 const {
     isLoading, fetchError, loadData, activeNoteData,
-    handleOverlayLike, handleOverlayDislike, handleUpdateNote, handleDeleteNote, responseData
+    toggleLike, toggleDislike, handleUpdateNote, handleDeleteNote, responseData
 } = useCards(currentNoteId, navigateToNote);
 const { activeFilter, rawSearchQuery, filteredCards } = useSearch(responseData);
 
@@ -43,7 +43,6 @@ onMounted(async () => {
     await loadData();
     parseUrlRoute();
     window.addEventListener('popstate', parseUrlRoute);
-    console.log("Data: ", toRaw(responseData.value));
 
 });
 </script>
@@ -67,6 +66,8 @@ onMounted(async () => {
                 :key="index"
                 :data="data"
                 @click="navigateToNote(data.id)"
+                @toggle-like="toggleLike(data)"
+                @toggle-dislike="toggleDislike(data)"
             />
         </div>
     </div>
@@ -75,10 +76,9 @@ onMounted(async () => {
         <Preview
             v-if="activeNoteData"
             :data="activeNoteData"
-            :userData="userData"
             @close="navigateToNote(null)"
-            @update:dislike="handleOverlayDislike"
-            @update:like="handleOverlayLike"
+            @update:like="toggleLike(activeNoteData)"
+            @update:dislike="toggleDislike(activeNoteData)"
             @delete-note="handleDeleteNote"
             @update-note="handleUpdateNote"
         />
