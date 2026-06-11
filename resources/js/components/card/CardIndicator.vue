@@ -7,7 +7,6 @@ const props = defineProps({
         required: true
     },
 });
-console.log("My props: ", props.data.interaction_status)
 const emit = defineEmits(['update:like', 'update:dislike']);
 
 </script>

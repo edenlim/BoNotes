@@ -13,24 +13,24 @@ const props = defineProps({
 const emit = defineEmits(['click']);
 
 const handleLike = () => {
-    if (props.data.interaction_status === 'like') {
+    if (props.data.interaction_status === 'liked') {
         props.data.noOfLikes--;
         props.data.interaction_status = null;
     } else {
-        if (props.data.interaction_status === 'dislike') props.data.noOfDislikes--;
+        if (props.data.interaction_status === 'disliked') props.data.noOfDislikes--;
         props.data.noOfLikes++;
-        props.data.interaction_status = 'like';
+        props.data.interaction_status = 'liked';
     }
 };
 
 const handleDislike = () => {
-    if (props.data.interaction_status === 'dislike') {
+    if (props.data.interaction_status === 'disliked') {
         props.data.noOfDislikes--;
         props.data.interaction_status = null;
     } else {
-        if (props.data.interaction_status === 'like') props.data.noOfLikes--;
+        if (props.data.interaction_status === 'liked') props.data.noOfLikes--;
         props.data.noOfDislikes++;
-        props.data.interaction_status = 'dislike';
+        props.data.interaction_status = 'disliked';
     }
 };
 </script>
