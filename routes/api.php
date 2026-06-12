@@ -18,7 +18,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/cards/{card}/rate', [CardController::class, 'rate']);
 });
 
-
+Route::put('/users/{id}', [UserController::class, 'update']);
 Route::get('/users', [UserController::class, 'index']);
 Route::get('/user', function (Request $request) {
     return $request->user();

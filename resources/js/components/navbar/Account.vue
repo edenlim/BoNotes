@@ -17,26 +17,27 @@ const showOverlay = computed(() => isEditModalOpen.value !== false || isLoginMod
 
 const handleLogout = async () => {
     try {
-        // Send the secure POST request to your Laravel backend
         const response = await fetch('/api/logout', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-XSRF-TOKEN': Cookies.get('XSRF-TOKEN') // Attach CSRF token
+                'X-XSRF-TOKEN': Cookies.get('XSRF-TOKEN')
             },
-            credentials: 'include' // Ensure session cookies are sent
+            credentials: 'include' // Sicher gehen das coockies gesendet werden
         });
 
-        // Only update the UI if the backend successfully destroyed the session
-        if (response.ok) {
-            accountDropdownShow.value = false;
-            emit('logout-success');
-        } else {
-            console.error("Logout failed on the server.");
+        // Immer ausloggen auch wenn Session bereits abgelaufen ist
+        accountDropdownShow.value = false;
+        emit('logout-success');
+
+        if (!response.ok && response.status !== 401) {
+            console.error("Logout failed on the server with status:", response.status);
         }
     } catch (error) {
         console.error("Network error during logout:", error);
+        accountDropdownShow.value = false;
+        emit('logout-success');
     }
 };
 

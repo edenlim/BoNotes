@@ -1,59 +1,63 @@
 <script setup>
-import { ref } from 'vue';
-import Cookies from 'js-cookie';
+import { ref, onMounted } from 'vue';
+
 import CloseButton from "../../../templates/CloseButton.vue";
 
 const emit = defineEmits(['close']);
 
 const session = ref(null);
-const cookieData = Cookies.get('current_login_session');
-session.value = cookieData ? JSON.parse(cookieData) : null;
-
-const name = ref(session.value ? session.value.username : '');
-const email = ref(session.value ? session.value.email : '');
+const name = ref('');
+const email = ref('');
 
 const password = ref('');
 const passwordConfirm = ref('');
 const currentPassword = ref('');
 const errorMessage = ref('');
 
+// Lade die echten Userdaten von der API
+onMounted(async () => {
+    try {
+        const response = await fetch('/api/user', {
+            method: 'GET',
+            headers: { 'Accept': 'application/json' },
+            credentials: 'include'
+        });
+        if (response.ok) {
+            const user = await response.json();
+            session.value = { userid: user.id };
+            name.value = user.name;
+            email.value = user.email;
+        }
+    } catch (error) {
+        console.error('Fehler beim Laden der Benutzerdaten:', error);
+    }
+});
+
 const handleRegister = async () => {
     errorMessage.value = '';
 
-    if (password.value !== passwordConfirm.value) {
+    if (password.value && password.value !== passwordConfirm.value) {
         errorMessage.value = 'Die neuen Passwörter stimmen nicht überein.';
         return;
     }
 
     try {
-        const response = await fetch('/mock/user.json');
-        if (!response.ok) {
-            throw new Error('Netzwerk-Fehler beim Laden der Benutzerdaten.');
-        }
-        const userlist = await response.json();
-
-        const currentUser = userlist.find(user => user.id === session.value?.userid);
-
-        if (!currentUser || currentUser.password !== currentPassword.value) {
-            errorMessage.value = 'Das aktuelle Passwort ist falsch.';
-            return;
-        }
-
-        console.log("Profile update success");
-
-        const updatedSessionData = {
-            username: name.value,
-            email: email.value,
-            userid: session.value.userid
-        };
-
-        Cookies.set('current_login_session', JSON.stringify(updatedSessionData), {
-            expires: 1,
-            path: '/',
-            sameSite: 'Strict',
-            secure: true
+        const response = await fetch(`/api/users/${session.value.userid}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                name: name.value,
+                email: email.value,
+                password: password.value,          // neues Passwort
+                current_password: currentPassword.value
+            })
         });
 
+        if (!response.ok) {
+            const data = await response.json();
+            errorMessage.value = data.message || 'Fehler beim Speichern.';
+            return;
+        }
         emit('close');
 
     } catch (error) {
@@ -99,12 +103,12 @@ const handleRegister = async () => {
 
                     <div class="form-input-group">
                         <label for="password" class="form-label">Neues Passwort</label>
-                        <input type="password" id="password" v-model="password" autocomplete="new-password" required class="form-input-field" />
+                        <input type="password" id="password" v-model="password" autocomplete="new-password" class="form-input-field" />
                     </div>
 
                     <div class="form-input-group">
                         <label for="passwordConfirm" class="form-label">Neues Passwort bestätigen</label>
-                        <input type="password" id="passwordConfirm" v-model="passwordConfirm" autocomplete="new-password" required class="form-input-field" />
+                        <input type="password" id="passwordConfirm" v-model="passwordConfirm" autocomplete="new-password" class="form-input-field" />
                     </div>
 
                     <p class="form-subtitle">
