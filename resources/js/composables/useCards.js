@@ -4,8 +4,6 @@ import Cookies from 'js-cookie'; // Import js-cookie at the top of useCards.js
 
 export function useCards(currentNoteId, navigateToNote) {
     const responseData = ref([]);
-    const isLoading = ref(true);
-    const fetchError = ref(null);
 
     const sendStateRequest = async (card, oldStatus, oldLikes, oldDislikes) => {
         try {
@@ -36,22 +34,6 @@ export function useCards(currentNoteId, navigateToNote) {
         }
     }
 
-    const loadData = async () => {
-        try {
-            const response = await fetch('/api/cards', {
-                method: 'GET',
-                headers: {'Accept': 'application/json'},
-                credentials: 'include'
-            });
-            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-            responseData.value = await response.json();
-        } catch (error) {
-            console.error("Failed to populate frontend state:", error);
-            fetchError.value = error.message;
-        } finally {
-            isLoading.value = false;
-        }
-    };
 
     const activeNoteData = computed(() => {
         if (!currentNoteId.value) return null;
@@ -109,7 +91,7 @@ export function useCards(currentNoteId, navigateToNote) {
     };
 
     return {
-        responseData, isLoading, fetchError, loadData, activeNoteData,
+        responseData, activeNoteData,
         toggleLike, toggleDislike, handleUpdateNote, handleDeleteNote
     };
 }
