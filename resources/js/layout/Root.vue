@@ -17,7 +17,7 @@ import { useSearch } from '../composables/useSearch';
 import { useInfiniteScroll } from "../composables/useInfiniteScroll.js";
 
 // Initialize Logic
-const { isLoggedIn,  checkSession, handleLogout } = useAuth();
+const { isLoggedIn, session, checkSession, handleLogout } = useAuth();
 const { currentNoteId, showNoteOverlay,  parseUrlRoute, navigateToNote } = useRouting();
 const { activeNoteData, responseData, toggleLike, toggleDislike, handleUpdateNote, handleDeleteNote } = useCards(currentNoteId, navigateToNote);
 const { activeFilter, rawSearchQuery, filteredCards } = useSearch(responseData);
@@ -92,6 +92,7 @@ onUnmounted(() => {
         <Preview
             v-if="activeNoteData"
             :data="activeNoteData"
+            :session="session"
             @close="navigateToNote(null)"
             @update:like="toggleLike(activeNoteData)"
             @update:dislike="toggleDislike(activeNoteData)"
