@@ -109,6 +109,23 @@ class CardController extends Controller
             ->get();
         return response()->json($cards);
     }
+    public function update(Request $request, Card $card): JsonResponse
+    {
+        // Nur der Eigentümer darf updaten
+        $user = $request->user('sanctum');
+        if ($card->user_id !== $user->id) {
+            return response()->json(['message' => 'Unauthorized'], 403);
+        }
+
+        $validated = $request->validate([
+            'title'       => ['sometimes', 'string', 'max:255'],
+            'description' => ['sometimes', 'string', 'nullable'],
+        ]);
+
+        $card->update($validated);
+
+        return response()->json($card);
+    }
 
     public function show(Request $request, Card $card): JsonResponse
     {

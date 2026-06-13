@@ -117,10 +117,28 @@ export function useCards(currentNoteId, navigateToNote) {
         await sendStateRequest(card, oldStatus, oldLikes, oldDislikes);
     };
 
-    const handleUpdateNote = (updatedNote) => {
-        const index = responseData.value.findIndex(card => card.id === updatedNote.id);
-        if (index !== -1) {
-            responseData.value[index] = { ...responseData.value[index], ...updatedNote };
+    const handleUpdateNote = async (updatedNote) => {
+        try {
+            const response = await fetch(`/api/cards/${updatedNote.id}`, {
+                method: 'PUT',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'X-XSRF-TOKEN': Cookies.get('XSRF-TOKEN')
+                },
+                credentials: 'include',
+                body: JSON.stringify(updatedNote)
+            });
+            if (!response.ok) throw new Error(`Status: ${response.status}`);
+
+            const savedCard = await response.json();
+            const index = responseData.value.findIndex(card => card.id === savedCard.id);
+            if (index !== -1) {
+                responseData.value[index] = { ...responseData.value[index], ...savedCard };
+            }
+        } catch (error) {
+            console.error("Speichern fehlgeschlagen:", error);
+            alert("Die Änderungen konnten nicht gespeichert werden.");
         }
         if (singleCard.value && singleCard.value.id === updatedNote.id) {
             singleCard.value = { ...singleCard.value, ...updatedNote };
