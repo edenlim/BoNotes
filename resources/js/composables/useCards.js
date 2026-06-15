@@ -1,9 +1,11 @@
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import Cookies from 'js-cookie'; // Import js-cookie at the top of useCards.js
 
 
 export function useCards(currentNoteId, navigateToNote) {
     const responseData = ref([]);
+    const singleCard = ref(null);
+    const isSingleCardLoading = ref(false);
 
     const sendStateRequest = async (card, oldStatus, oldLikes, oldDislikes) => {
         try {
@@ -37,8 +39,45 @@ export function useCards(currentNoteId, navigateToNote) {
 
     const activeNoteData = computed(() => {
         if (!currentNoteId.value) return null;
-        return responseData.value.find(card => card.id == currentNoteId.value);
+        const found = responseData.value.find(card => card.id == currentNoteId.value);
+        if (found) return found;
+        if (singleCard.value && singleCard.value.id == currentNoteId.value) {
+            return singleCard.value;
+        }
+        return null;
     });
+
+    watch(currentNoteId, async (newId) => {
+        if (!newId) {
+            singleCard.value = null;
+            isSingleCardLoading.value = false;
+            return;
+        }
+        const exists = responseData.value.some(card => card.id == newId);
+        if (exists) {
+            singleCard.value = null;
+            isSingleCardLoading.value = false;
+            return;
+        }
+        isSingleCardLoading.value = true;
+        try {
+            const response = await fetch(`/api/cards/show/${newId}`, {
+                method: 'GET',
+                headers: { 'Accept': 'application/json' },
+                credentials: 'include'
+            });
+            if (response.ok) {
+                singleCard.value = await response.json();
+            } else {
+                singleCard.value = null;
+            }
+        } catch (error) {
+            console.error("Failed to fetch single card:", error);
+            singleCard.value = null;
+        } finally {
+            isSingleCardLoading.value = false;
+        }
+    }, { immediate: true });
 
     const toggleLike = async (card) => {
         if (!card) return;
@@ -83,15 +122,21 @@ export function useCards(currentNoteId, navigateToNote) {
         if (index !== -1) {
             responseData.value[index] = { ...responseData.value[index], ...updatedNote };
         }
+        if (singleCard.value && singleCard.value.id === updatedNote.id) {
+            singleCard.value = { ...singleCard.value, ...updatedNote };
+        }
     };
 
     const handleDeleteNote = (noteId) => {
         responseData.value = responseData.value.filter(card => card.id !== noteId);
+        if (singleCard.value && singleCard.value.id === noteId) {
+            singleCard.value = null;
+        }
         navigateToNote(null);
     };
 
     return {
-        responseData, activeNoteData,
+        responseData, activeNoteData, isSingleCardLoading,
         toggleLike, toggleDislike, handleUpdateNote, handleDeleteNote
     };
 }

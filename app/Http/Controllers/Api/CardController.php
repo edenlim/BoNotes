@@ -109,4 +109,31 @@ class CardController extends Controller
             ->get();
         return response()->json($cards);
     }
+
+    public function show(Request $request, Card $card): JsonResponse
+    {
+        $user = $request->user('sanctum');
+
+        $query = Card::with('user:id,name')->where('cards.id', $card->id);
+
+        if ($user) {
+            $query->leftJoin('users_cards_ratings', function ($join) use ($user) {
+                $join->on('cards.id', '=', 'users_cards_ratings.card_id')
+                    ->where('users_cards_ratings.user_id', '=', $user->id);
+            })
+                ->select(
+                    'cards.*',
+                    DB::raw("IFNULL(users_cards_ratings.status, 'none') as interaction_status")
+                );
+        } else {
+            $query->select(
+                'cards.*',
+                DB::raw("'none' as interaction_status")
+            );
+        }
+
+        $result = $query->firstOrFail();
+
+        return response()->json($result);
+    }
 }

@@ -19,7 +19,7 @@ import { useInfiniteScroll } from "../composables/useInfiniteScroll.js";
 // Initialize Logic
 const { isLoggedIn,  checkSession, handleLogout } = useAuth();
 const { currentNoteId, showNoteOverlay,  parseUrlRoute, navigateToNote } = useRouting();
-const { activeNoteData, responseData, toggleLike, toggleDislike, handleUpdateNote, handleDeleteNote } = useCards(currentNoteId, navigateToNote);
+const { activeNoteData, responseData, toggleLike, toggleDislike, handleUpdateNote, handleDeleteNote, isSingleCardLoading } = useCards(currentNoteId, navigateToNote);
 const { activeFilter, rawSearchQuery, filteredCards } = useSearch(responseData);
 const { isLoading, fetchError, hasMore, loadMoreCards, resetInfiniteScrollVariables } = useInfiniteScroll(responseData);
 
@@ -98,6 +98,9 @@ onUnmounted(() => {
             @delete-note="handleDeleteNote"
             @update-note="handleUpdateNote"
         />
+        <div v-else-if="isSingleCardLoading" class="p-8 text-white text-center min-w-[300px]">
+            Laden...
+        </div>
         <div v-else class="p-8 text-red-500 text-center min-w-[300px]">
             Notiz nicht gefunden.
         </div>
