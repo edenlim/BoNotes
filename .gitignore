@@ -26,3 +26,4 @@ Homestead.yaml
 Thumbs.db
 *.sql.gz
 *.Identifier
+*_README.md
