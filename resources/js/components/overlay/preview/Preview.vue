@@ -66,7 +66,7 @@ const handleDelete = () => {
 </script>
 
 <template>
-    <div class="bg-preview-bg no-scrollbar">
+    <div class="bg-preview-bg no-scrollbar w-[85vw]">
         <InformationHeadbar
             :data="informationHeadbarData"
             :isOwner="isOwner"
