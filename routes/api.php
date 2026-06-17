@@ -25,4 +25,5 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('/cards', [CardController::class, 'index']);
+Route::get('/cards/show/{card}', [CardController::class, 'show']);
 Route::get('/cards/{lastIndex}', [CardController::class, 'infiniteLoad'])->whereNumber('lastIndex');
