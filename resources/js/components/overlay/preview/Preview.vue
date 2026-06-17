@@ -18,7 +18,7 @@ const props = defineProps({
 const emit = defineEmits(['close', 'update:like', 'update:dislike', 'delete-note', 'update-note']);
 
 const isOwner = computed(() => {
-    return props.session && props.session.userid == props.data.author;
+    return props.session && props.session.userid == props.data.user_id;
 });
 
 // Title editing state lives here so Sidebar can react to it
@@ -66,7 +66,7 @@ const handleDelete = () => {
 </script>
 
 <template>
-    <div class="bg-preview-bg no-scrollbar">
+    <div class="bg-preview-bg no-scrollbar w-[85vw]">
         <InformationHeadbar
             :data="informationHeadbarData"
             :isOwner="isOwner"

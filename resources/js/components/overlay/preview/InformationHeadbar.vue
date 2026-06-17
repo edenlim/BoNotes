@@ -20,6 +20,7 @@ const props = defineProps({
 
 const editedTitle = defineModel('editedTitle', { type: String, default: '' });
 const emit = defineEmits(['close', 'start-edit', 'save-title', 'cancel-edit']);
+const TITLE_LIMIT = 35;
 </script>
 
 <template>
@@ -34,6 +35,7 @@ const emit = defineEmits(['close', 'start-edit', 'save-title', 'cancel-edit']);
                     v-if="isEditingTitle"
                     v-model="editedTitle"
                     type="text"
+                    :maxlength="TITLE_LIMIT"
                     @keydown.enter="emit('save-title')"
                     @keydown.escape="emit('cancel-edit')"
                     class="bg-transparent text-white text-lg font-bold focus:outline-none w-full"
@@ -71,6 +73,7 @@ const emit = defineEmits(['close', 'start-edit', 'save-title', 'cancel-edit']);
                 v-if="isEditingTitle"
                 v-model="editedTitle"
                 type="text"
+                :maxlength="TITLE_LIMIT"
                 @keydown.enter="emit('save-title')"
                 @keydown.escape="emit('cancel-edit')"
                 class="bg-transparent text-white text-lg font-bold focus:outline-none"
