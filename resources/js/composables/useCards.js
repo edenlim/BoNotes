@@ -156,8 +156,12 @@ export function useCards(currentNoteId, navigateToNote, unfilteredCards, filtere
         navigateToNote(null);
     };
 
+    const handleNewCard = (newCard) => {
+        unfilteredCards.value.unshift(newCard);
+    };
+
     return {
         activeNoteData, isSingleCardLoading,
-        toggleLike, toggleDislike, handleUpdateNote, handleDeleteNote
+        toggleLike, toggleDislike, handleUpdateNote, handleDeleteNote, handleNewCard
     };
 }

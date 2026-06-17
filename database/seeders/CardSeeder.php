@@ -31,6 +31,7 @@ class CardSeeder extends Seeder
                 'upload_time'  => $card['uploadTime'],
                 'page_length'  => $card['pageLength'],
                 'description'    => $card['description'],
+                'file_path'    => $card['file_path'] ?? 'notes/dummy-file' . $card['fileType'],
             ]);
         }
     }

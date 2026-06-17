@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('upload_time');
             $table->integer('page_length');
             $table->text('description');
+            $table->string('file_path');
 
             $table->timestamps();
         });

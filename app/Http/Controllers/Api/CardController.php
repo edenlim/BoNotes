@@ -9,9 +9,84 @@ use App\Models\UserCardRating;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 
 class CardController extends Controller
 {
+    public function store(Request $request): JsonResponse
+    {
+        $request->validate([
+            'file'        => ['required', 'file', 'mimes:txt,pdf', 'max:10240'], // max 10 MB
+            'title'       => ['required', 'string', 'max:255'],
+            'description' => ['required', 'string', 'max:2000'],
+            'tags'        => ['nullable', 'string'], // comma-separated tags from frontend
+        ]);
+
+        $user      = $request->user();
+        $file      = $request->file('file');
+        $storedPath = null;
+
+        try {
+            $card = DB::transaction(function () use ($user, $file, $request, &$storedPath) {
+                // 1. Store the file inside the transaction callback so any exception rolls back the DB record.
+                //    We keep $storedPath outside so the catch block can clean up the file.
+                $storedPath = $file->store('notes', 'public');
+
+                if ($storedPath === false) {
+                    throw new \RuntimeException('File could not be stored.');
+                }
+
+                // 2. Parse tags: frontend sends a JSON array string or a comma-separated string
+                $rawTags = $request->input('tags', '[]');
+                $tags = is_string($rawTags) ? json_decode($rawTags, true) : $rawTags;
+                if (!is_array($tags)) {
+                    $tags = array_filter(array_map('trim', explode(',', $rawTags)));
+                }
+
+                // 3. Determine page length (line count for TXT, 0 for others)
+                $extension  = strtolower($file->getClientOriginalExtension());
+                $pageLength = 0;
+                if ($extension === 'txt') {
+                    $pageLength = substr_count(file_get_contents($file->getRealPath()), "\n") + 1;
+                }
+
+                // 4. Create the DB record inside the transaction
+                return Card::create([
+                    'user_id'     => $user->id,
+                    'title'       => $request->input('title'),
+                    'description' => $request->input('description'),
+                    'fileType'    => '.' . strtolower($extension), // Macht aus "pdf" => ".pdf"
+                    'tags'        => $tags,
+                    'file_path'   => $storedPath,
+                    'upload_time' => now()->toDateTimeString(),
+                    'page_length' => $pageLength,
+                    'noOfLikes'   => 0,
+                    'noOfDislikes'=> 0,
+                ]);
+            });
+
+            // 5. Load the user relationship so the frontend gets the author name
+            $card->load('user:id,name');
+            $card->file_url = Storage::disk('public')->url($card->file_path);
+            $card->interaction_status = 'none';
+
+            return response()->json($card, 201);
+
+        } catch (\Throwable $e) {
+            // 6. Rollback: delete the file if it was already stored but the DB write failed
+            if ($storedPath !== null && Storage::disk('public')->exists($storedPath)) {
+                Storage::disk('public')->delete($storedPath);
+                Log::warning('Upload rolled back – orphan file deleted', ['path' => $storedPath]);
+            }
+
+            Log::error('Card upload failed', ['error' => $e->getMessage()]);
+
+            return response()->json([
+                'message' => 'Upload fehlgeschlagen. Bitte versuche es erneut.',
+            ], 500);
+        }
+    }
+
     public function index(Request $request): JsonResponse
     {
         $user = $request->user('sanctum');
