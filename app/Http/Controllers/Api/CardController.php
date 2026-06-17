@@ -101,6 +101,23 @@ class CardController extends Controller
                 DB::raw("'none' as interaction_status")
             );
         }
+
+        // Apply Search Filter (Title matching name)
+        if ($request->filled('search')) {
+            $search = $request->query('search');
+            $query->where('cards.title', 'like', '%' . $search . '%');
+        }
+
+        // Apply Tag Filters
+        if ($request->filled('tags')) {
+            $tags = explode(',', $request->query('tags'));
+            $query->where(function ($q) use ($tags) {
+                foreach ($tags as $tag) {
+                    $q->orWhereJsonContains('cards.tags', $tag);
+                }
+            });
+        }
+
         // Sort by newest first, skip the already loaded records, and take 20
         $cards = $query->orderBy('cards.created_at', 'desc')
             ->orderBy('cards.id', 'desc')

@@ -1,1579 +1,2843 @@
 [
     {
         "id": 1,
-        "title": "linear_algebra,Author_Test.pdf",
-        "fileType": ".pdf",
+        "title": "chris prep.txt",
+        "fileType": ".txt",
         "tags": [
-            "wirtschaft",
-            "maschinenbau",
-            "mathe"
+            "maschinenbau"
         ],
-        "noOfDislikes": 279,
-        "noOfLikes": 396,
-        "user_id": 2,
-        "uploadTime": "10. Mar 2025",
-        "pageLength": 2,
+        "noOfLikes": 255,
+        "noOfDislikes": 46,
+        "user_id": 37,
+        "uploadTime": "16. Jul 2024",
+        "pageLength": 4,
         "description": "Practice-focused material with solved exercises and tips."
     },
     {
         "id": 2,
-        "title": "data_structures.txt",
-        "fileType": ".txt",
+        "title": "owen.pdf",
+        "fileType": ".pdf",
         "tags": [
-            "informatik"
+            "maschinenbau",
+            "wirtschaft"
         ],
-        "noOfDislikes": 232,
-        "noOfLikes": 285,
-        "user_id": 19,
-        "uploadTime": "24. Mar 2024",
+        "noOfLikes": 191,
+        "noOfDislikes": 37,
+        "user_id": 39,
+        "uploadTime": "06. May 2022",
         "pageLength": 1,
         "description": "Comprehensive study notes with worked examples and summaries."
     },
     {
         "id": 3,
-        "title": "statistics.pdf",
+        "title": "mech.pdf",
         "fileType": ".pdf",
-        "tags": [],
-        "noOfDislikes": 49,
-        "noOfLikes": 423,
-        "user_id": 8,
-        "uploadTime": "23. Jan 2026",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 285,
+        "noOfDislikes": 161,
+        "user_id": 21,
+        "uploadTime": "17. Jun 2024",
         "pageLength": 5,
-        "description": "Compact reference sheet covering the most important concepts."
+        "description": "Step-by-step walkthroughs for key topics and formulas."
     },
     {
         "id": 4,
-        "title": "calculus.pdf",
-        "fileType": ".pdf",
+        "title": "zoey's el.txt",
+        "fileType": ".txt",
         "tags": [
-            "mathe",
-            "wirtschaft",
-            "maschinenbau",
-            "informatik"
+            "maschinenbau"
         ],
-        "noOfDislikes": 103,
-        "noOfLikes": 493,
-        "user_id": 19,
-        "uploadTime": "07. Oct 2021",
+        "noOfLikes": 450,
+        "noOfDislikes": 127,
+        "user_id": 50,
+        "uploadTime": "11. Feb 2020",
         "pageLength": 2,
         "description": "Detailed explanations and practice exercises for exam preparation."
     },
     {
         "id": 5,
-        "title": "accounting.txt",
+        "title": "liam.txt",
         "fileType": ".txt",
         "tags": [
-            "maschinenbau",
-            "wirtschaft"
+            "informatik"
         ],
-        "noOfDislikes": 474,
-        "noOfLikes": 357,
-        "user_id": 42,
-        "uploadTime": "22. Nov 2023",
-        "pageLength": 2,
-        "description": "Practice-focused material with solved exercises and tips."
-    },
-    {
-        "id": 6,
-        "title": "machine_design.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "maschinenbau"
-        ],
-        "noOfDislikes": 389,
-        "noOfLikes": 392,
-        "user_id": 22,
-        "uploadTime": "09. Oct 2022",
+        "noOfLikes": 310,
+        "noOfDislikes": 42,
+        "user_id": 3,
+        "uploadTime": "16. Oct 2022",
         "pageLength": 3,
         "description": "Detailed explanations and practice exercises for exam preparation."
     },
     {
-        "id": 7,
-        "title": "accounting.txt",
-        "fileType": ".txt",
+        "id": 6,
+        "title": "net 120.pdf",
+        "fileType": ".pdf",
         "tags": [
-            "wirtschaft",
-            "mathe",
             "informatik"
         ],
-        "noOfDislikes": 360,
-        "noOfLikes": 439,
-        "user_id": 7,
-        "uploadTime": "23. Jul 2025",
-        "pageLength": 4,
+        "noOfLikes": 209,
+        "noOfDislikes": 73,
+        "user_id": 5,
+        "uploadTime": "24. Aug 2021",
+        "pageLength": 1,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 7,
+        "title": "chem 187.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 471,
+        "noOfDislikes": 61,
+        "user_id": 40,
+        "uploadTime": "12. Mar 2020",
+        "pageLength": 6,
         "description": "Practice-focused material with solved exercises and tips."
     },
     {
         "id": 8,
-        "title": "data_structures.pdf",
-        "fileType": ".pdf",
+        "title": "os.txt",
+        "fileType": ".txt",
         "tags": [
             "informatik",
-            "mathe"
+            "wirtschaft"
         ],
-        "noOfDislikes": 218,
-        "noOfLikes": 18,
-        "user_id": 16,
-        "uploadTime": "07. Sep 2023",
-        "pageLength": 3,
-        "description": "Comprehensive study notes with worked examples and summaries."
+        "noOfLikes": 474,
+        "noOfDislikes": 138,
+        "user_id": 2,
+        "uploadTime": "17. Oct 2021",
+        "pageLength": 10,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
     },
     {
         "id": 9,
-        "title": "algorithms.pdf",
-        "fileType": ".pdf",
-        "tags": [],
-        "noOfDislikes": 214,
-        "noOfLikes": 228,
-        "user_id": 5,
-        "uploadTime": "17. May 2023",
-        "pageLength": 4,
-        "description": "Detailed explanations and practice exercises for exam preparation."
-    },
-    {
-        "id": 10,
-        "title": "electronics.pdf",
+        "title": "emily.pdf",
         "fileType": ".pdf",
         "tags": [
             "maschinenbau",
-            "informatik",
-            "wirtschaft"
+            "mathe"
         ],
-        "noOfDislikes": 346,
-        "noOfLikes": 109,
-        "user_id": 23,
-        "uploadTime": "29. May 2020",
-        "pageLength": 1,
+        "noOfLikes": 346,
+        "noOfDislikes": 12,
+        "user_id": 22,
+        "uploadTime": "19. Aug 2026",
+        "pageLength": 8,
         "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 10,
+        "title": "math.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 257,
+        "noOfDislikes": 36,
+        "user_id": 32,
+        "uploadTime": "11. Feb 2024",
+        "pageLength": 2,
+        "description": "Lecture summaries with additional annotations and diagrams."
     },
     {
         "id": 11,
-        "title": "statistics.txt",
+        "title": "henry hw.txt",
         "fileType": ".txt",
         "tags": [
-            "mathe",
-            "wirtschaft"
+            "maschinenbau"
         ],
-        "noOfDislikes": 246,
-        "noOfLikes": 245,
-        "user_id": 4,
-        "uploadTime": "09. Nov 2022",
-        "pageLength": 3,
-        "description": "Practice-focused material with solved exercises and tips."
-    },
-    {
-        "id": 12,
-        "title": "economics.txt",
-        "fileType": ".txt",
-        "tags": [
-            "wirtschaft"
-        ],
-        "noOfDislikes": 416,
-        "noOfLikes": 338,
-        "user_id": 10,
-        "uploadTime": "19. Mar 2022",
-        "pageLength": 4,
+        "noOfLikes": 443,
+        "noOfDislikes": 128,
+        "user_id": 6,
+        "uploadTime": "15. Feb 2020",
+        "pageLength": 7,
         "description": "Compact reference sheet covering the most important concepts."
     },
     {
-        "id": 13,
-        "title": "business_math.pdf",
+        "id": 12,
+        "title": "ben.pdf",
         "fileType": ".pdf",
         "tags": [
-            "mathe",
-            "wirtschaft",
-            "informatik"
+            "maschinenbau"
         ],
-        "noOfDislikes": 279,
-        "noOfLikes": 99,
-        "user_id": 23,
-        "uploadTime": "11. Oct 2021",
-        "pageLength": 2,
+        "noOfLikes": 73,
+        "noOfDislikes": 15,
+        "user_id": 11,
+        "uploadTime": "13. Jan 2022",
+        "pageLength": 6,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 13,
+        "title": "gabe quiz.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 46,
+        "noOfDislikes": 198,
+        "user_id": 19,
+        "uploadTime": "25. Nov 2025",
+        "pageLength": 3,
         "description": "Comprehensive study notes with worked examples and summaries."
     },
     {
         "id": 14,
-        "title": "networking.txt",
+        "title": "algo 45.txt",
         "fileType": ".txt",
         "tags": [
             "informatik"
         ],
-        "noOfDislikes": 33,
-        "noOfLikes": 207,
-        "user_id": 18,
-        "uploadTime": "20. May 2023",
-        "pageLength": 2,
-        "description": "Practice-focused material with solved exercises and tips."
-    },
-    {
-        "id": 15,
-        "title": "data_structures.pdf",
-        "fileType": ".pdf",
-        "tags": [],
-        "noOfDislikes": 29,
-        "noOfLikes": 344,
-        "user_id": 27,
-        "uploadTime": "07. Mar 2026",
-        "pageLength": 2,
-        "description": "Practice-focused material with solved exercises and tips."
-    },
-    {
-        "id": 16,
-        "title": "machine_design.txt",
-        "fileType": ".txt",
-        "tags": [
-            "maschinenbau",
-            "mathe",
-            "informatik"
-        ],
-        "noOfDislikes": 393,
-        "noOfLikes": 133,
-        "user_id": 14,
-        "uploadTime": "12. Jan 2024",
-        "pageLength": 5,
+        "noOfLikes": 24,
+        "noOfDislikes": 110,
+        "user_id": 13,
+        "uploadTime": "08. Nov 2024",
+        "pageLength": 3,
         "description": "Lecture summaries with additional annotations and diagrams."
     },
     {
-        "id": 17,
-        "title": "database_systems.txt",
+        "id": 15,
+        "title": "db rev.txt",
         "fileType": ".txt",
         "tags": [
             "informatik"
         ],
-        "noOfDislikes": 218,
-        "noOfLikes": 262,
-        "user_id": 10,
-        "uploadTime": "25. Sep 2021",
+        "noOfLikes": 408,
+        "noOfDislikes": 85,
+        "user_id": 4,
+        "uploadTime": "22. Dec 2020",
+        "pageLength": 1,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 16,
+        "title": "stats 160.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "mathe",
+            "informatik"
+        ],
+        "noOfLikes": 375,
+        "noOfDislikes": 85,
+        "user_id": 40,
+        "uploadTime": "22. Oct 2020",
         "pageLength": 2,
-        "description": "Practice-focused material with solved exercises and tips."
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 17,
+        "title": "gabe.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 94,
+        "noOfDislikes": 126,
+        "user_id": 49,
+        "uploadTime": "28. Jun 2022",
+        "pageLength": 2,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
     },
     {
         "id": 18,
-        "title": "linear_algebra.txt",
-        "fileType": ".txt",
+        "title": "john hw.pdf",
+        "fileType": ".pdf",
         "tags": [
-            "mathe"
+            "wirtschaft"
         ],
-        "noOfDislikes": 97,
-        "noOfLikes": 132,
-        "user_id": 38,
-        "uploadTime": "31. Aug 2025",
-        "pageLength": 4,
-        "description": "Practice-focused material with solved exercises and tips."
+        "noOfLikes": 418,
+        "noOfDislikes": 110,
+        "user_id": 34,
+        "uploadTime": "27. Jul 2025",
+        "pageLength": 2,
+        "description": "Compact reference sheet covering the most important concepts."
     },
     {
         "id": 19,
-        "title": "algorithms.pdf",
+        "title": "thermo.pdf",
         "fileType": ".pdf",
         "tags": [
-            "informatik",
-            "mathe",
-            "wirtschaft",
             "maschinenbau"
         ],
-        "noOfDislikes": 125,
-        "noOfLikes": 435,
-        "user_id": 34,
-        "uploadTime": "04. Mar 2022",
-        "pageLength": 5,
+        "noOfLikes": 419,
+        "noOfDislikes": 149,
+        "user_id": 1,
+        "uploadTime": "21. Apr 2024",
+        "pageLength": 1,
         "description": "Practice-focused material with solved exercises and tips."
     },
     {
         "id": 20,
-        "title": "data_structures.pdf",
+        "title": "physics 170.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 203,
+        "noOfDislikes": 97,
+        "user_id": 31,
+        "uploadTime": "18. Jun 2020",
+        "pageLength": 10,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 21,
+        "title": "physics 139.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 24,
+        "noOfDislikes": 27,
+        "user_id": 14,
+        "uploadTime": "15. Mar 2023",
+        "pageLength": 5,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 22,
+        "title": "stats.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 134,
+        "noOfDislikes": 185,
+        "user_id": 49,
+        "uploadTime": "04. Feb 2025",
+        "pageLength": 4,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 23,
+        "title": "algo 54.pdf",
         "fileType": ".pdf",
         "tags": [
             "informatik"
         ],
-        "noOfDislikes": 186,
-        "noOfLikes": 391,
-        "user_id": 22,
-        "uploadTime": "08. May 2021",
-        "pageLength": 5,
-        "description": "Comprehensive study notes with worked examples and summaries."
-    },
-    {
-        "id": 21,
-        "title": "economics.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "wirtschaft",
-            "maschinenbau"
-        ],
-        "noOfDislikes": 478,
-        "noOfLikes": 104,
-        "user_id": 26,
-        "uploadTime": "27. Dec 2024",
+        "noOfLikes": 50,
+        "noOfDislikes": 104,
+        "user_id": 13,
+        "uploadTime": "19. Dec 2020",
         "pageLength": 1,
-        "description": "Comprehensive study notes with worked examples and summaries."
-    },
-    {
-        "id": 22,
-        "title": "algorithms.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "informatik",
-            "mathe"
-        ],
-        "noOfDislikes": 139,
-        "noOfLikes": 252,
-        "user_id": 27,
-        "uploadTime": "07. Feb 2020",
-        "pageLength": 5,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 23,
-        "title": "algorithms.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "informatik",
-            "wirtschaft",
-            "maschinenbau"
-        ],
-        "noOfDislikes": 367,
-        "noOfLikes": 377,
-        "user_id": 47,
-        "uploadTime": "21. Nov 2020",
-        "pageLength": 1,
-        "description": "Detailed explanations and practice exercises for exam preparation."
+        "description": "Compact reference sheet covering the most important concepts."
     },
     {
         "id": 24,
-        "title": "physics.txt",
+        "title": "chris lab.txt",
         "fileType": ".txt",
         "tags": [
-            "maschinenbau"
+            "informatik"
         ],
-        "noOfDislikes": 163,
-        "noOfLikes": 175,
-        "user_id": 39,
-        "uploadTime": "02. Nov 2021",
-        "pageLength": 3,
+        "noOfLikes": 413,
+        "noOfDislikes": 94,
+        "user_id": 14,
+        "uploadTime": "28. Aug 2024",
+        "pageLength": 8,
         "description": "Detailed explanations and practice exercises for exam preparation."
     },
     {
         "id": 25,
-        "title": "business_math.pdf",
+        "title": "stats rev.pdf",
         "fileType": ".pdf",
-        "tags": [
-            "mathe",
-            "wirtschaft"
-        ],
-        "noOfDislikes": 63,
-        "noOfLikes": 339,
-        "user_id": 21,
-        "uploadTime": "15. Feb 2022",
-        "pageLength": 1,
-        "description": "Comprehensive study notes with worked examples and summaries."
-    },
-    {
-        "id": 26,
-        "title": "linear_algebra.txt",
-        "fileType": ".txt",
         "tags": [
             "mathe"
         ],
-        "noOfDislikes": 419,
-        "noOfLikes": 414,
-        "user_id": 49,
-        "uploadTime": "21. May 2021",
+        "noOfLikes": 260,
+        "noOfDislikes": 121,
+        "user_id": 26,
+        "uploadTime": "16. Sep 2022",
         "pageLength": 3,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 27,
-        "title": "physics.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "maschinenbau"
-        ],
-        "noOfDislikes": 325,
-        "noOfLikes": 462,
-        "user_id": 27,
-        "uploadTime": "18. Jan 2022",
-        "pageLength": 1,
         "description": "Practice-focused material with solved exercises and tips."
     },
     {
-        "id": 28,
-        "title": "algorithms.pdf",
+        "id": 26,
+        "title": "chem.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 351,
+        "noOfDislikes": 174,
+        "user_id": 3,
+        "uploadTime": "06. Feb 2021",
+        "pageLength": 7,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 27,
+        "title": "jamess chem.pdf",
         "fileType": ".pdf",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 119,
+        "noOfDislikes": 92,
+        "user_id": 16,
+        "uploadTime": "05. Apr 2020",
+        "pageLength": 2,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 28,
+        "title": "net.txt",
+        "fileType": ".txt",
         "tags": [
             "informatik"
         ],
-        "noOfDislikes": 100,
-        "noOfLikes": 301,
-        "user_id": 34,
-        "uploadTime": "14. Feb 2022",
+        "noOfLikes": 278,
+        "noOfDislikes": 49,
+        "user_id": 43,
+        "uploadTime": "25. Feb 2024",
+        "pageLength": 6,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 29,
+        "title": "electro rev.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 482,
+        "noOfDislikes": 38,
+        "user_id": 7,
+        "uploadTime": "26. Feb 2023",
         "pageLength": 4,
         "description": "Compact reference sheet covering the most important concepts."
     },
     {
-        "id": 29,
-        "title": "statistics.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "mathe",
-            "wirtschaft"
-        ],
-        "noOfDislikes": 175,
-        "noOfLikes": 232,
-        "user_id": 24,
-        "uploadTime": "17. Feb 2026",
-        "pageLength": 3,
-        "description": "Practice-focused material with solved exercises and tips."
-    },
-    {
         "id": 30,
-        "title": "physics.pdf",
+        "title": "science note.pdf",
         "fileType": ".pdf",
         "tags": [
             "maschinenbau"
         ],
-        "noOfDislikes": 491,
-        "noOfLikes": 331,
-        "user_id": 23,
-        "uploadTime": "04. Apr 2024",
-        "pageLength": 1,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 31,
-        "title": "electronics.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "maschinenbau",
-            "informatik"
-        ],
-        "noOfDislikes": 214,
-        "noOfLikes": 491,
-        "user_id": 34,
-        "uploadTime": "13. Jul 2024",
-        "pageLength": 2,
+        "noOfLikes": 155,
+        "noOfDislikes": 15,
+        "user_id": 33,
+        "uploadTime": "13. Aug 2023",
+        "pageLength": 10,
         "description": "Comprehensive study notes with worked examples and summaries."
     },
     {
-        "id": 32,
-        "title": "statistics.pdf",
+        "id": 31,
+        "title": "science.pdf",
         "fileType": ".pdf",
         "tags": [
-            "mathe"
+            "maschinenbau"
         ],
-        "noOfDislikes": 239,
-        "noOfLikes": 407,
-        "user_id": 1,
-        "uploadTime": "30. Oct 2023",
-        "pageLength": 5,
+        "noOfLikes": 127,
+        "noOfDislikes": 172,
+        "user_id": 8,
+        "uploadTime": "04. Apr 2024",
+        "pageLength": 6,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 32,
+        "title": "db 199.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 49,
+        "noOfDislikes": 26,
+        "user_id": 33,
+        "uploadTime": "07. Mar 2023",
+        "pageLength": 10,
         "description": "Step-by-step walkthroughs for key topics and formulas."
     },
     {
         "id": 33,
-        "title": "database_systems.txt",
+        "title": "jamess bio.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 163,
+        "noOfDislikes": 67,
+        "user_id": 11,
+        "uploadTime": "25. Mar 2023",
+        "pageLength": 6,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 34,
+        "title": "algo.txt",
         "fileType": ".txt",
         "tags": [
             "informatik"
         ],
-        "noOfDislikes": 182,
-        "noOfLikes": 406,
-        "user_id": 26,
-        "uploadTime": "21. Mar 2020",
-        "pageLength": 3,
-        "description": "Compact reference sheet covering the most important concepts."
-    },
-    {
-        "id": 34,
-        "title": "machine_design.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "maschinenbau",
-            "wirtschaft"
-        ],
-        "noOfDislikes": 324,
-        "noOfLikes": 269,
-        "user_id": 14,
-        "uploadTime": "25. Jun 2024",
-        "pageLength": 4,
-        "description": "Compact reference sheet covering the most important concepts."
-    },
-    {
-        "id": 35,
-        "title": "networking.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "informatik"
-        ],
-        "noOfDislikes": 309,
-        "noOfLikes": 201,
-        "user_id": 7,
-        "uploadTime": "20. Aug 2021",
-        "pageLength": 5,
-        "description": "Practice-focused material with solved exercises and tips."
-    },
-    {
-        "id": 36,
-        "title": "statistics.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "mathe",
-            "wirtschaft"
-        ],
-        "noOfDislikes": 306,
-        "noOfLikes": 310,
-        "user_id": 50,
-        "uploadTime": "16. Jun 2025",
+        "noOfLikes": 134,
+        "noOfDislikes": 55,
+        "user_id": 3,
+        "uploadTime": "18. Jan 2024",
         "pageLength": 5,
         "description": "Comprehensive study notes with worked examples and summaries."
     },
     {
-        "id": 37,
-        "title": "mechanics.txt",
-        "fileType": ".txt",
+        "id": 35,
+        "title": "math 107.pdf",
+        "fileType": ".pdf",
         "tags": [
-            "maschinenbau"
-        ],
-        "noOfDislikes": 454,
-        "noOfLikes": 442,
-        "user_id": 16,
-        "uploadTime": "25. Mar 2023",
-        "pageLength": 5,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 38,
-        "title": "business_math.txt",
-        "fileType": ".txt",
-        "tags": [
-            "wirtschaft",
             "mathe"
         ],
-        "noOfDislikes": 108,
-        "noOfLikes": 360,
-        "user_id": 44,
-        "uploadTime": "05. May 2021",
-        "pageLength": 1,
-        "description": "Lecture summaries with additional annotations and diagrams."
+        "noOfLikes": 398,
+        "noOfDislikes": 93,
+        "user_id": 29,
+        "uploadTime": "28. Feb 2026",
+        "pageLength": 9,
+        "description": "Practice-focused material with solved exercises and tips."
     },
     {
-        "id": 39,
-        "title": "networking.pdf",
+        "id": 36,
+        "title": "os.pdf",
         "fileType": ".pdf",
         "tags": [
             "informatik"
         ],
-        "noOfDislikes": 341,
-        "noOfLikes": 393,
-        "user_id": 35,
-        "uploadTime": "26. May 2023",
-        "pageLength": 3,
+        "noOfLikes": 407,
+        "noOfDislikes": 134,
+        "user_id": 8,
+        "uploadTime": "22. Sep 2026",
+        "pageLength": 6,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 37,
+        "title": "sam hw.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 252,
+        "noOfDislikes": 180,
+        "user_id": 38,
+        "uploadTime": "06. Feb 2021",
+        "pageLength": 4,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 38,
+        "title": "chem.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 439,
+        "noOfDislikes": 24,
+        "user_id": 18,
+        "uploadTime": "19. Sep 2020",
+        "pageLength": 5,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 39,
+        "title": "alex's sci.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau",
+            "mathe"
+        ],
+        "noOfLikes": 75,
+        "noOfDislikes": 70,
+        "user_id": 16,
+        "uploadTime": "26. Aug 2024",
+        "pageLength": 5,
         "description": "Detailed explanations and practice exercises for exam preparation."
     },
     {
         "id": 40,
-        "title": "machine_design.txt",
-        "fileType": ".txt",
+        "title": "chem quiz.pdf",
+        "fileType": ".pdf",
         "tags": [
             "maschinenbau"
         ],
-        "noOfDislikes": 437,
-        "noOfLikes": 326,
-        "user_id": 24,
-        "uploadTime": "17. Apr 2021",
+        "noOfLikes": 62,
+        "noOfDislikes": 136,
+        "user_id": 32,
+        "uploadTime": "03. Aug 2020",
         "pageLength": 2,
         "description": "Compact reference sheet covering the most important concepts."
     },
     {
         "id": 41,
-        "title": "physics.txt",
-        "fileType": ".txt",
-        "tags": [
-            "maschinenbau"
-        ],
-        "noOfDislikes": 391,
-        "noOfLikes": 236,
-        "user_id": 8,
-        "uploadTime": "29. Aug 2023",
-        "pageLength": 2,
-        "description": "Detailed explanations and practice exercises for exam preparation."
-    },
-    {
-        "id": 42,
-        "title": "economics.txt",
-        "fileType": ".txt",
-        "tags": [
-            "wirtschaft"
-        ],
-        "noOfDislikes": 260,
-        "noOfLikes": 467,
-        "user_id": 29,
-        "uploadTime": "25. Jan 2025",
-        "pageLength": 1,
-        "description": "Detailed explanations and practice exercises for exam preparation."
-    },
-    {
-        "id": 43,
-        "title": "linear_algebra.txt",
-        "fileType": ".txt",
-        "tags": [
-            "mathe"
-        ],
-        "noOfDislikes": 499,
-        "noOfLikes": 414,
-        "user_id": 44,
-        "uploadTime": "07. Oct 2025",
-        "pageLength": 4,
-        "description": "Comprehensive study notes with worked examples and summaries."
-    },
-    {
-        "id": 44,
-        "title": "networking.txt",
-        "fileType": ".txt",
-        "tags": [
-            "informatik"
-        ],
-        "noOfDislikes": 234,
-        "noOfLikes": 445,
-        "user_id": 20,
-        "uploadTime": "16. May 2025",
-        "pageLength": 3,
-        "description": "Detailed explanations and practice exercises for exam preparation."
-    },
-    {
-        "id": 45,
-        "title": "thermodynamics.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "maschinenbau"
-        ],
-        "noOfDislikes": 427,
-        "noOfLikes": 34,
-        "user_id": 44,
-        "uploadTime": "30. Jan 2021",
-        "pageLength": 1,
-        "description": "Comprehensive study notes with worked examples and summaries."
-    },
-    {
-        "id": 46,
-        "title": "business_math.txt",
-        "fileType": ".txt",
-        "tags": [
-            "wirtschaft",
-            "mathe"
-        ],
-        "noOfDislikes": 472,
-        "noOfLikes": 121,
-        "user_id": 40,
-        "uploadTime": "17. Dec 2022",
-        "pageLength": 2,
-        "description": "Detailed explanations and practice exercises for exam preparation."
-    },
-    {
-        "id": 47,
-        "title": "networking.txt",
-        "fileType": ".txt",
-        "tags": [
-            "informatik"
-        ],
-        "noOfDislikes": 420,
-        "noOfLikes": 85,
-        "user_id": 42,
-        "uploadTime": "22. Dec 2021",
-        "pageLength": 5,
-        "description": "Detailed explanations and practice exercises for exam preparation."
-    },
-    {
-        "id": 48,
-        "title": "mechanics.txt",
-        "fileType": ".txt",
-        "tags": [
-            "maschinenbau"
-        ],
-        "noOfDislikes": 338,
-        "noOfLikes": 31,
-        "user_id": 29,
-        "uploadTime": "21. Feb 2020",
-        "pageLength": 2,
-        "description": "Compact reference sheet covering the most important concepts."
-    },
-    {
-        "id": 49,
-        "title": "thermodynamics.txt",
-        "fileType": ".txt",
-        "tags": [
-            "maschinenbau"
-        ],
-        "noOfDislikes": 423,
-        "noOfLikes": 23,
-        "user_id": 10,
-        "uploadTime": "21. Jan 2020",
-        "pageLength": 4,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 50,
-        "title": "economics.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "wirtschaft"
-        ],
-        "noOfDislikes": 35,
-        "noOfLikes": 178,
-        "user_id": 3,
-        "uploadTime": "07. May 2024",
-        "pageLength": 3,
-        "description": "Comprehensive study notes with worked examples and summaries."
-    },
-    {
-        "id": 51,
-        "title": "electronics.pdf",
+        "title": "chris.pdf",
         "fileType": ".pdf",
         "tags": [
             "maschinenbau",
             "informatik"
         ],
-        "noOfDislikes": 375,
-        "noOfLikes": 446,
-        "user_id": 36,
-        "uploadTime": "28. Apr 2021",
-        "pageLength": 5,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 52,
-        "title": "accounting.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "wirtschaft"
-        ],
-        "noOfDislikes": 121,
-        "noOfLikes": 464,
-        "user_id": 33,
-        "uploadTime": "03. Dec 2022",
-        "pageLength": 5,
+        "noOfLikes": 421,
+        "noOfDislikes": 45,
+        "user_id": 31,
+        "uploadTime": "17. Jan 2021",
+        "pageLength": 3,
         "description": "Detailed explanations and practice exercises for exam preparation."
     },
     {
-        "id": 53,
-        "title": "mechanics.txt",
+        "id": 42,
+        "title": "net rev.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 463,
+        "noOfDislikes": 23,
+        "user_id": 17,
+        "uploadTime": "06. Jan 2023",
+        "pageLength": 4,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 43,
+        "title": "physics 197.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 439,
+        "noOfDislikes": 103,
+        "user_id": 49,
+        "uploadTime": "02. Mar 2020",
+        "pageLength": 7,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 44,
+        "title": "henry.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 275,
+        "noOfDislikes": 23,
+        "user_id": 27,
+        "uploadTime": "26. Sep 2021",
+        "pageLength": 7,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 45,
+        "title": "alex.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 335,
+        "noOfDislikes": 60,
+        "user_id": 43,
+        "uploadTime": "05. Oct 2025",
+        "pageLength": 4,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 46,
+        "title": "chris.txt",
         "fileType": ".txt",
         "tags": [
             "maschinenbau"
         ],
-        "noOfDislikes": 417,
-        "noOfLikes": 274,
-        "user_id": 1,
-        "uploadTime": "01. Sep 2020",
+        "noOfLikes": 40,
+        "noOfDislikes": 124,
+        "user_id": 29,
+        "uploadTime": "04. Jun 2021",
+        "pageLength": 8,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 47,
+        "title": "grace's phy.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 264,
+        "noOfDislikes": 93,
+        "user_id": 30,
+        "uploadTime": "14. Jun 2025",
+        "pageLength": 9,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 48,
+        "title": "levi.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 345,
+        "noOfDislikes": 90,
+        "user_id": 40,
+        "uploadTime": "21. Feb 2024",
+        "pageLength": 8,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 49,
+        "title": "owen quiz.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 47,
+        "noOfDislikes": 130,
+        "user_id": 33,
+        "uploadTime": "28. Nov 2021",
+        "pageLength": 4,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 50,
+        "title": "eco.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "wirtschaft"
+        ],
+        "noOfLikes": 48,
+        "noOfDislikes": 133,
+        "user_id": 10,
+        "uploadTime": "04. Feb 2021",
+        "pageLength": 5,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 51,
+        "title": "db.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik",
+            "mathe"
+        ],
+        "noOfLikes": 382,
+        "noOfDislikes": 93,
+        "user_id": 19,
+        "uploadTime": "09. Apr 2022",
+        "pageLength": 10,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 52,
+        "title": "sam's alg.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau",
+            "mathe"
+        ],
+        "noOfLikes": 88,
+        "noOfDislikes": 150,
+        "user_id": 12,
+        "uploadTime": "03. Nov 2020",
+        "pageLength": 4,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 53,
+        "title": "os lab.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik",
+            "wirtschaft"
+        ],
+        "noOfLikes": 81,
+        "noOfDislikes": 52,
+        "user_id": 28,
+        "uploadTime": "11. Aug 2023",
         "pageLength": 1,
         "description": "Practice-focused material with solved exercises and tips."
     },
     {
         "id": 54,
-        "title": "physics.pdf",
+        "title": "ben.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 398,
+        "noOfDislikes": 128,
+        "user_id": 4,
+        "uploadTime": "15. Dec 2021",
+        "pageLength": 7,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 55,
+        "title": "aria lab.pdf",
         "fileType": ".pdf",
         "tags": [
             "maschinenbau"
         ],
-        "noOfDislikes": 494,
-        "noOfLikes": 208,
-        "user_id": 40,
-        "uploadTime": "02. Nov 2023",
-        "pageLength": 2,
-        "description": "Comprehensive study notes with worked examples and summaries."
-    },
-    {
-        "id": 55,
-        "title": "linear_algebra.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "mathe"
-        ],
-        "noOfDislikes": 421,
-        "noOfLikes": 75,
-        "user_id": 45,
-        "uploadTime": "24. May 2023",
-        "pageLength": 1,
+        "noOfLikes": 451,
+        "noOfDislikes": 8,
+        "user_id": 47,
+        "uploadTime": "03. Mar 2020",
+        "pageLength": 7,
         "description": "Lecture summaries with additional annotations and diagrams."
     },
     {
         "id": 56,
-        "title": "electronics.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "maschinenbau",
-            "informatik"
-        ],
-        "noOfDislikes": 225,
-        "noOfLikes": 225,
-        "user_id": 42,
-        "uploadTime": "27. May 2024",
-        "pageLength": 2,
-        "description": "Compact reference sheet covering the most important concepts."
-    },
-    {
-        "id": 57,
-        "title": "machine_design.txt",
+        "title": "mech hw.txt",
         "fileType": ".txt",
         "tags": [
             "maschinenbau"
         ],
-        "noOfDislikes": 235,
-        "noOfLikes": 162,
-        "user_id": 17,
-        "uploadTime": "03. Jun 2022",
-        "pageLength": 5,
-        "description": "Lecture summaries with additional annotations and diagrams."
+        "noOfLikes": 445,
+        "noOfDislikes": 181,
+        "user_id": 10,
+        "uploadTime": "14. Dec 2021",
+        "pageLength": 3,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 57,
+        "title": "aria's sci.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 254,
+        "noOfDislikes": 172,
+        "user_id": 22,
+        "uploadTime": "13. Mar 2026",
+        "pageLength": 4,
+        "description": "Practice-focused material with solved exercises and tips."
     },
     {
         "id": 58,
-        "title": "database_systems.txt",
+        "title": "ava doc.txt",
         "fileType": ".txt",
         "tags": [
-            "informatik"
+            "maschinenbau",
+            "wirtschaft"
         ],
-        "noOfDislikes": 15,
-        "noOfLikes": 254,
-        "user_id": 38,
-        "uploadTime": "24. Feb 2022",
-        "pageLength": 5,
-        "description": "Compact reference sheet covering the most important concepts."
+        "noOfLikes": 340,
+        "noOfDislikes": 99,
+        "user_id": 16,
+        "uploadTime": "09. Aug 2022",
+        "pageLength": 8,
+        "description": "Comprehensive study notes with worked examples and summaries."
     },
     {
         "id": 59,
-        "title": "algorithms.txt",
+        "title": "olivia.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 47,
+        "noOfDislikes": 79,
+        "user_id": 26,
+        "uploadTime": "22. Dec 2022",
+        "pageLength": 3,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 60,
+        "title": "grace quiz.txt",
         "fileType": ".txt",
+        "tags": [
+            "maschinenbau",
+            "informatik"
+        ],
+        "noOfLikes": 194,
+        "noOfDislikes": 37,
+        "user_id": 12,
+        "uploadTime": "24. Nov 2021",
+        "pageLength": 10,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 61,
+        "title": "stats prep.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 210,
+        "noOfDislikes": 74,
+        "user_id": 5,
+        "uploadTime": "01. Oct 2025",
+        "pageLength": 7,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 62,
+        "title": "thermo 198.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 398,
+        "noOfDislikes": 111,
+        "user_id": 22,
+        "uploadTime": "22. Apr 2025",
+        "pageLength": 1,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 63,
+        "title": "daniel prep.pdf",
+        "fileType": ".pdf",
         "tags": [
             "informatik",
             "mathe"
         ],
-        "noOfDislikes": 181,
-        "noOfLikes": 135,
-        "user_id": 13,
-        "uploadTime": "30. May 2020",
-        "pageLength": 3,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 60,
-        "title": "business_math.txt",
-        "fileType": ".txt",
-        "tags": [
-            "wirtschaft",
-            "mathe"
-        ],
-        "noOfDislikes": 360,
-        "noOfLikes": 230,
-        "user_id": 20,
-        "uploadTime": "03. Dec 2023",
-        "pageLength": 3,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 61,
-        "title": "linear_algebra.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "mathe",
-            "wirtschaft",
-            "maschinenbau"
-        ],
-        "noOfDislikes": 381,
-        "noOfLikes": 491,
-        "user_id": 50,
-        "uploadTime": "02. Jul 2021",
-        "pageLength": 5,
-        "description": "Comprehensive study notes with worked examples and summaries."
-    },
-    {
-        "id": 62,
-        "title": "accounting.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "wirtschaft"
-        ],
-        "noOfDislikes": 384,
-        "noOfLikes": 220,
-        "user_id": 6,
-        "uploadTime": "31. Aug 2020",
-        "pageLength": 1,
-        "description": "Comprehensive study notes with worked examples and summaries."
-    },
-    {
-        "id": 63,
-        "title": "statistics.txt",
-        "fileType": ".txt",
-        "tags": [
-            "mathe"
-        ],
-        "noOfDislikes": 334,
-        "noOfLikes": 28,
-        "user_id": 4,
-        "uploadTime": "30. Jan 2025",
-        "pageLength": 5,
-        "description": "Practice-focused material with solved exercises and tips."
-    },
-    {
-        "id": 64,
-        "title": "database_systems.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "informatik"
-        ],
-        "noOfDislikes": 328,
-        "noOfLikes": 228,
-        "user_id": 5,
-        "uploadTime": "15. May 2021",
-        "pageLength": 3,
-        "description": "Step-by-step walkthroughs for key topics and formulas."
-    },
-    {
-        "id": 65,
-        "title": "mechanics.txt",
-        "fileType": ".txt",
-        "tags": [
-            "maschinenbau"
-        ],
-        "noOfDislikes": 206,
-        "noOfLikes": 122,
-        "user_id": 11,
-        "uploadTime": "24. May 2020",
-        "pageLength": 3,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 66,
-        "title": "electronics.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "maschinenbau",
-            "informatik"
-        ],
-        "noOfDislikes": 231,
-        "noOfLikes": 306,
-        "user_id": 25,
-        "uploadTime": "01. Nov 2021",
-        "pageLength": 4,
-        "description": "Step-by-step walkthroughs for key topics and formulas."
-    },
-    {
-        "id": 67,
-        "title": "calculus.txt",
-        "fileType": ".txt",
-        "tags": [
-            "mathe"
-        ],
-        "noOfDislikes": 351,
-        "noOfLikes": 362,
-        "user_id": 37,
-        "uploadTime": "30. Mar 2021",
-        "pageLength": 5,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 68,
-        "title": "mechanics.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "maschinenbau"
-        ],
-        "noOfDislikes": 393,
-        "noOfLikes": 112,
-        "user_id": 46,
-        "uploadTime": "09. Jun 2022",
-        "pageLength": 2,
-        "description": "Comprehensive study notes with worked examples and summaries."
-    },
-    {
-        "id": 69,
-        "title": "machine_design.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "maschinenbau",
-            "wirtschaft",
-            "mathe"
-        ],
-        "noOfDislikes": 488,
-        "noOfLikes": 113,
-        "user_id": 19,
-        "uploadTime": "26. May 2025",
+        "noOfLikes": 280,
+        "noOfDislikes": 153,
+        "user_id": 27,
+        "uploadTime": "08. Jun 2020",
         "pageLength": 2,
         "description": "Detailed explanations and practice exercises for exam preparation."
     },
     {
-        "id": 70,
-        "title": "electronics.pdf",
+        "id": 64,
+        "title": "db prep.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 66,
+        "noOfDislikes": 78,
+        "user_id": 49,
+        "uploadTime": "10. Jun 2022",
+        "pageLength": 3,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 65,
+        "title": "bio lab.pdf",
         "fileType": ".pdf",
         "tags": [
             "maschinenbau",
+            "wirtschaft"
+        ],
+        "noOfLikes": 252,
+        "noOfDislikes": 103,
+        "user_id": 7,
+        "uploadTime": "16. Oct 2025",
+        "pageLength": 5,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 66,
+        "title": "abby rev.txt",
+        "fileType": ".txt",
+        "tags": [
+            "wirtschaft"
+        ],
+        "noOfLikes": 57,
+        "noOfDislikes": 91,
+        "user_id": 39,
+        "uploadTime": "27. Dec 2020",
+        "pageLength": 1,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 67,
+        "title": "net 52.txt",
+        "fileType": ".txt",
+        "tags": [
             "informatik"
         ],
-        "noOfDislikes": 144,
-        "noOfLikes": 205,
-        "user_id": 19,
-        "uploadTime": "26. Jan 2025",
+        "noOfLikes": 426,
+        "noOfDislikes": 115,
+        "user_id": 12,
+        "uploadTime": "21. Oct 2020",
+        "pageLength": 8,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 68,
+        "title": "eco rev.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "wirtschaft"
+        ],
+        "noOfLikes": 118,
+        "noOfDislikes": 121,
+        "user_id": 30,
+        "uploadTime": "18. Dec 2022",
+        "pageLength": 4,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 69,
+        "title": "thermo 150.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 402,
+        "noOfDislikes": 187,
+        "user_id": 7,
+        "uploadTime": "03. Mar 2020",
+        "pageLength": 4,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 70,
+        "title": "net.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 183,
+        "noOfDislikes": 143,
+        "user_id": 18,
+        "uploadTime": "15. Nov 2023",
         "pageLength": 2,
-        "description": "Lecture summaries with additional annotations and diagrams."
+        "description": "Practice-focused material with solved exercises and tips."
     },
     {
         "id": 71,
-        "title": "electronics.pdf",
-        "fileType": ".pdf",
+        "title": "db 114.txt",
+        "fileType": ".txt",
         "tags": [
-            "maschinenbau",
-            "informatik",
-            "wirtschaft",
-            "mathe"
+            "informatik"
         ],
-        "noOfDislikes": 147,
-        "noOfLikes": 131,
-        "user_id": 24,
-        "uploadTime": "11. Apr 2025",
-        "pageLength": 4,
+        "noOfLikes": 414,
+        "noOfDislikes": 13,
+        "user_id": 36,
+        "uploadTime": "02. Mar 2023",
+        "pageLength": 6,
         "description": "Detailed explanations and practice exercises for exam preparation."
     },
     {
         "id": 72,
-        "title": "thermodynamics.pdf",
+        "title": "electro 35.pdf",
         "fileType": ".pdf",
         "tags": [
             "maschinenbau"
         ],
-        "noOfDislikes": 212,
-        "noOfLikes": 210,
-        "user_id": 30,
-        "uploadTime": "25. Apr 2022",
-        "pageLength": 3,
+        "noOfLikes": 125,
+        "noOfDislikes": 82,
+        "user_id": 19,
+        "uploadTime": "26. Oct 2021",
+        "pageLength": 2,
         "description": "Lecture summaries with additional annotations and diagrams."
     },
     {
         "id": 73,
-        "title": "linear_algebra.txt",
-        "fileType": ".txt",
+        "title": "electro 184.pdf",
+        "fileType": ".pdf",
         "tags": [
-            "mathe"
+            "maschinenbau"
         ],
-        "noOfDislikes": 117,
-        "noOfLikes": 399,
-        "user_id": 48,
-        "uploadTime": "11. Sep 2021",
-        "pageLength": 4,
+        "noOfLikes": 42,
+        "noOfDislikes": 86,
+        "user_id": 30,
+        "uploadTime": "13. Feb 2021",
+        "pageLength": 7,
         "description": "Comprehensive study notes with worked examples and summaries."
     },
     {
         "id": 74,
-        "title": "statistics.pdf",
-        "fileType": ".pdf",
+        "title": "joe prep.txt",
+        "fileType": ".txt",
         "tags": [
-            "mathe"
+            "maschinenbau"
         ],
-        "noOfDislikes": 189,
-        "noOfLikes": 281,
-        "user_id": 31,
-        "uploadTime": "20. Aug 2024",
-        "pageLength": 2,
-        "description": "Step-by-step walkthroughs for key topics and formulas."
+        "noOfLikes": 68,
+        "noOfDislikes": 119,
+        "user_id": 1,
+        "uploadTime": "15. Jan 2021",
+        "pageLength": 5,
+        "description": "Compact reference sheet covering the most important concepts."
     },
     {
         "id": 75,
-        "title": "data_structures.txt",
-        "fileType": ".txt",
+        "title": "physics.pdf",
+        "fileType": ".pdf",
         "tags": [
-            "informatik"
+            "maschinenbau",
+            "wirtschaft"
         ],
-        "noOfDislikes": 340,
-        "noOfLikes": 276,
-        "user_id": 25,
-        "uploadTime": "25. Aug 2025",
-        "pageLength": 5,
+        "noOfLikes": 226,
+        "noOfDislikes": 196,
+        "user_id": 15,
+        "uploadTime": "11. Nov 2021",
+        "pageLength": 4,
         "description": "Step-by-step walkthroughs for key topics and formulas."
     },
     {
         "id": 76,
-        "title": "networking.pdf",
+        "title": "stats.pdf",
         "fileType": ".pdf",
         "tags": [
-            "informatik",
-            "wirtschaft"
+            "mathe"
         ],
-        "noOfDislikes": 270,
-        "noOfLikes": 166,
-        "user_id": 21,
-        "uploadTime": "17. Jun 2025",
-        "pageLength": 4,
-        "description": "Practice-focused material with solved exercises and tips."
+        "noOfLikes": 251,
+        "noOfDislikes": 36,
+        "user_id": 40,
+        "uploadTime": "08. Feb 2022",
+        "pageLength": 3,
+        "description": "Detailed explanations and practice exercises for exam preparation."
     },
     {
         "id": 77,
-        "title": "mechanics.txt",
+        "title": "matt rev.txt",
         "fileType": ".txt",
         "tags": [
             "maschinenbau"
         ],
-        "noOfDislikes": 405,
-        "noOfLikes": 466,
-        "user_id": 43,
-        "uploadTime": "04. Oct 2020",
-        "pageLength": 2,
-        "description": "Step-by-step walkthroughs for key topics and formulas."
+        "noOfLikes": 228,
+        "noOfDislikes": 148,
+        "user_id": 33,
+        "uploadTime": "18. Sep 2021",
+        "pageLength": 6,
+        "description": "Detailed explanations and practice exercises for exam preparation."
     },
     {
         "id": 78,
-        "title": "mechanics.txt",
+        "title": "thermo lab.txt",
         "fileType": ".txt",
         "tags": [
             "maschinenbau",
-            "wirtschaft"
+            "informatik"
         ],
-        "noOfDislikes": 187,
-        "noOfLikes": 400,
-        "user_id": 33,
-        "uploadTime": "19. Jun 2024",
-        "pageLength": 3,
-        "description": "Practice-focused material with solved exercises and tips."
+        "noOfLikes": 463,
+        "noOfDislikes": 17,
+        "user_id": 5,
+        "uploadTime": "06. Nov 2020",
+        "pageLength": 4,
+        "description": "Lecture summaries with additional annotations and diagrams."
     },
     {
         "id": 79,
-        "title": "data_structures.txt",
-        "fileType": ".txt",
+        "title": "isaac's os.pdf",
+        "fileType": ".pdf",
         "tags": [
-            "informatik",
-            "mathe"
+            "maschinenbau"
         ],
-        "noOfDislikes": 255,
-        "noOfLikes": 296,
-        "user_id": 10,
-        "uploadTime": "14. Mar 2025",
+        "noOfLikes": 77,
+        "noOfDislikes": 93,
+        "user_id": 17,
+        "uploadTime": "03. Mar 2025",
         "pageLength": 5,
-        "description": "Step-by-step walkthroughs for key topics and formulas."
+        "description": "Compact reference sheet covering the most important concepts."
     },
     {
         "id": 80,
-        "title": "programming_basics.txt",
-        "fileType": ".txt",
+        "title": "bio.pdf",
+        "fileType": ".pdf",
         "tags": [
-            "informatik"
+            "maschinenbau"
         ],
-        "noOfDislikes": 171,
-        "noOfLikes": 323,
-        "user_id": 41,
-        "uploadTime": "31. Mar 2023",
-        "pageLength": 2,
+        "noOfLikes": 256,
+        "noOfDislikes": 95,
+        "user_id": 32,
+        "uploadTime": "19. Jan 2020",
+        "pageLength": 6,
         "description": "Practice-focused material with solved exercises and tips."
     },
     {
         "id": 81,
-        "title": "electronics.pdf",
+        "title": "emma's os.pdf",
         "fileType": ".pdf",
         "tags": [
             "maschinenbau",
-            "informatik"
+            "wirtschaft"
         ],
-        "noOfDislikes": 54,
-        "noOfLikes": 15,
-        "user_id": 31,
-        "uploadTime": "10. Apr 2023",
-        "pageLength": 4,
-        "description": "Practice-focused material with solved exercises and tips."
+        "noOfLikes": 349,
+        "noOfDislikes": 15,
+        "user_id": 9,
+        "uploadTime": "03. Feb 2026",
+        "pageLength": 8,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
     },
     {
         "id": 82,
-        "title": "machine_design.pdf",
+        "title": "algo.pdf",
         "fileType": ".pdf",
         "tags": [
-            "maschinenbau"
+            "informatik"
         ],
-        "noOfDislikes": 351,
-        "noOfLikes": 223,
-        "user_id": 31,
-        "uploadTime": "11. Jan 2026",
-        "pageLength": 1,
+        "noOfLikes": 98,
+        "noOfDislikes": 193,
+        "user_id": 4,
+        "uploadTime": "13. Feb 2024",
+        "pageLength": 6,
         "description": "Practice-focused material with solved exercises and tips."
     },
     {
         "id": 83,
-        "title": "statistics.pdf",
-        "fileType": ".pdf",
+        "title": "ethan.txt",
+        "fileType": ".txt",
         "tags": [
-            "mathe"
+            "wirtschaft"
         ],
-        "noOfDislikes": 486,
-        "noOfLikes": 366,
-        "user_id": 3,
-        "uploadTime": "12. Dec 2023",
-        "pageLength": 1,
-        "description": "Step-by-step walkthroughs for key topics and formulas."
+        "noOfLikes": 425,
+        "noOfDislikes": 80,
+        "user_id": 29,
+        "uploadTime": "05. May 2023",
+        "pageLength": 3,
+        "description": "Lecture summaries with additional annotations and diagrams."
     },
     {
         "id": 84,
-        "title": "economics.pdf",
+        "title": "jack lab.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 191,
+        "noOfDislikes": 185,
+        "user_id": 43,
+        "uploadTime": "03. Mar 2021",
+        "pageLength": 2,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 85,
+        "title": "matt.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 486,
+        "noOfDislikes": 178,
+        "user_id": 3,
+        "uploadTime": "12. Sep 2022",
+        "pageLength": 5,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 86,
+        "title": "daniel.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 55,
+        "noOfDislikes": 191,
+        "user_id": 11,
+        "uploadTime": "26. Sep 2020",
+        "pageLength": 4,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 87,
+        "title": "nate's db.pdf",
         "fileType": ".pdf",
         "tags": [
             "wirtschaft",
             "maschinenbau"
         ],
-        "noOfDislikes": 494,
-        "noOfLikes": 129,
-        "user_id": 30,
-        "uploadTime": "15. Apr 2023",
-        "pageLength": 4,
-        "description": "Practice-focused material with solved exercises and tips."
-    },
-    {
-        "id": 85,
-        "title": "electronics.txt",
-        "fileType": ".txt",
-        "tags": [
-            "maschinenbau",
-            "informatik"
-        ],
-        "noOfDislikes": 292,
-        "noOfLikes": 124,
-        "user_id": 31,
-        "uploadTime": "20. May 2023",
-        "pageLength": 3,
-        "description": "Step-by-step walkthroughs for key topics and formulas."
-    },
-    {
-        "id": 86,
-        "title": "data_structures.txt",
-        "fileType": ".txt",
-        "tags": [
-            "informatik"
-        ],
-        "noOfDislikes": 227,
-        "noOfLikes": 336,
-        "user_id": 3,
-        "uploadTime": "06. Aug 2025",
-        "pageLength": 4,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 87,
-        "title": "business_math.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "mathe",
-            "wirtschaft"
-        ],
-        "noOfDislikes": 133,
-        "noOfLikes": 129,
-        "user_id": 46,
-        "uploadTime": "22. Apr 2021",
-        "pageLength": 3,
-        "description": "Step-by-step walkthroughs for key topics and formulas."
-    },
-    {
-        "id": 88,
-        "title": "accounting.txt",
-        "fileType": ".txt",
-        "tags": [
-            "wirtschaft"
-        ],
-        "noOfDislikes": 173,
-        "noOfLikes": 289,
-        "user_id": 23,
-        "uploadTime": "11. May 2020",
-        "pageLength": 3,
+        "noOfLikes": 288,
+        "noOfDislikes": 169,
+        "user_id": 26,
+        "uploadTime": "05. Jul 2022",
+        "pageLength": 6,
         "description": "Compact reference sheet covering the most important concepts."
     },
     {
-        "id": 89,
-        "title": "statistics.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "mathe"
-        ],
-        "noOfDislikes": 29,
-        "noOfLikes": 355,
-        "user_id": 5,
-        "uploadTime": "12. May 2024",
-        "pageLength": 5,
-        "description": "Lecture summaries with additional annotations and diagrams."
-    },
-    {
-        "id": 90,
-        "title": "data_structures.pdf",
+        "id": 88,
+        "title": "nora prep.pdf",
         "fileType": ".pdf",
         "tags": [
             "informatik"
         ],
-        "noOfDislikes": 416,
-        "noOfLikes": 211,
-        "user_id": 20,
-        "uploadTime": "18. Apr 2026",
-        "pageLength": 4,
+        "noOfLikes": 351,
+        "noOfDislikes": 42,
+        "user_id": 14,
+        "uploadTime": "28. Mar 2023",
+        "pageLength": 3,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 89,
+        "title": "lucass net.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik",
+            "wirtschaft"
+        ],
+        "noOfLikes": 456,
+        "noOfDislikes": 133,
+        "user_id": 40,
+        "uploadTime": "03. Mar 2022",
+        "pageLength": 8,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 90,
+        "title": "eco doc.txt",
+        "fileType": ".txt",
+        "tags": [
+            "wirtschaft"
+        ],
+        "noOfLikes": 372,
+        "noOfDislikes": 111,
+        "user_id": 26,
+        "uploadTime": "02. May 2023",
+        "pageLength": 6,
         "description": "Step-by-step walkthroughs for key topics and formulas."
     },
     {
         "id": 91,
-        "title": "statistics.pdf",
-        "fileType": ".pdf",
+        "title": "physics 137.txt",
+        "fileType": ".txt",
         "tags": [
-            "mathe",
-            "wirtschaft"
+            "maschinenbau"
         ],
-        "noOfDislikes": 54,
-        "noOfLikes": 45,
-        "user_id": 25,
-        "uploadTime": "19. Apr 2021",
-        "pageLength": 3,
-        "description": "Compact reference sheet covering the most important concepts."
+        "noOfLikes": 140,
+        "noOfDislikes": 143,
+        "user_id": 11,
+        "uploadTime": "23. Apr 2026",
+        "pageLength": 6,
+        "description": "Detailed explanations and practice exercises for exam preparation."
     },
     {
         "id": 92,
-        "title": "business_math.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "mathe",
-            "wirtschaft"
-        ],
-        "noOfDislikes": 98,
-        "noOfLikes": 59,
-        "user_id": 48,
-        "uploadTime": "08. Jul 2020",
-        "pageLength": 2,
-        "description": "Detailed explanations and practice exercises for exam preparation."
-    },
-    {
-        "id": 93,
-        "title": "accounting.txt",
+        "title": "joe's db.txt",
         "fileType": ".txt",
-        "tags": [
-            "wirtschaft"
-        ],
-        "noOfDislikes": 364,
-        "noOfLikes": 22,
-        "user_id": 11,
-        "uploadTime": "21. Sep 2023",
-        "pageLength": 1,
-        "description": "Detailed explanations and practice exercises for exam preparation."
-    },
-    {
-        "id": 94,
-        "title": "machine_design.pdf",
-        "fileType": ".pdf",
         "tags": [
             "maschinenbau"
         ],
-        "noOfDislikes": 212,
-        "noOfLikes": 13,
-        "user_id": 8,
-        "uploadTime": "06. Oct 2025",
-        "pageLength": 2,
-        "description": "Detailed explanations and practice exercises for exam preparation."
-    },
-    {
-        "id": 95,
-        "title": "business_math.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "mathe",
-            "wirtschaft"
-        ],
-        "noOfDislikes": 403,
-        "noOfLikes": 90,
-        "user_id": 30,
-        "uploadTime": "06. Jun 2020",
-        "pageLength": 4,
+        "noOfLikes": 31,
+        "noOfDislikes": 128,
+        "user_id": 50,
+        "uploadTime": "13. Sep 2020",
+        "pageLength": 7,
         "description": "Compact reference sheet covering the most important concepts."
     },
     {
-        "id": 96,
-        "title": "database_systems.txt",
-        "fileType": ".txt",
+        "id": 93,
+        "title": "mary's stat.pdf",
+        "fileType": ".pdf",
         "tags": [
             "informatik"
         ],
-        "noOfDislikes": 398,
-        "noOfLikes": 220,
-        "user_id": 48,
-        "uploadTime": "04. Aug 2021",
-        "pageLength": 5,
-        "description": "Practice-focused material with solved exercises and tips."
+        "noOfLikes": 365,
+        "noOfDislikes": 142,
+        "user_id": 13,
+        "uploadTime": "10. Mar 2025",
+        "pageLength": 8,
+        "description": "Comprehensive study notes with worked examples and summaries."
     },
     {
-        "id": 97,
-        "title": "physics.pdf",
+        "id": 94,
+        "title": "susy prep.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik",
+            "maschinenbau"
+        ],
+        "noOfLikes": 11,
+        "noOfDislikes": 151,
+        "user_id": 37,
+        "uploadTime": "28. Feb 2026",
+        "pageLength": 2,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 95,
+        "title": "olivia's math.pdf",
         "fileType": ".pdf",
         "tags": [
             "maschinenbau"
         ],
-        "noOfDislikes": 220,
-        "noOfLikes": 410,
-        "user_id": 20,
-        "uploadTime": "07. Nov 2021",
-        "pageLength": 2,
+        "noOfLikes": 381,
+        "noOfDislikes": 103,
+        "user_id": 42,
+        "uploadTime": "16. Apr 2024",
+        "pageLength": 8,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 96,
+        "title": "alex prep.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 343,
+        "noOfDislikes": 146,
+        "user_id": 27,
+        "uploadTime": "01. Jun 2026",
+        "pageLength": 6,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 97,
+        "title": "physics hw.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 98,
+        "noOfDislikes": 106,
+        "user_id": 25,
+        "uploadTime": "03. Jul 2023",
+        "pageLength": 3,
         "description": "Compact reference sheet covering the most important concepts."
     },
     {
         "id": 98,
-        "title": "programming_basics.txt",
-        "fileType": ".txt",
-        "tags": [
-            "informatik"
-        ],
-        "noOfDislikes": 335,
-        "noOfLikes": 381,
-        "user_id": 46,
-        "uploadTime": "29. May 2020",
-        "pageLength": 5,
-        "description": "Step-by-step walkthroughs for key topics and formulas."
-    },
-    {
-        "id": 99,
-        "title": "data_structures.pdf",
+        "title": "nate prep.pdf",
         "fileType": ".pdf",
         "tags": [
-            "informatik"
+            "maschinenbau"
         ],
-        "noOfDislikes": 445,
-        "noOfLikes": 254,
-        "user_id": 33,
-        "uploadTime": "18. Mar 2021",
+        "noOfLikes": 446,
+        "noOfDislikes": 187,
+        "user_id": 22,
+        "uploadTime": "08. Feb 2026",
         "pageLength": 1,
-        "description": "Practice-focused material with solved exercises and tips."
-    },
-    {
-        "id": 100,
-        "title": "calculus.pdf",
-        "fileType": ".pdf",
-        "tags": [
-            "mathe",
-            "wirtschaft",
-            "maschinenbau",
-            "informatik"
-        ],
-        "noOfDislikes": 299,
-        "noOfLikes": 149,
-        "user_id": 44,
-        "uploadTime": "24. Feb 2025",
-        "pageLength": 2,
         "description": "Compact reference sheet covering the most important concepts."
     },
     {
-        "id": 101,
-        "title": "economics.txt",
-        "fileType": ".txt",
+        "id": 99,
+        "title": "zoey lab.pdf",
+        "fileType": ".pdf",
         "tags": [
-            "wirtschaft"
+            "maschinenbau"
         ],
-        "noOfDislikes": 365,
-        "noOfLikes": 90,
-        "user_id": 33,
-        "uploadTime": "04. Jun 2020",
-        "pageLength": 3,
-        "description": "Practice-focused material with solved exercises and tips."
-    },
-    {
-        "id": 102,
-        "title": "statistics.txt",
-        "fileType": ".txt",
-        "tags": [
-            "mathe"
-        ],
-        "noOfDislikes": 403,
-        "noOfLikes": 463,
-        "user_id": 11,
-        "uploadTime": "28. May 2024",
+        "noOfLikes": 321,
+        "noOfDislikes": 183,
+        "user_id": 26,
+        "uploadTime": "27. Sep 2025",
         "pageLength": 2,
         "description": "Step-by-step walkthroughs for key topics and formulas."
     },
     {
-        "id": 103,
-        "title": "statistics.pdf",
+        "id": 100,
+        "title": "nate's phy.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 282,
+        "noOfDislikes": 191,
+        "user_id": 21,
+        "uploadTime": "25. Dec 2026",
+        "pageLength": 3,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 101,
+        "title": "matt's bio.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 298,
+        "noOfDislikes": 36,
+        "user_id": 42,
+        "uploadTime": "16. Aug 2020",
+        "pageLength": 10,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 102,
+        "title": "stats 47.pdf",
         "fileType": ".pdf",
         "tags": [
             "mathe"
         ],
-        "noOfDislikes": 174,
-        "noOfLikes": 42,
-        "user_id": 46,
-        "uploadTime": "17. May 2021",
+        "noOfLikes": 155,
+        "noOfDislikes": 138,
+        "user_id": 36,
+        "uploadTime": "16. Nov 2026",
+        "pageLength": 6,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 103,
+        "title": "math.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 296,
+        "noOfDislikes": 191,
+        "user_id": 17,
+        "uploadTime": "19. Apr 2020",
+        "pageLength": 7,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 104,
+        "title": "math 176.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 181,
+        "noOfDislikes": 64,
+        "user_id": 29,
+        "uploadTime": "05. Apr 2025",
+        "pageLength": 8,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 105,
+        "title": "jack.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau",
+            "mathe"
+        ],
+        "noOfLikes": 155,
+        "noOfDislikes": 97,
+        "user_id": 34,
+        "uploadTime": "05. Jan 2023",
+        "pageLength": 3,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 106,
+        "title": "emma rev.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau",
+            "mathe"
+        ],
+        "noOfLikes": 368,
+        "noOfDislikes": 173,
+        "user_id": 12,
+        "uploadTime": "08. May 2022",
+        "pageLength": 4,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 107,
+        "title": "chloe's stat.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau",
+            "wirtschaft"
+        ],
+        "noOfLikes": 296,
+        "noOfDislikes": 200,
+        "user_id": 42,
+        "uploadTime": "18. Apr 2021",
+        "pageLength": 6,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 108,
+        "title": "ava's db.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 292,
+        "noOfDislikes": 178,
+        "user_id": 22,
+        "uploadTime": "03. Aug 2023",
         "pageLength": 4,
         "description": "Comprehensive study notes with worked examples and summaries."
     },
     {
-        "id": 104,
-        "title": "linear_algebra.txt",
+        "id": 109,
+        "title": "noah.txt",
         "fileType": ".txt",
         "tags": [
-            "mathe"
+            "maschinenbau"
         ],
-        "noOfDislikes": 4,
-        "noOfLikes": 302,
-        "user_id": 31,
-        "uploadTime": "13. Aug 2024",
-        "pageLength": 4,
-        "description": "Step-by-step walkthroughs for key topics and formulas."
+        "noOfLikes": 366,
+        "noOfDislikes": 140,
+        "user_id": 7,
+        "uploadTime": "28. Oct 2021",
+        "pageLength": 3,
+        "description": "Lecture summaries with additional annotations and diagrams."
     },
     {
-        "id": 105,
-        "title": "networking.pdf",
+        "id": 110,
+        "title": "matt note.pdf",
         "fileType": ".pdf",
         "tags": [
             "informatik"
         ],
-        "noOfDislikes": 459,
-        "noOfLikes": 332,
-        "user_id": 50,
-        "uploadTime": "26. Dec 2023",
-        "pageLength": 1,
-        "description": "Detailed explanations and practice exercises for exam preparation."
+        "noOfLikes": 415,
+        "noOfDislikes": 97,
+        "user_id": 18,
+        "uploadTime": "25. Oct 2022",
+        "pageLength": 10,
+        "description": "Compact reference sheet covering the most important concepts."
     },
     {
-        "id": 106,
-        "title": "programming_basics.txt",
-        "fileType": ".txt",
-        "tags": [
-            "informatik"
-        ],
-        "noOfDislikes": 82,
-        "noOfLikes": 396,
-        "user_id": 27,
-        "uploadTime": "21. Sep 2025",
-        "pageLength": 1,
-        "description": "Detailed explanations and practice exercises for exam preparation."
-    },
-    {
-        "id": 107,
-        "title": "physics.pdf",
+        "id": 111,
+        "title": "bio 120.pdf",
         "fileType": ".pdf",
         "tags": [
             "maschinenbau"
         ],
-        "noOfDislikes": 483,
-        "noOfLikes": 381,
-        "user_id": 47,
-        "uploadTime": "09. Jan 2024",
+        "noOfLikes": 331,
+        "noOfDislikes": 104,
+        "user_id": 8,
+        "uploadTime": "15. Sep 2024",
+        "pageLength": 5,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 112,
+        "title": "thermo.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 430,
+        "noOfDislikes": 154,
+        "user_id": 8,
+        "uploadTime": "05. Apr 2023",
         "pageLength": 2,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 113,
+        "title": "seb.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau",
+            "wirtschaft"
+        ],
+        "noOfLikes": 48,
+        "noOfDislikes": 15,
+        "user_id": 18,
+        "uploadTime": "20. May 2022",
+        "pageLength": 5,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 114,
+        "title": "liam quiz.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 248,
+        "noOfDislikes": 26,
+        "user_id": 29,
+        "uploadTime": "25. Nov 2024",
+        "pageLength": 3,
         "description": "Step-by-step walkthroughs for key topics and formulas."
     },
     {
-        "id": 108,
-        "title": "physics.pdf",
+        "id": 115,
+        "title": "chem 102.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 360,
+        "noOfDislikes": 86,
+        "user_id": 47,
+        "uploadTime": "26. Aug 2026",
+        "pageLength": 9,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 116,
+        "title": "joe rev.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 158,
+        "noOfDislikes": 88,
+        "user_id": 36,
+        "uploadTime": "28. Aug 2025",
+        "pageLength": 6,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 117,
+        "title": "electro doc.pdf",
         "fileType": ".pdf",
         "tags": [
             "maschinenbau"
         ],
+        "noOfLikes": 158,
+        "noOfDislikes": 13,
+        "user_id": 3,
+        "uploadTime": "19. Oct 2022",
+        "pageLength": 1,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 118,
+        "title": "db 48.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 298,
+        "noOfDislikes": 151,
+        "user_id": 34,
+        "uploadTime": "02. Aug 2024",
+        "pageLength": 10,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 119,
+        "title": "joe's os.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 23,
+        "noOfDislikes": 26,
+        "user_id": 11,
+        "uploadTime": "21. Mar 2025",
+        "pageLength": 5,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 120,
+        "title": "os prep.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 454,
+        "noOfDislikes": 189,
+        "user_id": 50,
+        "uploadTime": "06. Jan 2021",
+        "pageLength": 9,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 121,
+        "title": "chem note.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 221,
+        "noOfDislikes": 28,
+        "user_id": 10,
+        "uploadTime": "15. Jul 2020",
+        "pageLength": 7,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 122,
+        "title": "mary's th.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 192,
+        "noOfDislikes": 63,
+        "user_id": 34,
+        "uploadTime": "07. Mar 2025",
+        "pageLength": 1,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 123,
+        "title": "andy note.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 278,
+        "noOfDislikes": 47,
+        "user_id": 3,
+        "uploadTime": "13. May 2020",
+        "pageLength": 1,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 124,
+        "title": "lucas hw.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "wirtschaft",
+            "maschinenbau"
+        ],
+        "noOfLikes": 324,
+        "noOfDislikes": 39,
+        "user_id": 32,
+        "uploadTime": "10. Mar 2023",
+        "pageLength": 1,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 125,
+        "title": "science.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 33,
         "noOfDislikes": 157,
-        "noOfLikes": 85,
-        "user_id": 28,
-        "uploadTime": "13. Feb 2025",
+        "user_id": 18,
+        "uploadTime": "24. Aug 2024",
         "pageLength": 4,
         "description": "Practice-focused material with solved exercises and tips."
     },
     {
-        "id": 109,
-        "title": "statistics.pdf",
+        "id": 126,
+        "title": "lucass stat.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 21,
+        "noOfDislikes": 190,
+        "user_id": 36,
+        "uploadTime": "07. Dec 2024",
+        "pageLength": 6,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 127,
+        "title": "db rev.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 276,
+        "noOfDislikes": 76,
+        "user_id": 24,
+        "uploadTime": "18. Feb 2022",
+        "pageLength": 1,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 128,
+        "title": "bio 16.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau",
+            "informatik"
+        ],
+        "noOfLikes": 433,
+        "noOfDislikes": 63,
+        "user_id": 36,
+        "uploadTime": "04. Mar 2022",
+        "pageLength": 9,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 129,
+        "title": "nora.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 476,
+        "noOfDislikes": 104,
+        "user_id": 11,
+        "uploadTime": "18. Oct 2022",
+        "pageLength": 6,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 130,
+        "title": "science 41.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau",
+            "mathe"
+        ],
+        "noOfLikes": 250,
+        "noOfDislikes": 41,
+        "user_id": 39,
+        "uploadTime": "04. Sep 2020",
+        "pageLength": 7,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 131,
+        "title": "science 72.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 204,
+        "noOfDislikes": 50,
+        "user_id": 44,
+        "uploadTime": "20. May 2026",
+        "pageLength": 1,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 132,
+        "title": "os rev.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik",
+            "wirtschaft"
+        ],
+        "noOfLikes": 285,
+        "noOfDislikes": 93,
+        "user_id": 25,
+        "uploadTime": "28. Jun 2026",
+        "pageLength": 2,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 133,
+        "title": "nate rev.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik",
+            "mathe"
+        ],
+        "noOfLikes": 494,
+        "noOfDislikes": 45,
+        "user_id": 35,
+        "uploadTime": "23. May 2026",
+        "pageLength": 4,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 134,
+        "title": "owen rev.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 171,
+        "noOfDislikes": 22,
+        "user_id": 2,
+        "uploadTime": "15. Aug 2023",
+        "pageLength": 7,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 135,
+        "title": "eco quiz.txt",
+        "fileType": ".txt",
+        "tags": [
+            "wirtschaft"
+        ],
+        "noOfLikes": 311,
+        "noOfDislikes": 148,
+        "user_id": 6,
+        "uploadTime": "11. Dec 2026",
+        "pageLength": 6,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 136,
+        "title": "abby doc.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik",
+            "maschinenbau"
+        ],
+        "noOfLikes": 393,
+        "noOfDislikes": 63,
+        "user_id": 12,
+        "uploadTime": "06. Mar 2025",
+        "pageLength": 6,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 137,
+        "title": "physics 116.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 37,
+        "noOfDislikes": 93,
+        "user_id": 30,
+        "uploadTime": "04. Jul 2020",
+        "pageLength": 9,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 138,
+        "title": "os doc.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 352,
+        "noOfDislikes": 135,
+        "user_id": 49,
+        "uploadTime": "21. Jan 2026",
+        "pageLength": 10,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 139,
+        "title": "physics rev.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 197,
+        "noOfDislikes": 88,
+        "user_id": 30,
+        "uploadTime": "24. Nov 2025",
+        "pageLength": 5,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 140,
+        "title": "mary.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 308,
+        "noOfDislikes": 95,
+        "user_id": 16,
+        "uploadTime": "10. Jun 2021",
+        "pageLength": 10,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 141,
+        "title": "levi doc.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 343,
+        "noOfDislikes": 197,
+        "user_id": 18,
+        "uploadTime": "22. May 2025",
+        "pageLength": 9,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 142,
+        "title": "olivia note.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 385,
+        "noOfDislikes": 21,
+        "user_id": 36,
+        "uploadTime": "02. Mar 2021",
+        "pageLength": 2,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 143,
+        "title": "alex.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 270,
+        "noOfDislikes": 172,
+        "user_id": 21,
+        "uploadTime": "28. Dec 2020",
+        "pageLength": 5,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 144,
+        "title": "electro lab.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 76,
+        "noOfDislikes": 139,
+        "user_id": 10,
+        "uploadTime": "23. Jan 2020",
+        "pageLength": 5,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 145,
+        "title": "db 94.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 170,
+        "noOfDislikes": 186,
+        "user_id": 31,
+        "uploadTime": "17. Oct 2022",
+        "pageLength": 1,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 146,
+        "title": "mike.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 191,
+        "noOfDislikes": 151,
+        "user_id": 8,
+        "uploadTime": "02. Dec 2025",
+        "pageLength": 7,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 147,
+        "title": "mia's phy.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 493,
+        "noOfDislikes": 82,
+        "user_id": 11,
+        "uploadTime": "10. Aug 2024",
+        "pageLength": 5,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 148,
+        "title": "net 156.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik",
+            "wirtschaft"
+        ],
+        "noOfLikes": 220,
+        "noOfDislikes": 66,
+        "user_id": 41,
+        "uploadTime": "23. May 2023",
+        "pageLength": 4,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 149,
+        "title": "eco 132.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "wirtschaft"
+        ],
+        "noOfLikes": 293,
+        "noOfDislikes": 84,
+        "user_id": 19,
+        "uploadTime": "05. Jan 2022",
+        "pageLength": 10,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 150,
+        "title": "stats 167.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 318,
+        "noOfDislikes": 196,
+        "user_id": 37,
+        "uploadTime": "15. Nov 2022",
+        "pageLength": 2,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 151,
+        "title": "andy prep.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 217,
+        "noOfDislikes": 7,
+        "user_id": 36,
+        "uploadTime": "18. Apr 2020",
+        "pageLength": 10,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 152,
+        "title": "mech 76.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 258,
+        "noOfDislikes": 172,
+        "user_id": 24,
+        "uploadTime": "07. Nov 2023",
+        "pageLength": 4,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 153,
+        "title": "lucass chem.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 500,
+        "noOfDislikes": 130,
+        "user_id": 17,
+        "uploadTime": "21. Dec 2020",
+        "pageLength": 10,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 154,
+        "title": "zoey's bio.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 256,
+        "noOfDislikes": 160,
+        "user_id": 21,
+        "uploadTime": "10. Feb 2026",
+        "pageLength": 3,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 155,
+        "title": "isaac's math.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 491,
+        "noOfDislikes": 114,
+        "user_id": 17,
+        "uploadTime": "24. Aug 2023",
+        "pageLength": 9,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 156,
+        "title": "seb's chem.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 459,
+        "noOfDislikes": 99,
+        "user_id": 31,
+        "uploadTime": "26. Feb 2021",
+        "pageLength": 1,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 157,
+        "title": "chem 46.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 461,
+        "noOfDislikes": 167,
+        "user_id": 48,
+        "uploadTime": "02. Feb 2022",
+        "pageLength": 9,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 158,
+        "title": "noah note.pdf",
         "fileType": ".pdf",
         "tags": [
             "mathe",
             "wirtschaft"
         ],
-        "noOfDislikes": 482,
-        "noOfLikes": 217,
-        "user_id": 33,
-        "uploadTime": "17. Dec 2025",
+        "noOfLikes": 146,
+        "noOfDislikes": 164,
+        "user_id": 24,
+        "uploadTime": "07. Mar 2022",
+        "pageLength": 3,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 159,
+        "title": "mary.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 13,
+        "noOfDislikes": 91,
+        "user_id": 42,
+        "uploadTime": "15. Apr 2021",
+        "pageLength": 7,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 160,
+        "title": "os 138.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 283,
+        "noOfDislikes": 48,
+        "user_id": 40,
+        "uploadTime": "26. Aug 2022",
+        "pageLength": 6,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 161,
+        "title": "owen lab.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 173,
+        "noOfDislikes": 39,
+        "user_id": 46,
+        "uploadTime": "25. Jun 2025",
+        "pageLength": 6,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 162,
+        "title": "daniel doc.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 458,
+        "noOfDislikes": 89,
+        "user_id": 18,
+        "uploadTime": "20. Jan 2025",
+        "pageLength": 10,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 163,
+        "title": "david's me.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 131,
+        "noOfDislikes": 145,
+        "user_id": 7,
+        "uploadTime": "23. Feb 2021",
+        "pageLength": 9,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 164,
+        "title": "daniel's eco.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik",
+            "wirtschaft"
+        ],
+        "noOfLikes": 342,
+        "noOfDislikes": 200,
+        "user_id": 4,
+        "uploadTime": "04. May 2022",
+        "pageLength": 3,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 165,
+        "title": "electro 95.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 281,
+        "noOfDislikes": 158,
+        "user_id": 50,
+        "uploadTime": "09. May 2021",
+        "pageLength": 6,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 166,
+        "title": "stats 23.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 439,
+        "noOfDislikes": 152,
+        "user_id": 41,
+        "uploadTime": "26. Jul 2025",
+        "pageLength": 4,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 167,
+        "title": "net 51.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 210,
+        "noOfDislikes": 58,
+        "user_id": 49,
+        "uploadTime": "06. Apr 2025",
+        "pageLength": 5,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 168,
+        "title": "stats 155.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 95,
+        "noOfDislikes": 30,
+        "user_id": 25,
+        "uploadTime": "13. Mar 2021",
+        "pageLength": 6,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 169,
+        "title": "joe quiz.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 301,
+        "noOfDislikes": 192,
+        "user_id": 3,
+        "uploadTime": "10. Sep 2026",
+        "pageLength": 9,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 170,
+        "title": "henry's os.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau",
+            "mathe"
+        ],
+        "noOfLikes": 180,
+        "noOfDislikes": 108,
+        "user_id": 17,
+        "uploadTime": "21. Sep 2024",
         "pageLength": 3,
         "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 171,
+        "title": "eco lab.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "wirtschaft"
+        ],
+        "noOfLikes": 468,
+        "noOfDislikes": 6,
+        "user_id": 16,
+        "uploadTime": "08. May 2020",
+        "pageLength": 1,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 172,
+        "title": "david doc.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 162,
+        "noOfDislikes": 12,
+        "user_id": 36,
+        "uploadTime": "05. Dec 2022",
+        "pageLength": 10,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 173,
+        "title": "david's el.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 488,
+        "noOfDislikes": 25,
+        "user_id": 43,
+        "uploadTime": "15. May 2023",
+        "pageLength": 5,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 174,
+        "title": "eco 19.txt",
+        "fileType": ".txt",
+        "tags": [
+            "wirtschaft",
+            "maschinenbau"
+        ],
+        "noOfLikes": 433,
+        "noOfDislikes": 188,
+        "user_id": 26,
+        "uploadTime": "16. Oct 2025",
+        "pageLength": 1,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 175,
+        "title": "liam note.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 443,
+        "noOfDislikes": 112,
+        "user_id": 7,
+        "uploadTime": "23. Oct 2020",
+        "pageLength": 10,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 176,
+        "title": "physics quiz.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 451,
+        "noOfDislikes": 48,
+        "user_id": 32,
+        "uploadTime": "17. Sep 2022",
+        "pageLength": 2,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 177,
+        "title": "ethan.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "wirtschaft"
+        ],
+        "noOfLikes": 93,
+        "noOfDislikes": 77,
+        "user_id": 38,
+        "uploadTime": "17. Nov 2020",
+        "pageLength": 5,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 178,
+        "title": "zoey.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik",
+            "mathe"
+        ],
+        "noOfLikes": 426,
+        "noOfDislikes": 79,
+        "user_id": 48,
+        "uploadTime": "14. Sep 2026",
+        "pageLength": 2,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 179,
+        "title": "algo 109.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik",
+            "mathe"
+        ],
+        "noOfLikes": 225,
+        "noOfDislikes": 97,
+        "user_id": 40,
+        "uploadTime": "09. May 2024",
+        "pageLength": 5,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 180,
+        "title": "stats 124.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 298,
+        "noOfDislikes": 145,
+        "user_id": 5,
+        "uploadTime": "26. Sep 2022",
+        "pageLength": 1,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 181,
+        "title": "math prep.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe",
+            "maschinenbau"
+        ],
+        "noOfLikes": 440,
+        "noOfDislikes": 120,
+        "user_id": 42,
+        "uploadTime": "13. Mar 2023",
+        "pageLength": 4,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 182,
+        "title": "db 66.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 392,
+        "noOfDislikes": 55,
+        "user_id": 41,
+        "uploadTime": "26. Mar 2022",
+        "pageLength": 2,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 183,
+        "title": "james.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 423,
+        "noOfDislikes": 175,
+        "user_id": 37,
+        "uploadTime": "03. Aug 2020",
+        "pageLength": 2,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 184,
+        "title": "db 130.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 159,
+        "noOfDislikes": 47,
+        "user_id": 19,
+        "uploadTime": "16. Mar 2023",
+        "pageLength": 8,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 185,
+        "title": "grace doc.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 259,
+        "noOfDislikes": 33,
+        "user_id": 5,
+        "uploadTime": "26. Dec 2026",
+        "pageLength": 1,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 186,
+        "title": "thermo note.txt",
+        "fileType": ".txt",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 66,
+        "noOfDislikes": 82,
+        "user_id": 27,
+        "uploadTime": "06. Nov 2025",
+        "pageLength": 5,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 187,
+        "title": "eco.txt",
+        "fileType": ".txt",
+        "tags": [
+            "wirtschaft"
+        ],
+        "noOfLikes": 409,
+        "noOfDislikes": 89,
+        "user_id": 14,
+        "uploadTime": "28. Jan 2022",
+        "pageLength": 5,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 188,
+        "title": "algo 110.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 195,
+        "noOfDislikes": 130,
+        "user_id": 31,
+        "uploadTime": "17. Jan 2022",
+        "pageLength": 1,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 189,
+        "title": "os note.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 456,
+        "noOfDislikes": 147,
+        "user_id": 3,
+        "uploadTime": "03. Dec 2020",
+        "pageLength": 2,
+        "description": "Comprehensive study notes with worked examples and summaries."
+    },
+    {
+        "id": 190,
+        "title": "stats hw.txt",
+        "fileType": ".txt",
+        "tags": [
+            "mathe",
+            "wirtschaft"
+        ],
+        "noOfLikes": 292,
+        "noOfDislikes": 79,
+        "user_id": 6,
+        "uploadTime": "21. Jul 2021",
+        "pageLength": 5,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 191,
+        "title": "chriss bio.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 146,
+        "noOfDislikes": 199,
+        "user_id": 17,
+        "uploadTime": "13. May 2021",
+        "pageLength": 5,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 192,
+        "title": "ava prep.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "wirtschaft",
+            "mathe"
+        ],
+        "noOfLikes": 357,
+        "noOfDislikes": 154,
+        "user_id": 38,
+        "uploadTime": "06. Aug 2021",
+        "pageLength": 3,
+        "description": "Detailed explanations and practice exercises for exam preparation."
+    },
+    {
+        "id": 193,
+        "title": "emma.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 476,
+        "noOfDislikes": 98,
+        "user_id": 41,
+        "uploadTime": "20. Mar 2023",
+        "pageLength": 5,
+        "description": "Lecture summaries with additional annotations and diagrams."
+    },
+    {
+        "id": 194,
+        "title": "ella.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 433,
+        "noOfDislikes": 196,
+        "user_id": 18,
+        "uploadTime": "03. Feb 2022",
+        "pageLength": 4,
+        "description": "Compact reference sheet covering the most important concepts."
+    },
+    {
+        "id": 195,
+        "title": "math 100.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "mathe"
+        ],
+        "noOfLikes": 349,
+        "noOfDislikes": 105,
+        "user_id": 40,
+        "uploadTime": "25. Apr 2026",
+        "pageLength": 9,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 196,
+        "title": "os 73.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik"
+        ],
+        "noOfLikes": 25,
+        "noOfDislikes": 95,
+        "user_id": 21,
+        "uploadTime": "16. Oct 2026",
+        "pageLength": 2,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 197,
+        "title": "mech rev.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 171,
+        "noOfDislikes": 181,
+        "user_id": 8,
+        "uploadTime": "01. Jan 2022",
+        "pageLength": 1,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 198,
+        "title": "chem lab.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau"
+        ],
+        "noOfLikes": 487,
+        "noOfDislikes": 147,
+        "user_id": 29,
+        "uploadTime": "28. Jan 2020",
+        "pageLength": 10,
+        "description": "Step-by-step walkthroughs for key topics and formulas."
+    },
+    {
+        "id": 199,
+        "title": "algo 58.txt",
+        "fileType": ".txt",
+        "tags": [
+            "informatik",
+            "maschinenbau"
+        ],
+        "noOfLikes": 219,
+        "noOfDislikes": 132,
+        "user_id": 43,
+        "uploadTime": "18. Jul 2025",
+        "pageLength": 5,
+        "description": "Practice-focused material with solved exercises and tips."
+    },
+    {
+        "id": 200,
+        "title": "liam's db.pdf",
+        "fileType": ".pdf",
+        "tags": [
+            "maschinenbau",
+            "wirtschaft"
+        ],
+        "noOfLikes": 206,
+        "noOfDislikes": 71,
+        "user_id": 28,
+        "uploadTime": "14. Oct 2020",
+        "pageLength": 9,
+        "description": "Compact reference sheet covering the most important concepts."
     }
 ]

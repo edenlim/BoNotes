@@ -1,9 +1,7 @@
 import { ref, computed, watch } from 'vue';
-import Cookies from 'js-cookie'; // Import js-cookie at the top of useCards.js
+import Cookies from 'js-cookie';
 
-
-export function useCards(currentNoteId, navigateToNote) {
-    const responseData = ref([]);
+export function useCards(currentNoteId, navigateToNote, unfilteredCards, filteredCards, activeCards) {
     const singleCard = ref(null);
     const isSingleCardLoading = ref(false);
 
@@ -14,7 +12,7 @@ export function useCards(currentNoteId, navigateToNote) {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
-                    'X-XSRF-TOKEN': Cookies.get('XSRF-TOKEN') // Required for PUT requests in Sanctum stateful API
+                    'X-XSRF-TOKEN': Cookies.get('XSRF-TOKEN')
                 },
                 credentials: 'include',
                 body: JSON.stringify({status: card.interaction_status})
@@ -36,10 +34,9 @@ export function useCards(currentNoteId, navigateToNote) {
         }
     }
 
-
     const activeNoteData = computed(() => {
         if (!currentNoteId.value) return null;
-        const found = responseData.value.find(card => card.id == currentNoteId.value);
+        const found = activeCards.value.find(card => card.id == currentNoteId.value);
         if (found) return found;
         if (singleCard.value && singleCard.value.id == currentNoteId.value) {
             return singleCard.value;
@@ -53,7 +50,7 @@ export function useCards(currentNoteId, navigateToNote) {
             isSingleCardLoading.value = false;
             return;
         }
-        const exists = responseData.value.some(card => card.id == newId);
+        const exists = activeCards.value.some(card => card.id == newId);
         if (exists) {
             singleCard.value = null;
             isSingleCardLoading.value = false;
@@ -132,10 +129,15 @@ export function useCards(currentNoteId, navigateToNote) {
             if (!response.ok) throw new Error(`Status: ${response.status}`);
 
             const savedCard = await response.json();
-            const index = responseData.value.findIndex(card => card.id === savedCard.id);
-            if (index !== -1) {
-                responseData.value[index] = { ...responseData.value[index], ...savedCard };
-            }
+            
+            const updateInArray = (arr) => {
+                const index = arr.findIndex(card => card.id === savedCard.id);
+                if (index !== -1) {
+                    arr[index] = { ...arr[index], ...savedCard };
+                }
+            };
+            updateInArray(unfilteredCards.value);
+            updateInArray(filteredCards.value);
         } catch (error) {
             console.error("Speichern fehlgeschlagen:", error);
             alert("Die Änderungen konnten nicht gespeichert werden.");
@@ -146,7 +148,8 @@ export function useCards(currentNoteId, navigateToNote) {
     };
 
     const handleDeleteNote = (noteId) => {
-        responseData.value = responseData.value.filter(card => card.id !== noteId);
+        unfilteredCards.value = unfilteredCards.value.filter(card => card.id !== noteId);
+        filteredCards.value = filteredCards.value.filter(card => card.id !== noteId);
         if (singleCard.value && singleCard.value.id === noteId) {
             singleCard.value = null;
         }
@@ -154,7 +157,7 @@ export function useCards(currentNoteId, navigateToNote) {
     };
 
     return {
-        responseData, activeNoteData, isSingleCardLoading,
+        activeNoteData, isSingleCardLoading,
         toggleLike, toggleDislike, handleUpdateNote, handleDeleteNote
     };
 }
