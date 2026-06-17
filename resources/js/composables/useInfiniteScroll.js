@@ -1,12 +1,10 @@
 import { ref } from "vue";
 
 export function useInfiniteScroll() {
-    // Unfiltered (Main Feed) State
     const unfilteredCards = ref([]);
     const lastIndexUnfiltered = ref(0);
     const hasMoreUnfiltered = ref(true);
 
-    // Filtered (Search/Filter Feed) State
     const filteredCards = ref([]);
     const lastIndexFiltered = ref(0);
     const hasMoreFiltered = ref(true);
@@ -14,7 +12,6 @@ export function useInfiniteScroll() {
     const isLoading = ref(false);
     const fetchError = ref(null);
 
-    // Load method that acts depending on active filter parameters
     const loadMoreCards = async (searchQuery = '', activeFilters = []) => {
         const hasSearch = searchQuery.trim() !== '';
         const hasTags = activeFilters.length > 0 && !activeFilters.includes('Alle');

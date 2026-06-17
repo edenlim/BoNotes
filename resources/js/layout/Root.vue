@@ -15,7 +15,6 @@ import { useRouting } from '../composables/useRouting';
 import { useCards } from '../composables/useCards';
 import { useInfiniteScroll } from "../composables/useInfiniteScroll.js";
 
-// Local Search/Filter UI State
 const activeFilter = ref(['Alle']);
 const rawSearchQuery = ref('');
 const debouncedSearchQuery = ref('');
@@ -82,7 +81,6 @@ const handleLogoutSuccess = async () => {
     await loadMoreCards(rawSearchQuery.value, activeFilter.value);
 };
 
-// Debounce search query
 watch(rawSearchQuery, (newValue) => {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
@@ -90,7 +88,6 @@ watch(rawSearchQuery, (newValue) => {
     }, 500);
 });
 
-// Watch debounced query and filters to fetch search results
 watch([debouncedSearchQuery, activeFilter], async () => {
     resetFilteredState();
     if (isSearchActive.value) {
@@ -129,8 +126,8 @@ onUnmounted(() => {
     <div v-else>
         <div class="flex flex-wrap justify-center my-12 gap-[2rem] mx-16 md:mx-24 lg:mx-32 xl:mx-54">
             <Card
-                v-for="(data, index) in activeCards"
-                :key="index"
+                v-for="data in activeCards"
+                :key="data.id"
                 :data="data"
                 @click="navigateToNote(data.id)"
                 @toggle-like="toggleLike(data)"

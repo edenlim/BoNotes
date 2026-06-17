@@ -102,20 +102,26 @@ class CardController extends Controller
             );
         }
 
-        // Apply Search Filter (Title matching name)
         if ($request->filled('search')) {
             $search = $request->query('search');
             $query->where('cards.title', 'like', '%' . $search . '%');
         }
 
-        // Apply Tag Filters
         if ($request->filled('tags')) {
-            $tags = explode(',', $request->query('tags'));
-            $query->where(function ($q) use ($tags) {
-                foreach ($tags as $tag) {
-                    $q->orWhereJsonContains('cards.tags', $tag);
-                }
-            });
+            $selectedTags = array_map(function ($tag) {
+                return strtolower(trim($tag));
+            }, explode(',', $request->query('tags')));
+
+            $allTags = ['mathe', 'informatik', 'wirtschaft', 'maschinenbau'];
+            $unselectedTags = array_diff($allTags, $selectedTags);
+
+            $query->whereNotNull('cards.tags')
+                  ->where('cards.tags', '!=', '[]')
+                  ->where('cards.tags', '!=', '');
+
+            foreach ($unselectedTags as $unselectedTag) {
+                $query->whereJsonDoesntContain('cards.tags', $unselectedTag);
+            }
         }
 
         // Sort by newest first, skip the already loaded records, and take 20
