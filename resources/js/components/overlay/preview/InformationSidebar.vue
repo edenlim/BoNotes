@@ -59,7 +59,7 @@ const cancelDescription = () => {
             </div>
             <p>Von <span class="font-bold text-[#90CAF9]">{{ props.data.user.name }}</span></p>
             <p>Hochgeladen <span class="font-bold text-white">{{ props.data.uploadTime }}</span></p>
-            <p class="font-bold text-white">{{ props.data.pageLength }} {{ props.data.pageLength > 1 ? "Seiten" : "Seite" }}</p>
+            <p class="font-bold text-white">{{ props.data.page_length }} {{ props.data.page_length > 1 ? "Seiten" : "Seite" }}</p>
         </div>
 
         <!-- BESCHREIBUNG Bereich -->

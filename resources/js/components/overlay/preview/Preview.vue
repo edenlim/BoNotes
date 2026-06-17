@@ -47,7 +47,7 @@ const informationHeadbarData = computed(() => ({
 const informationSidebarData = computed(() => ({
     user: props.data.user,
     uploadTime: props.data.uploadTime,
-    pageLength: props.data.pageLength,
+    page_length: props.data.page_length,
     description: props.data.description,
     noOfLikes: props.data.noOfLikes,
     noOfDislikes: props.data.noOfDislikes,
@@ -80,7 +80,7 @@ const handleDelete = () => {
         <div class="flex flex-col md:flex-row md:grid grid-cols-3">
             <Display
                 :fileType="props.data.fileType"
-                :pageLength="props.data.pageLength"
+                :page_length="props.data.page_length"
                 class="col-span-2"
             />
             <InformationSidebar

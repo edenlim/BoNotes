@@ -23,7 +23,7 @@ const emit = defineEmits(['click', 'toggle-dislike', 'toggle-like']);
         />
 
         <div class="flex flex-col justify-between p-3 grow">
-            <h1 class="text-primary-text font-medium text-card-title mb-1">
+            <h1 class="text-primary-text font-medium text-card-title mb-1 truncate" :title="props.data.title">
                 {{ props.data.title }}
             </h1>
             <div class="flex flex-row justify-between">

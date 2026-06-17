@@ -1,46 +1,100 @@
-import {ref} from "vue";
+import { ref } from "vue";
 
-export function useInfiniteScroll(responseData) {
-    const lastIndex = ref(0);
-    const isLoading = ref(true);
+export function useInfiniteScroll() {
+    const unfilteredCards = ref([]);
+    const lastIndexUnfiltered = ref(0);
+    const hasMoreUnfiltered = ref(true);
+
+    const filteredCards = ref([]);
+    const lastIndexFiltered = ref(0);
+    const hasMoreFiltered = ref(true);
+
+    const isLoading = ref(false);
     const fetchError = ref(null);
-    const hasMore = ref(true);
 
-    const loadMoreCards = async () => {
-        if (!hasMore.value) return;
+    const loadMoreCards = async (searchQuery = '', activeFilters = []) => {
+        const hasSearch = searchQuery.trim() !== '';
+        const hasTags = activeFilters.length > 0 && !activeFilters.includes('Alle');
+        const isFiltering = hasSearch || hasTags;
+
+        // Check bounds
+        if (isFiltering && !hasMoreFiltered.value) return;
+        if (!isFiltering && !hasMoreUnfiltered.value) return;
+
         isLoading.value = true;
+        fetchError.value = null;
+
         try {
-            const response = await fetch(`/api/cards/${lastIndex.value}`, {
+            const offset = isFiltering ? lastIndexFiltered.value : lastIndexUnfiltered.value;
+            let url = `/api/cards/${offset}`;
+
+            const params = new URLSearchParams();
+            if (hasSearch) params.append('search', searchQuery.trim());
+            if (hasTags) {
+                const tagsToPass = activeFilters.filter(t => t !== 'Alle');
+                if (tagsToPass.length > 0) {
+                    params.append('tags', tagsToPass.join(','));
+                }
+            }
+
+            const queryString = params.toString();
+            if (queryString) {
+                url += `?${queryString}`;
+            }
+
+            const response = await fetch(url, {
                 method: 'GET',
                 headers: {'Accept': 'application/json'},
                 credentials: 'include'
             });
+
             if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
             const newCards = await response.json();
 
-            if (newCards.length < 20) {
-                hasMore.value = false;
+            if (isFiltering) {
+                if (newCards.length < 20) {
+                    hasMoreFiltered.value = false;
+                }
+                filteredCards.value = [...filteredCards.value, ...newCards];
+                lastIndexFiltered.value += 20;
+            } else {
+                if (newCards.length < 20) {
+                    hasMoreUnfiltered.value = false;
+                }
+                unfilteredCards.value = [...unfilteredCards.value, ...newCards];
+                lastIndexUnfiltered.value += 20;
             }
-
-            responseData.value = [...responseData.value, ...newCards];
         } catch (error) {
-            console.error("Failed to populate frontend state:", error);
+            console.error("Failed to populate cards:", error);
             fetchError.value = error.message;
         } finally {
             isLoading.value = false;
-            lastIndex.value += 20;
         }
-    }
+    };
 
-    const resetInfiniteScrollVariables = () => {
-        responseData.value = [];
-        lastIndex.value = 0;
-        hasMore.value = true;
+    const resetFilteredState = () => {
+        filteredCards.value = [];
+        lastIndexFiltered.value = 0;
+        hasMoreFiltered.value = true;
         fetchError.value = null;
-    }
+    };
+
+    const resetAll = () => {
+        unfilteredCards.value = [];
+        lastIndexUnfiltered.value = 0;
+        hasMoreUnfiltered.value = true;
+        resetFilteredState();
+    };
 
     return {
-        lastIndex, isLoading, fetchError, hasMore,
-        loadMoreCards, resetInfiniteScrollVariables
+        unfilteredCards,
+        filteredCards,
+        isLoading,
+        fetchError,
+        hasMoreUnfiltered,
+        hasMoreFiltered,
+        loadMoreCards,
+        resetFilteredState,
+        resetAll
     };
 }
