@@ -6,7 +6,10 @@ use App\Http\Controllers\Api\CardController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\AuthController;
 
+// - Login
 Route::post('/login', [AuthController::class, 'login']);
+
+// - Protected Routes; Requires user logged in
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
 
@@ -21,6 +24,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/users', [UserController::class, 'index']);
 });
 
+// - Public Routes; No login required
 Route::get('/cards', [CardController::class, 'index']);
 Route::get('/cards/show/{card}', [CardController::class, 'show']);
 Route::get('/cards/{lastIndex}', [CardController::class, 'infiniteLoad'])->whereNumber('lastIndex');
