@@ -9,21 +9,17 @@ use App\Http\Controllers\Api\AuthController;
 Route::post('/login', [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
-    Route::post('/cards', [CardController::class, 'store']);
 
-    // Add any other routes here that STRICTLY require a logged-in user
+    Route::post('/cards', [CardController::class, 'store']);    
+    Route::put('/cards/{card}', [CardController::class, 'update']);
+    Route::put('/cards/{card}/rate', [CardController::class, 'rate']);
+
     Route::get('/user', function (Request $request) {
         return $request->user();
     });
-    Route::put('/cards/{card}', [CardController::class, 'update']);
-    Route::put('/cards/{card}/rate', [CardController::class, 'rate']);
+    Route::put('/users/{id}', [UserController::class, 'update']);
+    Route::get('/users', [UserController::class, 'index']);
 });
-
-Route::put('/users/{id}', [UserController::class, 'update']);
-Route::get('/users', [UserController::class, 'index']);
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
 
 Route::get('/cards', [CardController::class, 'index']);
 Route::get('/cards/show/{card}', [CardController::class, 'show']);
