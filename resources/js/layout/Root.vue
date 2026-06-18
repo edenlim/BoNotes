@@ -55,6 +55,7 @@ const {
     toggleDislike, 
     handleUpdateNote, 
     handleDeleteNote, 
+    handleNewCard,
     isSingleCardLoading 
 } = useCards(currentNoteId, navigateToNote, unfilteredCards, filteredCards, activeCards);
 
@@ -159,7 +160,10 @@ onUnmounted(() => {
     <div v-if="isLoggedIn">
         <Upload @open="showUploadOverlay = true" />
         <Background :show="showUploadOverlay" @close="showUploadOverlay = false">
-            <UploadOverlay @close="showUploadOverlay = false" />
+            <UploadOverlay
+                @close="showUploadOverlay = false"
+                @uploaded="handleNewCard"
+            />
         </Background>
     </div>
 </template>

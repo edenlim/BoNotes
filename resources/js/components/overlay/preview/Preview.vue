@@ -52,6 +52,8 @@ const informationSidebarData = computed(() => ({
     noOfLikes: props.data.noOfLikes,
     noOfDislikes: props.data.noOfDislikes,
     interaction_status: props.data.interaction_status,
+    file_path: props.data.file_path ?? null,
+    title: props.data.title,
 }));
 
 const handleUpdateDescription = (newDescription) => {

@@ -117,13 +117,14 @@ const cancelDescription = () => {
         >
              Speichern
         </div>
-        <div v-else class="
-            preview-button hover-pop w-40 text-center mx-auto
-            p-2 md:p-4 lg:p-4
-            my-4 md:my-0
-        ">
+        <a
+            v-if="!isEditingDescription && !props.isEditingTitle"
+            :href="`/storage/${props.data.file_path}`"
+            :download="props.data.title"
+            class="preview-button hover-pop w-40 text-center mx-auto p-2 md:p-4 lg:p-4 my-4 md:my-0 no-underline"
+        >
             Download
-        </div>
+        </a>
     </div>
 </template>
 

@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\AuthController;
 Route::post('/login', [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
+    Route::post('/cards', [CardController::class, 'store']);
 
     // Add any other routes here that STRICTLY require a logged-in user
     Route::get('/user', function (Request $request) {
