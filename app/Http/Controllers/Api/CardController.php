@@ -251,4 +251,13 @@ class CardController extends Controller
 
         return response()->json($result);
     }
+    public function destroy(Request $request, Card $card): JsonResponse
+    {
+        $user = $request->user('sanctum');
+        if ($card->user_id !== $user->id) {
+            return response()->json(['message' => 'Unauthorized'], 403);
+        }
+        $card->delete();
+        return response()->json(['message' => 'Notiz gelöscht']);
+    }
 }

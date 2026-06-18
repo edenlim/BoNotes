@@ -17,6 +17,7 @@ Route::middleware('auth:sanctum')->group(function () {
     });
     Route::put('/cards/{card}', [CardController::class, 'update']);
     Route::put('/cards/{card}/rate', [CardController::class, 'rate']);
+    Route::delete('/cards/{card}', [CardController::class, 'destroy']);
 });
 
 Route::put('/users/{id}', [UserController::class, 'update']);
