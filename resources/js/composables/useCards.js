@@ -129,7 +129,7 @@ export function useCards(currentNoteId, navigateToNote, unfilteredCards, filtere
             if (!response.ok) throw new Error(`Status: ${response.status}`);
 
             const savedCard = await response.json();
-            
+
             const updateInArray = (arr) => {
                 const index = arr.findIndex(card => card.id === savedCard.id);
                 if (index !== -1) {
@@ -147,13 +147,29 @@ export function useCards(currentNoteId, navigateToNote, unfilteredCards, filtere
         }
     };
 
-    const handleDeleteNote = (noteId) => {
-        unfilteredCards.value = unfilteredCards.value.filter(card => card.id !== noteId);
-        filteredCards.value = filteredCards.value.filter(card => card.id !== noteId);
-        if (singleCard.value && singleCard.value.id === noteId) {
-            singleCard.value = null;
+    const handleDeleteNote = async (noteId) => {
+        try {
+            const response = await fetch(`/api/cards/${noteId}`, {
+                method: 'DELETE',
+                headers: {
+                    'Accept': 'application/json',
+                    'X-XSRF-TOKEN': Cookies.get('XSRF-TOKEN')
+                },
+                credentials: 'include'
+            });
+            if (!response.ok) throw new Error(`Status: ${response.status}`);
+
+            if (unfilteredCards && unfilteredCards.value) {
+                unfilteredCards.value = unfilteredCards.value.filter(card => card.id !== noteId);
+            }
+            if (filteredCards && filteredCards.value) {
+                filteredCards.value = filteredCards.value.filter(card => card.id !== noteId);
+            }
+            navigateToNote(null);
+        } catch (error) {
+            console.error("Löschen fehlgeschlagen:", error);
+            alert("Die Notiz konnte nicht gelöscht werden.");
         }
-        navigateToNote(null);
     };
 
     const handleNewCard = (newCard) => {

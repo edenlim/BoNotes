@@ -20,6 +20,10 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', function (Request $request) {
         return $request->user();
     });
+    Route::put('/cards/{card}', [CardController::class, 'update']);
+    Route::put('/cards/{card}/rate', [CardController::class, 'rate']);
+    Route::delete('/cards/{card}', [CardController::class, 'destroy']);
+    Route::get('/cards/{lastIndex}', [CardController::class, 'infiniteLoad'])->whereNumber('lastIndex');
     Route::put('/users/{id}', [UserController::class, 'update']);
     Route::get('/users', [UserController::class, 'index']);
 });
