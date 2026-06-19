@@ -18,7 +18,7 @@ const emit = defineEmits(['total-pages']);
 
 
 const fileUrl = computed(() =>
-    props.data?.file_path ? `/storage/${props.data.file_path}` : null
+    props.data?.file_path ? `/files/${props.data.file_path}` : null
 );
 const isPdf = computed(() => props.data?.fileType === '.pdf');
 const isTxt = computed(() => props.data?.fileType === '.txt');
@@ -80,7 +80,11 @@ const loadPdf = async (url) => {
     totalPdfPages.value  = 0;
 
     try {
-        const loadingTask   = pdfjsLib.getDocument({ url });
+        // FIX: Pass withCredentials to allow Sanctum session cookies through
+        const loadingTask   = pdfjsLib.getDocument({ 
+            url: url,
+            withCredentials: true 
+        });
         pdfDoc.value        = await loadingTask.promise;
         totalPdfPages.value = pdfDoc.value.numPages;
 
