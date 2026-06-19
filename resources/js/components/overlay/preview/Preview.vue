@@ -8,20 +8,16 @@ const props = defineProps({
     data: {
         type: Object,
         required: true
-    },
-    session: {
-        type: Object,
-        default: null
     }
 });
 
 const emit = defineEmits(['close', 'update:like', 'update:dislike', 'delete-note', 'update-note']);
 
+const livePageLength = ref(null);
 const isOwner = computed(() => {
     return props.session && props.session.userid == props.data.user_id;
 });
 
-// Title editing state lives here so Sidebar can react to it
 const isEditingTitle = ref(false);
 const editedTitle = ref('');
 
@@ -47,7 +43,7 @@ const informationHeadbarData = computed(() => ({
 const informationSidebarData = computed(() => ({
     user: props.data.user,
     uploadTime: props.data.uploadTime,
-    page_length: props.data.page_length,
+    page_length: livePageLength.value !== null ? livePageLength.value : (props.data.page_length ?? 0),
     description: props.data.description,
     noOfLikes: props.data.noOfLikes,
     noOfDislikes: props.data.noOfDislikes,
@@ -56,6 +52,9 @@ const informationSidebarData = computed(() => ({
     title: props.data.title,
 }));
 
+const handleTotalPages = (pages) => {
+    livePageLength.value = pages;
+};
 const handleUpdateDescription = (newDescription) => {
     emit('update-note', { id: props.data.id, description: newDescription });
 };
@@ -81,8 +80,8 @@ const handleDelete = () => {
         />
         <div class="flex flex-col md:flex-row md:grid grid-cols-3">
             <Display
-                :fileType="props.data.fileType"
-                :page_length="props.data.page_length"
+                :data="props.data"
+                @total-pages="handleTotalPages"
                 class="col-span-2"
             />
             <InformationSidebar

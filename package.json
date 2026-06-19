@@ -19,6 +19,7 @@
         "@vitejs/plugin-vue": "^6.0.6",
         "alpinejs": "^3.15.12",
         "js-cookie": "^3.0.7",
+        "pdfjs-dist": "^6.0.227",
         "vue": "^3.5.34"
     }
 }

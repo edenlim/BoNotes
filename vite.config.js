@@ -12,6 +12,12 @@ export default defineConfig({
         tailwindcss(),
         vue(),
     ],
+    build: {
+        target: 'es2022',
+    },
+    optimizeDeps: {
+        exclude: ['pdfjs-dist'],
+    },
     server: {
         watch: {
             ignored: ['**/storage/framework/views/**'],
