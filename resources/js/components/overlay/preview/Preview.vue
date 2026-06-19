@@ -8,6 +8,10 @@ const props = defineProps({
     data: {
         type: Object,
         required: true
+    },
+    session: {
+        type: Object,
+        default: null
     }
 });
 
