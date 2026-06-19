@@ -6,12 +6,17 @@ use App\Http\Controllers\Api\CardController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\AuthController;
 
+// - Login
 Route::post('/login', [AuthController::class, 'login']);
+
+// - Protected Routes; Requires user logged in
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
-    Route::post('/cards', [CardController::class, 'store']);
 
-    // Add any other routes here that STRICTLY require a logged-in user
+    Route::post('/cards', [CardController::class, 'store']);    
+    Route::put('/cards/{card}', [CardController::class, 'update']);
+    Route::put('/cards/{card}/rate', [CardController::class, 'rate']);
+
     Route::get('/user', function (Request $request) {
         return $request->user();
     });
@@ -19,14 +24,11 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/cards/{card}/rate', [CardController::class, 'rate']);
     Route::delete('/cards/{card}', [CardController::class, 'destroy']);
     Route::get('/cards/{lastIndex}', [CardController::class, 'infiniteLoad'])->whereNumber('lastIndex');
+    Route::put('/users/{id}', [UserController::class, 'update']);
+    Route::get('/users', [UserController::class, 'index']);
 });
 
-Route::put('/users/{id}', [UserController::class, 'update']);
-Route::get('/users', [UserController::class, 'index']);
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
-
+// - Public Routes; No login required
 Route::get('/cards', [CardController::class, 'index']);
 Route::get('/cards/show/{card}', [CardController::class, 'show']);
 Route::get('/cards/{lastIndex}', [CardController::class, 'infiniteLoad'])->whereNumber('lastIndex');
